@@ -1,0 +1,401 @@
+---
+import '~/assets/styles/tailwind.css';
+
+const metadata = {
+  title: 'Wellington | THE MATCH BUREAU',
+  description:
+    'Private matchmaking in Wellington for discerning professionals seeking discreet, curated introductions.',
+};
+---
+
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>{metadata.title}</title>
+    <meta name="description" content={metadata.description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;700&family=Newsreader:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#0e1322] text-[#dee1f7] antialiased">
+    <header
+      class="fixed left-0 top-0 z-50 flex w-full items-center justify-between border-b border-[#4e453b] bg-[#0e1322]/95 px-5 py-5 backdrop-blur md:px-12 md:py-8"
+    >
+      <a
+        class="font-headline text-base font-light uppercase tracking-[0.22em] text-white md:text-xl md:tracking-[0.3em]"
+        href="/wellington"
+      >
+        THE MATCH BUREAU
+      </a>
+      <nav class="hidden items-center gap-12 md:flex">
+        <a class="nav-link" href="#membership">Membership</a>
+        <a class="nav-link active" href="#wellington">Wellington</a>
+        <a class="nav-link" href="#process">The Process</a>
+      </nav>
+      <a
+        class="bg-[#cda777] px-4 py-3 font-headline text-[0.62rem] uppercase tracking-[0.18em] text-[#442b06] transition-opacity hover:opacity-90 md:px-8 md:tracking-[0.25em]"
+        href="#apply"
+      >
+        Apply Now
+      </a>
+    </header>
+
+    <main class="pt-20 md:pt-28">
+      <section id="wellington" class="relative flex min-h-[760px] items-center overflow-hidden md:min-h-[860px]">
+        <div class="absolute inset-0 z-0">
+          <img
+            class="h-full w-full object-cover opacity-60 grayscale-[30%]"
+            alt="Cinematic wide shot of Wellington harbor at dusk, city lights reflecting on calm water with steep hills in the background under a moody twilight sky"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrRNuOAzfVxHOAcd9sNQg0Wus1-kHbfSI50zSDz2MOvNq-12ubM0dYve64Hqvlc6YjP0NJo-Hsc_hFuzYXwRi2qe1o3BbMFGfkeyPtUZ1I0Auun04QJD59WpmJvs8ykl18OTiudaB5dZKrNKxtNoLAlY44DylSobOzWBPdevZjTsY8Gv8Uuj3GprZfmyFwHALdZ2hNhSeImag7MkWLwivU1dKDaki56XC5BkRvP0i1VndVw4mQKObYQqxoxA6rV0AQR2zY5TnyGQ0W"
+          />
+          <div class="absolute inset-0 bg-gradient-to-r from-[#0e1322] via-[#0e1322]/65 to-[#0e1322]/10"></div>
+        </div>
+        <div class="relative z-10 mx-auto w-full max-w-7xl px-5 md:px-12">
+          <div class="max-w-3xl">
+            <span
+              class="mb-6 inline-block border-b border-[#eac290] pb-2 font-body text-xs uppercase tracking-[0.25em] text-[#eac290]"
+            >
+              New Zealand's Cultural Capital
+            </span>
+            <h1 class="mb-8 font-headline text-5xl font-light leading-tight text-white md:text-8xl">
+              Private <br />
+              <span class="italic text-[#eac290]">matchmaking</span>
+              <br />
+              in Wellington.
+            </h1>
+            <p class="max-w-xl font-body text-xl italic leading-relaxed text-[#d2c4b7] md:text-2xl">
+              Where sophisticated capital connections meet cultural grace. We curate unions for Wellington's most
+              discerning professionals.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="membership" class="bg-[#0e1322] px-5 py-24 md:px-12 md:py-32">
+        <div class="editorial-grid mx-auto max-w-7xl">
+          <div class="col-span-12 border-l border-[#4e453b] py-8 pl-8 md:col-span-5 md:py-12 md:pl-12">
+            <h2 class="mb-8 font-headline text-3xl uppercase tracking-widest text-white">The Wellington Standard</h2>
+            <p class="mb-6 font-body text-lg leading-relaxed text-[#d2c4b7]">
+              Wellington demands a unique approach to intimacy. In a city where the political, creative, and corporate
+              worlds intersect with such proximity, discretion is not just a luxury; it is a necessity.
+            </p>
+            <p class="font-body text-lg italic leading-relaxed text-[#d2c4b7]">
+              Our bureau understands the specific rhythm of the capital. From the quiet galleries of Te Papa to the
+              secluded dining rooms of Boulcott Street, we facilitate introductions that feel both inevitable and
+              extraordinary.
+            </p>
+          </div>
+          <div class="col-span-12 md:col-span-6 md:col-start-7">
+            <div class="aspect-[4/5] overflow-hidden bg-[#161b2b]">
+              <img
+                class="h-full w-full object-cover"
+                alt="Interior of a luxury private library or members club with dark wood paneling, amber lighting, and leather chairs"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1nJLMGZ4bzxJpKRp22tvMK5Y35kzDPNCq1g6cgr4cl27O1Eo2meC3qB51kms18iMnIDrodeyp0FbjhddfPF4fFx0WTMMyPz9dxCWz_Dt0gQ4pp245VdlQYiny3Z84-4d0TeY6KVCvKnHb6xCGAnJz6XtNbyFAtqdO-5fUgkTn5_Qrsn2pPLW3kpNxG8dNbcPYsN687-k1YSXu4q4X1o2nYrZY1SweMXrXeCual80hA3d77G4XaLDNSlCfgHwaY72FJGqYKuM24e1l"
+              />
+            </div>
+            <div class="mt-8 flex items-start justify-between gap-8">
+              <div class="text-xs uppercase tracking-[0.2em] text-[#eac290]">The Exclusive Archive</div>
+              <div class="max-w-[200px] text-right text-[10px] uppercase tracking-[0.1em] text-[#9b8f82]">
+                Curated selection for the discerning individual
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="border-y border-[#4e453b] bg-[#161b2b] py-24 md:py-32">
+        <div class="mx-auto max-w-7xl px-5 md:px-12">
+          <div class="mb-16 text-center md:mb-20">
+            <h2 class="mb-4 font-headline text-4xl font-light tracking-tight text-white">Our Process</h2>
+            <p class="font-body italic tracking-[0.1em] text-[#eac290]">The Architecture of Connection</p>
+          </div>
+          <div class="grid grid-cols-1 border border-[#4e453b] md:grid-cols-3">
+            <article class="process-card">
+              <span>01</span>
+              <h3>The Inquiry</h3>
+              <p>
+                Submit your profile for a strictly confidential preliminary review. We accept members based on
+                character, values, and compatibility potential.
+              </p>
+            </article>
+            <article class="process-card">
+              <span>02</span>
+              <h3>The Curation</h3>
+              <p>
+                Our matchmakers use an architectural approach to screening, filtering through our network to find the
+                precise alignment of intellect and soul.
+              </p>
+            </article>
+            <article class="process-card">
+              <span>03</span>
+              <h3>The Introduction</h3>
+              <p>
+                A seamless introduction curated at Wellington's most refined locales. No digital noise, just the purity
+                of a shared moment.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#0e1322] px-5 py-24 md:px-12 md:py-32">
+        <div class="mx-auto max-w-7xl">
+          <div class="mb-16 flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
+            <div class="max-w-2xl">
+              <h2 class="mb-6 font-headline text-5xl font-light text-white">
+                A Legacy of <span class="italic">Intimacy</span>.
+              </h2>
+              <p class="font-body text-lg leading-relaxed text-[#d2c4b7]">
+                Wellington is a city of layers: the mist on the hills, the depth of the harbour, and the profound
+                connections made in its quietest corners. We operate at the centre of these layers.
+              </p>
+            </div>
+            <div class="text-left md:text-right">
+              <div class="font-headline text-7xl font-bold text-[#4e453b]/45 md:text-8xl">WGN</div>
+              <div class="text-xs uppercase tracking-[0.3em] text-[#eac290]">Bureau Head Office</div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16">
+            <div class="border-l-4 border-[#eac290] bg-[#25293a] p-8 md:p-12">
+              <p class="mb-8 font-body text-2xl italic leading-relaxed text-white">
+                "The Match Bureau didn't just find me a partner; they understood the complexities of my life in the
+                capital and found someone who complemented every nuance of it."
+              </p>
+              <div class="flex items-center gap-4">
+                <div class="h-px w-8 bg-[#eac290]"></div>
+                <span class="text-xs uppercase tracking-[0.2em] text-[#eac290]">Senior Partner, Wellington</span>
+              </div>
+            </div>
+            <div class="group relative min-h-[360px] overflow-hidden">
+              <img
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                alt="Atmospheric close-up of high-end cocktail glasses on a dark stone bar in a moody upscale lounge"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVUqUZTKoRGYndqXr4qVVANnOAcWxjPemyq1J9NiQ3KfRhaCVQ05g4fdDX5shSFSXgfE45D43hW2Nqqi8XEf7uYfl9nv8zosoHpHvJDs0bEgAYKaawDNgcVNan-kvdwmkIGx_Gk-bwOd-HCFsJJhUlgf18BqpHgYh_cbtBhHNzOWOA7XTFRPukE-JtW2b_0I-fKLaudzrbj8iZVQXf63mjsUqdwFLtLXD9mkbqaw9vvylY_kkViLMl6SABqzYJdXtK6-lJAHoIhxCR"
+              />
+              <div class="absolute inset-0 bg-[#0e1322]/20 transition-colors group-hover:bg-transparent"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="apply" class="relative overflow-hidden bg-[#090e1c] py-28 md:py-40">
+        <div class="absolute inset-0 opacity-10 dotted-field"></div>
+        <div class="relative z-10 mx-auto max-w-4xl px-5 text-center md:px-12">
+          <h2 class="mb-10 font-headline text-4xl font-light leading-tight text-white md:text-6xl">
+            Your seat is reserved at <br />
+            <span class="italic text-[#eac290]">The Table of Connection</span>.
+          </h2>
+          <div class="flex flex-col items-center justify-center gap-5 md:flex-row md:gap-6">
+            <a class="cta-primary" href="mailto:hello@thematchbureau.co.nz">Begin Your Inquiry</a>
+            <a class="cta-secondary" href="#process">View Process</a>
+          </div>
+          <p class="mt-12 font-body text-sm italic text-[#9b8f82]">Accepting Wellington memberships for 2026</p>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="flex w-full flex-col items-start justify-between gap-8 border-t border-[#4e453b] bg-[#161b2b] px-5 py-16 md:flex-row md:px-12 md:py-20"
+    >
+      <div class="flex flex-col gap-6">
+        <div class="font-headline text-lg uppercase tracking-[0.25em] text-white">THE MATCH BUREAU</div>
+        <p class="font-body text-[10px] uppercase tracking-[0.15em] text-[#cda777]">
+          © 2026 THE MATCH BUREAU. ALL RIGHTS RESERVED.
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-8 md:gap-12">
+        <div class="footer-column">
+          <span>Practice</span>
+          <a href="#membership">Membership</a>
+          <a href="#process">Our Process</a>
+        </div>
+        <div class="footer-column">
+          <span>Legal</span>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+        </div>
+        <div class="footer-column">
+          <span>Connect</span>
+          <a href="mailto:hello@thematchbureau.co.nz">Contact</a>
+          <a href="#apply">Apply</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+
+  :global(body) {
+    margin: 0;
+    font-family: 'Newsreader', serif;
+    background-color: #0e1322;
+  }
+
+  .font-headline {
+    font-family: 'Noto Serif', serif;
+  }
+
+  .font-body {
+    font-family: 'Newsreader', serif;
+  }
+
+  .nav-link {
+    font-family: 'Noto Serif', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: #cda777;
+  }
+
+  .nav-link.active {
+    border-bottom: 1px solid #cda777;
+    padding-bottom: 0.25rem;
+  }
+
+  .editorial-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  .process-card {
+    border-bottom: 1px solid #4e453b;
+    padding: 2rem;
+    transition: background-color 0.5s ease;
+  }
+
+  .process-card:hover {
+    background-color: #1a1f2f;
+  }
+
+  .process-card span {
+    display: block;
+    margin-bottom: 2rem;
+    font-family: 'Noto Serif', serif;
+    font-size: 2.5rem;
+    color: rgb(234 194 144 / 0.35);
+    transition: color 0.3s ease;
+  }
+
+  .process-card:hover span {
+    color: #eac290;
+  }
+
+  .process-card h3 {
+    margin-bottom: 1rem;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.125rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .process-card p {
+    font-family: 'Newsreader', serif;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: #d2c4b7;
+  }
+
+  .dotted-field {
+    background-image: radial-gradient(circle at 2px 2px, #cda777 1px, transparent 0);
+    background-size: 40px 40px;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    display: inline-flex;
+    min-height: 3.75rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    font-family: 'Noto Serif', serif;
+    font-size: 0.82rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease,
+      border-color 0.3s ease;
+  }
+
+  .cta-primary {
+    background-color: #cda777;
+    color: #442b06;
+  }
+
+  .cta-primary:hover {
+    background-color: #eac290;
+  }
+
+  .cta-secondary {
+    border: 1px solid #9b8f82;
+    color: #eac290;
+  }
+
+  .cta-secondary:hover {
+    background-color: #eac290;
+    color: #442b06;
+    border-color: #eac290;
+  }
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer-column span,
+  .footer-column a {
+    font-family: 'Newsreader', serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .footer-column span {
+    color: #9ca3af;
+  }
+
+  .footer-column a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+
+  .footer-column a:hover {
+    color: #cda777;
+  }
+
+  @media (min-width: 768px) {
+    .process-card {
+      border-right: 1px solid #4e453b;
+      border-bottom: 0;
+      padding: 3rem;
+    }
+
+    .process-card:last-child {
+      border-right: 0;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .editorial-grid {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+</style>
