@@ -2,7 +2,7 @@ export const headerData = {
   links: [
     { text: 'Membership', href: '/membership' },
     {
-      text: 'Our Cities',
+      text: 'Cities',
       links: [
         { text: 'Auckland', href: '/cities/auckland' },
         { text: 'Wellington', href: '/cities/wellington' },
