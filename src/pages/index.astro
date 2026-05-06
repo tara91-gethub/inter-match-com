@@ -1,399 +1,140 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
-
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
-  ignoreTitleTemplate: true,
+  title: 'The Match Bureau',
+  description:
+    'Private matchmaking in New Zealand for discerning singles across Auckland, Wellington, Christchurch and Queenstown.',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
+  <main transition:animate="fade">
+    <header class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img class="w-full h-full object-cover grayscale-[30%] contrast-[110%]" alt="New Zealand Southern Alps at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvRsUSBG0i67Qkt62mPcPgSJMGfk8Jcp0eon-4SXsb0lZEava6DvDCWhx-k7x55hJodV_NfEH2dLBFOTMBmrSwnz_PJZkA3QPQxXev91qNr423aYorzx7APa4Pho60g3nYcvOaazZ7Gk_u__4OpjW7q4enPaCbWfUIgV-cVX86bQg1rn0nwtYh5Bj0stf-4Y6dDPKV7Vd1g7uI72vxhIabkXCiniFZlYSKbPACpx_4oV4deKe2qvfcvqkMn4Os7l7RxgBugEew3pB5"/>
+        <div class="absolute inset-0 bg-[#0e1322]/40"></div>
+      </div>
+      <div class="relative z-10 text-center px-6 max-w-5xl">
+        <h1 class="text-[3.5rem] md:text-[5rem] leading-tight mb-6 text-white" style="font-family:'Noto Serif',serif;">
+          Private matchmaking in <span class="text-[#eac290] italic">New Zealand</span>
+        </h1>
+        <div class="h-px w-24 bg-[#eac290] mx-auto mb-8"></div>
+        <p class="text-xl md:text-2xl tracking-wide text-[#d2c4b7]" style="font-family:'Newsreader',serif;">
+          A silent authority in the art of the introduction.
+        </p>
+      </div>
+    </header>
 
-  <Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-      { text: 'Learn more', href: '#features' },
-    ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
-  >
-    <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white"> Astro 5.0</span> + Tailwind CSS
-    </Fragment>
+    <section class="py-32 px-12 bg-[#0e1322]">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+        <div class="md:col-span-5 relative">
+          <div class="border border-[#4e453b] p-2">
+            <img class="w-full h-[600px] object-cover" alt="Luxury watch movement close-up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMUdn11VsAhWw8EuHK9943GS6IJmjfK62nd-FkEsxOBrsepcMR8MXPovgtNGYkXyoc78312JAtb_rRHRQe-gtS2-i-vUEGZAqnQVlcjIyYU1RWV6RUhCgMLbmv6K_Qvo9ki1xbGLSefjUOZsA_34-MkCRepBIFEcO4XJ-4cHUmnvKsGkRjK4DHaIVGCFN6t6kMMVetZa3ZO-4RWBFtGIh006nxS0jJ4S8oxTVXsO1hd89DtWcYMSCcjsJ_i4nrGxAIOq0EMtkH2m4M"/>
+          </div>
+          <div class="absolute -bottom-8 -right-8 bg-[#cda777] p-8 hidden lg:block">
+            <p class="text-[#573c15] tracking-[0.25em] uppercase text-xs" style="font-family:'Newsreader',serif;">Est. 2024</p>
+          </div>
+        </div>
+        <div class="md:col-span-7 md:pl-12">
+          <p class="tracking-[0.25em] uppercase text-[#eac290] mb-6 text-sm" style="font-family:'Newsreader',serif;">The Private Atelier</p>
+          <h2 class="text-5xl mb-8 leading-tight text-white" style="font-family:'Noto Serif',serif;">Precision in <br/>Human Connection.</h2>
+          <div class="space-y-6 text-lg text-[#d2c4b7] leading-relaxed max-w-xl" style="font-family:'Newsreader',serif;">
+            <p>The Bureau is more than a service; it is a private enclave designed for New Zealand's most successful and discerning individuals. We operate beyond the reach of standard platforms, catering to those who value discretion above all else.</p>
+            <p>Our approach is architectural, building relationships on foundations of shared intellectual rigor, lifestyle compatibility, and unspoken ambition. In the world of high-value introductions, we are the invisible architects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
-    </Fragment>
-  </Hero>
+    <section class="py-32 px-12 bg-[#161b2b]">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-end mb-16">
+          <div>
+            <p class="tracking-[0.25em] uppercase text-[#eac290] mb-4 text-sm" style="font-family:'Newsreader',serif;">Territories</p>
+            <h2 class="text-4xl text-white" style="font-family:'Noto Serif',serif;">The City Registry</h2>
+          </div>
+          <p class="italic text-[#d2c4b7] max-w-xs text-right hidden md:block" style="font-family:'Newsreader',serif;">Active mandates currently being fulfilled across four primary hubs.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
+          <a href="/cities/auckland" class="relative group aspect-[3/4] overflow-hidden bg-[#25293a]">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60" alt="Auckland cityscape at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUILFGWlG8D1sxO67LduV9WfsFyAlAjh694don06Hj_-J6OIkzD8u0PZWEGfrmY9DOvkC4_yYymYWzM0Lhe7IIGNXG_-F4iUxYdVhiUyyLv1gPyOT6q3xhyFMlS8D8UUgIS6BsMKzusznQDHRgVM7Nw0RgCNTViD8KfxC5E4m0gIs_t38gYBh0wTKHF2QLCLLWJHfwYobCpgzdA_3hI9OHGn4zFQh5hQtd4CsNY8DFUUfEHSZZ5c56TQc598S73c5LA4ndQuDPrAWx"/>
+            <div class="absolute inset-0 flex flex-col justify-end p-8">
+              <h3 class="text-2xl text-[#eac290] tracking-widest uppercase mb-2" style="font-family:'Noto Serif',serif;">Auckland</h3>
+              <p class="text-xs tracking-[0.2em] text-[#d2c4b7] uppercase opacity-0 group-hover:opacity-100 transition-opacity" style="font-family:'Newsreader',serif;">Northern Portfolio</p>
+            </div>
+          </a>
+          <a href="/cities/wellington" class="relative group aspect-[3/4] overflow-hidden bg-[#25293a]">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60" alt="Wellington coastline at blue hour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYBMFJPU6ZHvG1YWcsc1VYLax4P4ypjTo_sw9xSwfCfmKRc-YTh_JRv7xlpUjPgsxloxlSh53lEr-caFaw8OwmHzRHYOYsc7GpLhiTtDoZY8ElYOTa9N9w2eDHe16lELweyunNSGrHnNgRVvQknFzVpLyzlKGQZWNgAb6ULhlAXN3eX1Vbj8wJZuOKMEIQyjqlzFzsZMM2sh_9PsFuSin2htuqmCq0j1e0pl8VQtCSjTmNlK55mCG03oceqFUN_1SSZWiI0BRf3i0o"/>
+            <div class="absolute inset-0 flex flex-col justify-end p-8">
+              <h3 class="text-2xl text-[#eac290] tracking-widest uppercase mb-2" style="font-family:'Noto Serif',serif;">Wellington</h3>
+              <p class="text-xs tracking-[0.2em] text-[#d2c4b7] uppercase opacity-0 group-hover:opacity-100 transition-opacity" style="font-family:'Newsreader',serif;">Capital Registry</p>
+            </div>
+          </a>
+          <a href="/cities/christchurch" class="relative group aspect-[3/4] overflow-hidden bg-[#25293a]">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60" alt="Christchurch modern architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAySM9Us59QEG1zXP_1HA1kmXS7JcfkfiH_XoJzw5RRzbyrr6YhEMxOGKJqHcbeS1VebwKNl9O-yTePNmdo3rM7MiAlN2AtRcJSyDSIAwaB5DS2tLG_JXS3lP5ETLsYsQqzy9U9Nu1MlvKmQ5X9v2DbXP4FO4sCjPqW1AQISunEUgIADtyDVyqVV5qM8s_k1latnI4tmSKFfoy-TUWWG9s0EEy9U72THHZr8mIk0_whjTonw7S-WkNrOc3p8EsBj3Pbys1b_U8smmaR"/>
+            <div class="absolute inset-0 flex flex-col justify-end p-8">
+              <h3 class="text-2xl text-[#eac290] tracking-widest uppercase mb-2" style="font-family:'Noto Serif',serif;">Christchurch</h3>
+              <p class="text-xs tracking-[0.2em] text-[#d2c4b7] uppercase opacity-0 group-hover:opacity-100 transition-opacity" style="font-family:'Newsreader',serif;">Canterbury Hub</p>
+            </div>
+          </a>
+          <a href="/cities/queenstown" class="relative group aspect-[3/4] overflow-hidden bg-[#25293a]">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60" alt="Lake Wakatipu and Remarkables at nightfall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMIgH5jILyAPY00nGVYvDi89bEzdAUYYgi912nba-C96PlZIWXFHh-EjjYwaewAf3NrenEB0XgICeNc0kJmYPoGUsGamX7Veg-B1n7QEynD7LPc1h3d_Yv3GM9DQaWa7WfEpL0sx2qHp5tliEd1DNsTed3vewQc6shcJxFOUhJv6IqT9Gx1dqYh7rJomfhY6wc8dYhYhsSTIyEracCwG7gvnfjSkWXXWKyblHvUx_2DWJ7HYNTUjxgn67zMDGQclvN-JdwuDqijXei"/>
+            <div class="absolute inset-0 flex flex-col justify-end p-8">
+              <h3 class="text-2xl text-[#eac290] tracking-widest uppercase mb-2" style="font-family:'Noto Serif',serif;">Queenstown</h3>
+              <p class="text-xs tracking-[0.2em] text-[#d2c4b7] uppercase opacity-0 group-hover:opacity-100 transition-opacity" style="font-family:'Newsreader',serif;">Alpine Collection</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-  <!-- Note Widget ******************* -->
+    <section class="py-32 px-12 bg-[#0e1322]">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-24">
+          <p class="tracking-[0.25em] uppercase text-[#eac290] mb-4 text-sm" style="font-family:'Newsreader',serif;">Methodology</p>
+          <h2 class="text-4xl text-white" style="font-family:'Noto Serif',serif;">The Protocol</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-[#4e453b]">
+          <div class="p-12 border-b md:border-b-0 md:border-r border-[#4e453b] hover:bg-[#161b2b] transition-colors">
+            <p class="text-xs tracking-[0.2em] text-[#eac290] mb-4 uppercase" style="font-family:'Newsreader',serif;">Phase 01</p>
+            <h3 class="text-2xl text-white mb-6" style="font-family:'Noto Serif',serif;">Intake</h3>
+            <p class="text-[#d2c4b7] leading-relaxed" style="font-family:'Newsreader',serif;">A comprehensive assessment of personal values, professional trajectories, and intellectual prerequisites conducted in absolute privacy.</p>
+          </div>
+          <div class="p-12 border-b md:border-b-0 md:border-r border-[#4e453b] hover:bg-[#161b2b] transition-colors">
+            <p class="text-xs tracking-[0.2em] text-[#eac290] mb-4 uppercase" style="font-family:'Newsreader',serif;">Phase 02</p>
+            <h3 class="text-2xl text-white mb-6" style="font-family:'Noto Serif',serif;">Curation</h3>
+            <p class="text-[#d2c4b7] leading-relaxed" style="font-family:'Newsreader',serif;">Our registry is meticulously scanned. We don't provide lists; we provide singular, high-probability introductions vetted by our senior partners.</p>
+          </div>
+          <div class="p-12 hover:bg-[#161b2b] transition-colors">
+            <p class="text-xs tracking-[0.2em] text-[#eac290] mb-4 uppercase" style="font-family:'Newsreader',serif;">Phase 03</p>
+            <h3 class="text-2xl text-white mb-6" style="font-family:'Noto Serif',serif;">Integration</h3>
+            <p class="text-[#d2c4b7] leading-relaxed" style="font-family:'Newsreader',serif;">The debut introduction is managed with white-glove precision, ensuring the environment is as carefully curated as the connection itself.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" />
+    <section class="py-40 px-12 bg-[#090e1c] border-y border-[#4e453b]">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="text-[#eac290] text-6xl mb-12">"</div>
+        <blockquote class="italic text-3xl md:text-4xl text-white leading-snug mb-10" style="font-family:'Newsreader',serif;">
+          "The Bureau operates with a level of sophistication previously unseen in the New Zealand market. Their discretion is absolute, and their intuition is flawless."
+        </blockquote>
+        <cite class="not-italic tracking-[0.25em] uppercase text-[#eac290] text-sm" style="font-family:'Newsreader',serif;">Member, Christchurch Registry</cite>
+      </div>
+    </section>
 
-  <!-- Features Widget *************** -->
-
-  <Features
-    id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
-    items={[
-      {
-        title: 'Astro + Tailwind CSS Integration',
-        description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
-      },
-      {
-        title: 'Ready-to-use Components',
-        description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
-      },
-      {
-        title: 'Best Practices',
-        description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
-      },
-      {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
-      },
-    ]}
-  />
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
-    items={[
-      {
-        title: 'Built on top of Astro 5.0',
-        description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
-      },
-      {
-        title: 'Styled using Tailwind CSS',
-        description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
-      },
-      {
-        title: 'Cross-browser compatibility',
-        description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isAfterContent
-    items={[
-      {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
-      },
-      {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
-      },
-      {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
-    }}
-  >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
-      },
-      {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
-      },
-      {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
-    }}
-  >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Steps Widget ****************** -->
-
-  <Steps
-    title="Get your dream website up and running in no time with AstroWind."
-    items={[
-      {
-        title: 'Step 1: <span class="font-medium">Download</span>',
-        description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
-      },
-      {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
-        description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
-        description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'Ready!',
-        icon: 'tabler:check',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
-    }}
-  />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
-    items={[
-      {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
-
-  <!-- HighlightedPosts Widget ******* -->
-
-  <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
-  />
-
-  <!-- FAQs Widget ******************* -->
-
-  <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
-    tagline="FAQs"
-    classes={{ container: 'max-w-6xl' }}
-    items={[
-      {
-        title: 'Why AstroWind?',
-        description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
-      },
-      {
-        title: 'What do I need to start?',
-        description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
-      },
-      {
-        title: 'How to install the Astro + Tailwind CSS template?',
-        description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
-      },
-      {
-        title: "What's something that you don't understand?",
-        description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
-      },
-      {
-        title: 'What is something that you would like to try again?',
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
-      },
-    ]}
-  />
-
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
-    ]}
-  />
-
-  <!-- CallToAction Widget *********** -->
-
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-    ]}
-  >
-    <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
-    </Fragment>
-  </CallToAction>
+    <section class="py-32 px-12 bg-[#0e1322]">
+      <div class="max-w-4xl mx-auto text-center border border-[#eac290] p-2">
+        <div class="border border-[#eac290] py-24 px-12">
+          <h2 class="text-4xl md:text-5xl text-white mb-8" style="font-family:'Noto Serif',serif;">Begin the Dialogue</h2>
+          <p class="text-xl text-[#d2c4b7] mb-12 max-w-lg mx-auto" style="font-family:'Newsreader',serif;">Membership is strictly by application. We invite you to initiate a confidential inquiry to begin your journey with the Bureau.</p>
+          <a href="/contact" class="inline-block bg-[#cda777] text-[#573c15] px-12 py-5 tracking-[0.25em] uppercase text-sm hover:bg-[#eac290] transition-colors" style="font-family:'Noto Serif',serif;">
+            APPLY NOW
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>
