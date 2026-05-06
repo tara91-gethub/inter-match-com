@@ -1,13 +1,109 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+
 const metadata = {
   title: 'Private Matchmaking in Wellington',
-  description: 'The Match Bureau Wellington — discreet introductions for the discerning elite of the capital.',
+  description: 'The Match Bureau Wellington — discreet introductions for the discerning elite of New Zealand\'s cultural capital. Where the political meets the poetic.',
 };
 ---
 
 <Layout metadata={metadata}>
-  <div class="min-h-screen bg-[#0e1322] flex items-center justify-center">
-    <h1 class="text-white text-4xl" style="font-family:'Noto Serif',serif;">Wellington — Coming Soon</h1>
-  </div>
+  <main transition:animate="fade">
+
+    <!-- Hero -->
+    <section class="relative h-screen w-full overflow-hidden flex items-center px-6 md:px-12">
+      <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0e1322] via-[#0e1322]/60 to-transparent z-10"></div>
+        <img class="w-full h-full object-cover brightness-[0.7]" alt="Wellington harbour and skyline at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBH03f7GERtaVesuvOHv3KMAU5lGQt_jaMyqlXpTd1K87YU1gDJgxikSRU7iPjps2vlz1XA0pS_WOYaJ5B54PHPDN0ps-76dGiNT5gWUTehHxGa4xtUjrHk6jfS3n8LLLANTRl4FqT-DOgJtwswcFAY0V2YShDR9uWe5vk1uZPahHNHK282oIjNwCiXwDoFyy5KR2acKKsiwLpeH15PtnESBpQ7ut527nD4pivCrzYyz9q2CE3oHMF7tkUCS-zSnsMR937Ralexc83" />
+      </div>
+      <div class="relative z-20 max-w-4xl">
+        <p class="text-[#eac290] tracking-[0.3em] uppercase mb-6 text-xs" style="font-family:'Newsreader',serif;">ESTABLISHED IN THE CAPITAL</p>
+        <h1 class="text-white leading-none mb-8 text-5xl md:text-[5rem]" style="font-family:'Noto Serif',serif;">
+          Private matchmaking <br/>in Wellington
+        </h1>
+        <p class="text-xl md:text-2xl italic text-[#d2c4b7] max-w-2xl leading-relaxed" style="font-family:'Newsreader',serif;">
+          New Zealand's cultural capital: Where the political meets the poetic.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Wellington -->
+    <section class="py-24 md:py-40 px-6 md:px-12 bg-[#0e1322]">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-5 order-2 md:order-1">
+          <div class="aspect-[4/5] bg-[#161b2b] border border-[#4e453b] p-4">
+            <img class="w-full h-full object-cover" alt="Wellington architectural detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj2esNGSPxqR9A8fE4tq42wwO97mNBW-ozqXUJAND8_k2N6EoErxPF4ECxYozxyfjBcpNSQZ3aBtvG55xqhODG8S-gQJlOoK6oo6Ei3u4rM8LoVO8MayI2XKypOZ23AAo58NuyrJ5SG5IHjNL25qe4hSlh5s4DHp81o_sXUgbPtX5H_qixVO1ldEyzrdlSvnLH9ZI1skDeYqYUXNcYJlBCVo030zbLGVIvOpyq-bwWmR1vCAPHYvxuJEsVIQZC77C7_CxrROoMlB-K" />
+          </div>
+        </div>
+        <div class="md:col-span-7 md:pl-16 order-1 md:order-2">
+          <h2 class="text-[#eac290] uppercase tracking-[0.1em] mb-12 text-xl" style="font-family:'Noto Serif',serif;">The Spirit of the City</h2>
+          <div class="space-y-8 text-lg leading-relaxed text-[#d2c4b7]" style="font-family:'Newsreader',serif;">
+            <p>Wellington is a city of layers — a compact metropolis where the gravitas of government offices sits comfortably alongside the avant-garde pulse of Cuba Street. It is a destination for the intellectually curious and the professionally formidable.</p>
+            <p class="border-l border-[#eac290] pl-8 italic text-white">
+              "In Wellington, connections are made not just over cocktails, but over shared visions of the future. It is a city that demands substance over style, yet possesses an innate elegance all its own."
+            </p>
+            <p>The Match Bureau operates within this intersection of political weight and creative spirit. We curate introductions for those who lead the nation's corporate and cultural dialogues, ensuring discretion is never compromised and excellence is always the baseline.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Protocol -->
+    <section class="py-24 px-6 md:px-12 bg-[#161b2b]">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+          <h2 class="text-4xl md:text-6xl text-white font-light" style="font-family:'Noto Serif',serif;">The Protocol</h2>
+          <p class="tracking-[0.2em] text-[#eac290] uppercase border-b border-[#eac290] pb-2 text-xs" style="font-family:'Newsreader',serif;">THE ARCHITECTURAL PROCESS</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-[#4e453b]">
+          <div class="p-12 border-b md:border-b-0 md:border-r border-[#4e453b] hover:bg-[#0e1322] transition-colors duration-500">
+            <span class="text-[#eac290] tracking-[0.3em] font-bold text-xs" style="font-family:'Newsreader',serif;">01</span>
+            <h3 class="text-white mt-6 mb-6 text-2xl" style="font-family:'Noto Serif',serif;">Intake</h3>
+            <p class="text-[#d2c4b7] leading-relaxed" style="font-family:'Newsreader',serif;">An exhaustive personal audit conducted in person at our Wellington atelier or a location of your choosing. We map your values, ambitions, and non-negotiables.</p>
+          </div>
+          <div class="p-12 border-b md:border-b-0 md:border-r border-[#4e453b] hover:bg-[#0e1322] transition-colors duration-500">
+            <span class="text-[#eac290] tracking-[0.3em] font-bold text-xs" style="font-family:'Newsreader',serif;">02</span>
+            <h3 class="text-white mt-6 mb-6 text-2xl" style="font-family:'Noto Serif',serif;">The Search</h3>
+            <p class="text-[#d2c4b7] leading-relaxed" style="font-family:'Newsreader',serif;">Leveraging our private network spanning the legal, political, and creative echelons of New Zealand. We look beyond the profile to find true structural alignment.</p>
+          </div>
+          <div class="p-12 hover:bg-[#0e1322] transition-colors duration-500">
+            <span class="text-[#eac290] tracking-[0.3em] font-bold text-xs" style="font-family:'Newsreader',serif;">03</span>
+            <h3 class="text-white mt-6 mb-6 text-2xl" style="font-family:'Noto Serif',serif;">The Introduction</h3>
+            <p class="text-[#d2c4b7] leading-relaxed" style="font-family:'Newsreader',serif;">A curated meeting in a secure, high-end environment. No digital noise — only the focused reality of two compatible individuals sharing a moment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="py-32 px-6 md:px-12 bg-[#0e1322]">
+      <div class="max-w-3xl mx-auto text-center">
+        <div class="text-[#eac290] text-4xl mb-8">"</div>
+        <blockquote class="text-2xl md:text-3xl italic leading-snug mb-12 text-white" style="font-family:'Noto Serif',serif;">
+          "The Bureau understands the unique landscape of Wellington. They navigate the professional and personal circles with a level of discretion that is rare in this city. Every introduction felt like it was built on a foundation of genuine mutual respect."
+        </blockquote>
+        <cite class="tracking-[0.25em] uppercase text-[#eac290] text-xs" style="font-family:'Newsreader',serif;">— SENIOR COUNSEL, WELLINGTON MEMBER</cite>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 md:py-40 px-6 md:px-12 bg-[#0e1322] border-t border-[#4e453b] overflow-hidden relative">
+      <div class="absolute top-0 right-0 w-1/3 h-full bg-[#161b2b] -skew-x-12 translate-x-1/2"></div>
+      <div class="relative z-10 max-w-4xl">
+        <h2 class="text-4xl md:text-6xl text-white mb-8" style="font-family:'Noto Serif',serif;">Begin the Dialogue</h2>
+        <p class="text-lg md:text-xl text-[#d2c4b7] mb-12 max-w-2xl leading-relaxed" style="font-family:'Newsreader',serif;">
+          Membership is by invitation or application only. Start your journey with a confidential inquiry to our New Zealand bureau.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-6">
+          <a href="/contact" class="inline-block bg-[#cda777] text-[#573c15] px-12 py-5 uppercase tracking-[0.2em] text-xs font-bold hover:bg-[#eac290] transition-all" style="font-family:'Noto Serif',serif;">
+            APPLY FOR MEMBERSHIP
+          </a>
+          <a href="/cities/auckland" class="inline-block border border-[#9b8f82] text-[#eac290] px-12 py-5 uppercase tracking-[0.2em] text-xs font-bold hover:bg-[#eac290]/10 transition-all" style="font-family:'Noto Serif',serif;">
+            VIEW ALL CITIES
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
 </Layout>
