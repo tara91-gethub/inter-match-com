@@ -1,6 +1,4 @@
 ---
-import { Icon } from 'astro-icon/components';
-import { SITE } from 'astrowind:config';
 import { getHomePermalink } from '~/utils/permalinks';
 
 interface Link {
@@ -22,83 +20,110 @@ export interface Props {
   footNote?: string;
   theme?: string;
 }
-
-const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme = 'light' } = Astro.props;
 ---
 
-<footer class:list={[{ dark: theme === 'dark' }, 'relative border-t border-gray-200 dark:border-slate-800 not-prose']}>
-  <div class="dark:bg-dark absolute inset-0 pointer-events-none" aria-hidden="true"></div>
-  <div
-    class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300 intersect-once intersect-quarter intersect-no-queue motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
-  >
-    <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12">
-      <div class="col-span-12 lg:col-span-4">
-        <div class="mb-2">
-          <a class="inline-block font-bold text-xl" href={getHomePermalink()}>{SITE?.name}</a>
-        </div>
-        <div class="text-sm text-muted flex gap-1">
-          {
-            secondaryLinks.map(({ text, href }, index) => (
-              <>
-                {index !== 0 ? ' · ' : ''}
-                <a
-                  class="text-muted hover:text-gray-700 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                  href={href}
-                  set:html={text}
-                />
-              </>
-            ))
-          }
-        </div>
+<footer class="not-prose border-t border-[#4e453b] bg-[#161b2b] text-[#dee1f7]">
+  <div class="mx-auto max-w-7xl px-6 py-16 md:px-12 md:py-20">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-12">
+      <div class="lg:col-span-5">
+        <a
+          href={getHomePermalink()}
+          class="inline-block font-bold uppercase tracking-[0.15em] text-[#cda777] text-xl"
+          style="font-family:'Noto Serif',serif;"
+        >
+          THE MATCH BUREAU
+        </a>
+        <p
+          class="mt-5 uppercase tracking-[0.25em] text-[0.7rem] text-[#eac290]"
+          style="font-family:'Newsreader',serif;"
+        >
+          PRIVATE MATCHMAKING · NEW ZEALAND
+        </p>
+        <div class="mt-10 h-px w-24 bg-[#4e453b]"></div>
       </div>
-      {
-        links.map(({ title, links }) => (
-          <div class="col-span-6 md:col-span-3 lg:col-span-2">
-            <div class="dark:text-gray-300 font-medium mb-2">{title}</div>
-            {links && Array.isArray(links) && links.length > 0 && (
-              <ul class="text-sm">
-                {links.map(({ text, href, ariaLabel }) => (
-                  <li class="mb-2">
-                    <a
-                      class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out"
-                      href={href}
-                      aria-label={ariaLabel}
-                    >
-                      <Fragment set:html={text} />
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-        ))
-      }
-    </div>
-    <div class="md:flex md:items-center md:justify-between py-6 md:py-8">
-      {
-        socialLinks?.length ? (
-          <ul class="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0 rtl:ml-0 rtl:-mr-2 rtl:md:ml-0 rtl:md:mr-4">
-            {socialLinks.map(({ ariaLabel, href, text, icon }) => (
-              <li>
-                <a
-                  class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
-                  aria-label={ariaLabel}
-                  href={href}
-                >
-                  {icon && <Icon name={icon} class="w-5 h-5" />}
-                  <Fragment set:html={text} />
-                </a>
-              </li>
-            ))}
-          </ul>
-        ) : (
-          ''
-        )
-      }
 
-      <div class="text-sm mr-4 dark:text-muted">
-        <Fragment set:html={footNote} />
+      <nav class="lg:col-span-3" aria-label="City links">
+        <h2
+          class="mb-6 uppercase tracking-[0.25em] text-[0.7rem] text-[#eac290]"
+          style="font-family:'Newsreader',serif;"
+        >
+          Cities
+        </h2>
+        <ul class="space-y-4">
+          <li><a class="footer-link" href="/cities/auckland">Auckland</a></li>
+          <li><a class="footer-link" href="/cities/wellington">Wellington</a></li>
+          <li><a class="footer-link" href="/cities/christchurch">Christchurch</a></li>
+          <li><a class="footer-link" href="/cities/queenstown">Queenstown</a></li>
+        </ul>
+      </nav>
+
+      <nav class="lg:col-span-2" aria-label="Bureau links">
+        <h2
+          class="mb-6 uppercase tracking-[0.25em] text-[0.7rem] text-[#eac290]"
+          style="font-family:'Newsreader',serif;"
+        >
+          Bureau
+        </h2>
+        <ul class="space-y-4">
+          <li><a class="footer-link" href="/membership">Membership</a></li>
+          <li><a class="footer-link" href="/process">The Process</a></li>
+          <li><a class="footer-link" href="/blog">Blog</a></li>
+          <li><a class="footer-link" href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex items-start lg:col-span-2 lg:justify-end">
+        <a
+          href="/contact"
+          class="inline-flex items-center justify-center bg-[#cda777] px-8 py-4 text-center uppercase tracking-[0.25em] text-[0.75rem] font-bold text-[#573c15] transition-colors duration-300 hover:bg-[#eac290]"
+          style="font-family:'Noto Serif',serif;"
+        >
+          Apply Now
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="mt-16 flex flex-col gap-5 border-t border-[#4e453b] pt-8 md:flex-row md:items-center md:justify-between"
+    >
+      <p
+        class="uppercase tracking-[0.2em] text-[0.65rem] text-[#d2c4b7]/70"
+        style="font-family:'Newsreader',serif;"
+      >
+        © 2025 The Match Bureau. All rights reserved.
+      </p>
+      <div class="flex gap-8">
+        <a class="footer-legal-link" href="/privacy">Privacy</a>
+        <a class="footer-legal-link" href="/terms">Terms</a>
       </div>
     </div>
   </div>
 </footer>
+
+<style>
+  .footer-link {
+    font-family: 'Newsreader', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgb(222 225 247 / 0.72);
+    transition: color 0.3s ease;
+  }
+
+  .footer-link:hover {
+    color: #eac290;
+  }
+
+  .footer-legal-link {
+    font-family: 'Newsreader', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgb(210 196 183 / 0.75);
+    transition: color 0.3s ease;
+  }
+
+  .footer-legal-link:hover {
+    color: #eac290;
+  }
+</style>
