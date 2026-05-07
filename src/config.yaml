@@ -7,9 +7,9 @@ site:
 
 metadata:
   title:
-    default: 'The Match Bureau'
-    template: '%s | The Match Bureau NZ'
-  description: 'Private matchmaking for discerning singles across Auckland, Wellington, Christchurch and Queenstown. The Match Bureau — where exceptional people connect.'
+    default: 'The Match Bureau | Private Matchmaking New Zealand'
+    template: '%s | The Match Bureau'
+  description: 'Private matchmaking for discerning singles across Auckland, Wellington, Christchurch and Queenstown. The Match Bureau is where exceptional people connect.'
   robots:
     index: true
     follow: true

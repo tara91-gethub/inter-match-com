@@ -28,7 +28,7 @@ This is not hypothetical. We have spoken with members who discovered their profi
 
 Our approach to discretion is modelled after private banking. We operate on a closed-loop system. No public profiles. No searchable database. No digital footprint of your search.
 
-When you become a member of The Match Bureau, your information exists within our private registry — accessible only to our senior matchmakers, never to other members, and never to the public. Your identity is only revealed to a potential match after mutual interest has been established through our consultation process, and only after both parties have consented.
+When you become a member of The Match Bureau, your information exists within our private network — accessible only to our senior matchmakers, never to other members, and never to the public. Your identity is only revealed to a potential match after mutual interest has been established through our consultation process, and only after both parties have consented.
 
 We do not advertise our members. We do not reference our introductions publicly. We do not discuss our client relationships with anyone outside the bureau.
 

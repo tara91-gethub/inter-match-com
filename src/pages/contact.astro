@@ -11,13 +11,20 @@ const metadata = {
   <main transition:animate="fade" class="max-w-4xl mx-auto px-6 py-24 md:py-32">
 
     <header class="mb-24 text-center">
-      <h1 class="text-5xl md:text-7xl mb-8 tracking-[-0.02em] text-white" style="font-family:'Noto Serif',serif;">The Entry Registry</h1>
+      <h1 class="text-5xl md:text-7xl mb-8 tracking-[-0.02em] text-white" style="font-family:'Noto Serif',serif;">The Entry Bureau</h1>
       <p class="text-xl md:text-2xl text-[#9b8f82] max-w-2xl mx-auto italic leading-relaxed" style="font-family:'Newsreader',serif;">
         Refining the search for exceptional connection. Please provide your details with the utmost discretion.
       </p>
     </header>
 
-    <form class="space-y-32">
+    <form
+      class="space-y-32"
+      action="https://formsubmit.co/hello@thematchbureau.co.nz"
+      method="POST"
+    >
+      <input type="hidden" name="_subject" value="New Match Bureau application" />
+      <input type="hidden" name="_next" value="https://match-bureau.vercel.app/contact" />
+      <input type="hidden" name="_captcha" value="false" />
 
       <section class="space-y-12">
         <div class="flex items-baseline gap-4 border-b border-[#4e453b] pb-4 mb-12">
@@ -27,19 +34,19 @@ const metadata = {
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
           <div class="space-y-2">
             <label class="text-xs tracking-[0.25em] uppercase text-[#9b8f82]" style="font-family:'Newsreader',serif;">Full Legal Name <span class="text-[#eac290]">*</span></label>
-            <input class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 text-white" placeholder="E.g. Alistair Sterling" type="text" style="font-family:'Newsreader',serif;" />
+            <input name="full_name" class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 text-white" placeholder="E.g. Alistair Sterling" type="text" required style="font-family:'Newsreader',serif;" />
           </div>
           <div class="space-y-2">
             <label class="text-xs tracking-[0.25em] uppercase text-[#9b8f82]" style="font-family:'Newsreader',serif;">Preferred Alias</label>
-            <input class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 text-white" type="text" style="font-family:'Newsreader',serif;" />
+            <input name="preferred_alias" class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 text-white" type="text" style="font-family:'Newsreader',serif;" />
           </div>
           <div class="space-y-2">
             <label class="text-xs tracking-[0.25em] uppercase text-[#9b8f82]" style="font-family:'Newsreader',serif;">Email Address <span class="text-[#eac290]">*</span></label>
-            <input class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 text-white" placeholder="contact@example.com" type="email" style="font-family:'Newsreader',serif;" />
+            <input name="email" class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 text-white" placeholder="contact@example.com" type="email" required style="font-family:'Newsreader',serif;" />
           </div>
           <div class="space-y-2">
             <label class="text-xs tracking-[0.25em] uppercase text-[#9b8f82]" style="font-family:'Newsreader',serif;">Current Location <span class="text-[#eac290]">*</span></label>
-            <select class="w-full bg-[#0e1322] border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 text-white appearance-none" style="font-family:'Newsreader',serif;">
+            <select name="location" required class="w-full bg-[#0e1322] border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 text-white appearance-none" style="font-family:'Newsreader',serif;">
               <option>Auckland</option>
               <option>Wellington</option>
               <option>Christchurch</option>
@@ -58,11 +65,11 @@ const metadata = {
         <div class="space-y-16">
           <div class="space-y-2">
             <label class="text-xs tracking-[0.25em] uppercase text-[#9b8f82]" style="font-family:'Newsreader',serif;">Industry & Occupation <span class="text-[#eac290]">*</span></label>
-            <input class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 text-white" placeholder="Current profession or business focus" type="text" style="font-family:'Newsreader',serif;" />
+            <input name="occupation" class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 text-white" placeholder="Current profession or business focus" type="text" required style="font-family:'Newsreader',serif;" />
           </div>
           <div class="space-y-2">
             <label class="text-xs tracking-[0.25em] uppercase text-[#9b8f82]" style="font-family:'Newsreader',serif;">Brief Career Trajectory</label>
-            <textarea class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 resize-none text-white" placeholder="Significant milestones or achievements..." rows="3" style="font-family:'Newsreader',serif;"></textarea>
+            <textarea name="career_trajectory" class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 resize-none text-white" placeholder="Significant milestones or achievements..." rows="3" style="font-family:'Newsreader',serif;"></textarea>
           </div>
         </div>
       </section>
@@ -75,11 +82,11 @@ const metadata = {
         <div class="space-y-16">
           <div class="space-y-2">
             <label class="text-xs tracking-[0.25em] uppercase text-[#9b8f82]" style="font-family:'Newsreader',serif;">Personal Ethos & Values <span class="text-[#eac290]">*</span></label>
-            <textarea class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 resize-none text-white" placeholder="What principles guide your life and choices?" rows="4" style="font-family:'Newsreader',serif;"></textarea>
+            <textarea name="values" class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 resize-none text-white" placeholder="What principles guide your life and choices?" rows="4" required style="font-family:'Newsreader',serif;"></textarea>
           </div>
           <div class="space-y-2">
             <label class="text-xs tracking-[0.25em] uppercase text-[#9b8f82]" style="font-family:'Newsreader',serif;">Leisure & Passions</label>
-            <textarea class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 resize-none text-white" placeholder="How do you choose to spend your most valuable asset: time?" rows="3" style="font-family:'Newsreader',serif;"></textarea>
+            <textarea name="passions" class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 resize-none text-white" placeholder="How do you choose to spend your most valuable asset: time?" rows="3" style="font-family:'Newsreader',serif;"></textarea>
           </div>
         </div>
       </section>
@@ -92,11 +99,11 @@ const metadata = {
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
           <div class="space-y-2">
             <label class="text-xs tracking-[0.25em] uppercase text-[#9b8f82]" style="font-family:'Newsreader',serif;">Ideal Partner Archetype <span class="text-[#eac290]">*</span></label>
-            <input class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 text-white" type="text" style="font-family:'Newsreader',serif;" />
+            <input name="ideal_partner" class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 text-white" type="text" required style="font-family:'Newsreader',serif;" />
           </div>
           <div class="space-y-2">
             <label class="text-xs tracking-[0.25em] uppercase text-[#9b8f82]" style="font-family:'Newsreader',serif;">Relationship Goals</label>
-            <select class="w-full bg-[#0e1322] border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 text-white appearance-none" style="font-family:'Newsreader',serif;">
+            <select name="relationship_goals" class="w-full bg-[#0e1322] border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 text-white appearance-none" style="font-family:'Newsreader',serif;">
               <option>Long-term partnership</option>
               <option>Marriage-oriented</option>
               <option>Companionship</option>
@@ -105,7 +112,7 @@ const metadata = {
           </div>
           <div class="md:col-span-2 space-y-2">
             <label class="text-xs tracking-[0.25em] uppercase text-[#9b8f82]" style="font-family:'Newsreader',serif;">Non-Negotiables</label>
-            <textarea class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 resize-none text-white" placeholder="Traits or lifestyles that are incompatible with yours." rows="3" style="font-family:'Newsreader',serif;"></textarea>
+            <textarea name="non_negotiables" class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 resize-none text-white" placeholder="Traits or lifestyles that are incompatible with yours." rows="3" style="font-family:'Newsreader',serif;"></textarea>
           </div>
         </div>
       </section>
@@ -113,16 +120,16 @@ const metadata = {
       <section class="space-y-12 pt-12">
         <div class="space-y-8">
           <label class="flex items-start gap-4 cursor-pointer group">
-            <input class="mt-1 w-5 h-5 border border-[#4e453b] bg-transparent accent-[#eac290] cursor-pointer" type="checkbox" />
+            <input name="discretion_agreement" value="Accepted" required class="mt-1 w-5 h-5 border border-[#4e453b] bg-transparent accent-[#eac290] cursor-pointer" type="checkbox" />
             <span class="text-sm leading-relaxed text-[#4e453b] group-hover:text-white transition-colors" style="font-family:'Newsreader',serif;">I understand that The Match Bureau operates with absolute discretion and I agree to maintain the privacy of any individuals I may be introduced to. <span class="text-[#eac290]">*</span></span>
           </label>
           <label class="flex items-start gap-4 cursor-pointer group">
-            <input class="mt-1 w-5 h-5 border border-[#4e453b] bg-transparent accent-[#eac290] cursor-pointer" type="checkbox" />
+            <input name="verification_authorization" value="Accepted" required class="mt-1 w-5 h-5 border border-[#4e453b] bg-transparent accent-[#eac290] cursor-pointer" type="checkbox" />
             <span class="text-sm leading-relaxed text-[#4e453b] group-hover:text-white transition-colors" style="font-family:'Newsreader',serif;">I authorize the bureau to conduct a standard verification of my professional and personal background. <span class="text-[#eac290]">*</span></span>
           </label>
         </div>
         <div class="pt-12">
-          <button type="button" class="w-full bg-[#cda777] text-[#573c15] text-sm tracking-[0.3em] uppercase py-6 transition-all duration-300 hover:bg-[#eac290]" style="font-family:'Newsreader',serif;">
+          <button type="submit" class="w-full bg-[#cda777] text-[#573c15] text-sm tracking-[0.3em] uppercase py-6 transition-all duration-300 hover:bg-[#eac290]" style="font-family:'Newsreader',serif;">
             Submit Application
           </button>
           <p class="mt-12 text-center text-xs text-[#9b8f82] italic leading-loose max-w-xl mx-auto" style="font-family:'Newsreader',serif;">
