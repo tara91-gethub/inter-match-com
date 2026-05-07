@@ -11,6 +11,7 @@ export const headerData = {
       ],
     },
     { text: 'The Process', href: '/process' },
+    { text: 'About', href: '/about' },
   ],
   actions: [{ text: 'Apply Now', href: '/contact' }],
 };
