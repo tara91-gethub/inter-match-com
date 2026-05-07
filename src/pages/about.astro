@@ -9,11 +9,11 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <main transition:animate="fade">
-    <header class="px-12 mb-32">
+    <header class="mb-24 px-6 md:mb-32 md:px-12">
       <div class="grid grid-cols-12 gap-8">
         <div class="col-span-12 md:col-span-8">
           <span class="block text-[#cda777] uppercase tracking-[0.3em] text-[10px] mb-6">Introduction</span>
-          <h1 class="text-6xl md:text-8xl font-light text-[#eac290] leading-tight tracking-tight italic" style="font-family:'Noto Serif',serif;">Our Philosophy</h1>
+          <h1 class="text-5xl font-light italic leading-tight tracking-tight text-[#eac290] md:text-8xl" style="font-family:'Noto Serif',serif;">Our Philosophy</h1>
         </div>
         <div class="col-span-12 md:col-span-4 flex items-end">
           <p class="text-xl md:text-2xl italic text-[#9b8f82] leading-relaxed border-l border-[#4e453b] pl-8" style="font-family:'Newsreader',serif;">
@@ -23,21 +23,21 @@ const metadata = {
       </div>
     </header>
 
-    <section class="mb-40 px-12">
-      <div class="w-full h-[716px] bg-[#161b2b] relative overflow-hidden">
+    <section class="mb-28 px-6 md:mb-40 md:px-12">
+      <div class="relative h-[420px] w-full overflow-hidden bg-[#161b2b] md:h-[716px]">
         <img class="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-1000" alt="Luxurious dark interior of a private library with leather chairs and warm amber lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc-UVdUFszuciZOhnr8NiMd9FtEDd80C9-euyX-GQXpz-ctpWI01v18Jt-u1kEA5DuK_kWY_Q0S8Erzc2aoPOW3w3eN-ExY4_fmAp-NeqylG0Xqralb_O6salSTzGwqv31kwfpUCjQTICfcbePwv38Mk0eKBej-ZYsAgrWd_Y2JvsyzPVSUxA6xfzwAPPhwqley_cNZUyrvBeM_-x5rfJxCYf2JZi5-KJYXXSyR_ZoEXA0HLV6ZLzhmRVBwRscYPvMV6B5KMN4Q5fw" />
         <div class="absolute inset-0 bg-gradient-to-t from-[#0e1322] via-transparent to-transparent"></div>
       </div>
     </section>
 
-    <section class="px-12 mb-40">
+    <section class="mb-28 px-6 md:mb-40 md:px-12">
       <div class="grid grid-cols-12 gap-16">
         <div class="col-span-12 md:col-span-4">
           <h2 class="text-3xl text-[#cda777] mb-8" style="font-family:'Noto Serif',serif;">Quality over Quantity</h2>
           <div class="w-12 h-px bg-[#cda777] mb-8"></div>
         </div>
         <div class="col-span-12 md:col-span-7 md:col-start-6">
-          <p class="text-2xl text-[#dee1f7] leading-relaxed mb-8" style="font-family:'Newsreader',serif;">
+          <p class="mb-8 text-xl leading-relaxed text-[#dee1f7] md:text-2xl" style="font-family:'Newsreader',serif;">
             We reject the digital carousel of modern dating. Our approach is curated, deliberate, and finite. We do not offer a database to browse; we offer a singular focus on a select few who represent the pinnacle of compatibility.
           </p>
           <p class="text-lg text-[#9b8f82] leading-relaxed max-w-xl" style="font-family:'Newsreader',serif;">
@@ -47,7 +47,7 @@ const metadata = {
       </div>
     </section>
 
-    <section class="bg-[#161b2b] py-40 px-12 mb-40">
+    <section class="mb-28 bg-[#161b2b] px-6 py-28 md:mb-40 md:px-12 md:py-40">
       <div class="grid grid-cols-12 gap-16 items-center">
         <div class="col-span-12 md:col-span-5 order-2 md:order-1">
           <div class="aspect-[4/5] bg-[#0e1322] relative">
@@ -56,7 +56,7 @@ const metadata = {
         </div>
         <div class="col-span-12 md:col-span-6 md:col-start-7 order-1 md:order-2">
           <span class="text-[#cda777] uppercase tracking-[0.25em] text-[10px] mb-8 block" style="font-family:'Newsreader',serif;">The Discretion Promise</span>
-          <h2 class="text-5xl text-[#eac290] mb-12 italic leading-tight" style="font-family:'Noto Serif',serif;">Your life is private. <br/>Your search should be too.</h2>
+          <h2 class="mb-12 text-4xl italic leading-tight text-[#eac290] md:text-5xl" style="font-family:'Noto Serif',serif;">Your life is private. <br/>Your search should be too.</h2>
           <div class="space-y-8 max-w-lg">
             <p class="text-xl italic text-[#dee1f7]" style="font-family:'Newsreader',serif;">
               "Discretion is not merely a policy; it is our foundational pillar."
@@ -69,28 +69,28 @@ const metadata = {
       </div>
     </section>
 
-    <section class="px-12 mb-56">
+    <section class="mb-32 px-6 md:mb-56 md:px-12">
       <div class="grid grid-cols-12 gap-16">
         <div class="col-span-12 md:col-span-8 md:col-start-3 text-center">
           <h2 class="text-4xl md:text-6xl text-[#eac290] mb-16 tracking-tight" style="font-family:'Noto Serif',serif;">For whom it is intended</h2>
         </div>
-        <div class="col-span-12 md:col-span-4 border-r border-[#4e453b] pr-12 text-right">
+        <div class="col-span-12 border-b border-[#4e453b] pb-10 text-left md:col-span-4 md:border-b-0 md:border-r md:pb-0 md:pr-12 md:text-right">
           <h3 class="uppercase tracking-[0.2em] text-xs font-bold text-[#cda777] mb-6" style="font-family:'Newsreader',serif;">The Successful</h3>
           <p class="text-lg text-[#9b8f82] italic" style="font-family:'Newsreader',serif;">For those who have mastered their professional worlds and now seek the same excellence in their personal lives.</p>
         </div>
-        <div class="col-span-12 md:col-span-4 text-center px-12">
+        <div class="col-span-12 border-b border-[#4e453b] px-0 pb-10 text-left md:col-span-4 md:border-b-0 md:px-12 md:pb-0 md:text-center">
           <h3 class="uppercase tracking-[0.2em] text-xs font-bold text-[#cda777] mb-6" style="font-family:'Newsreader',serif;">The Intuitive</h3>
           <p class="text-lg text-[#9b8f82] italic" style="font-family:'Newsreader',serif;">For those who understand that human chemistry cannot be reduced to an algorithm or a set of binary choices.</p>
         </div>
-        <div class="col-span-12 md:col-span-4 border-l border-[#4e453b] pl-12 text-left">
+        <div class="col-span-12 text-left md:col-span-4 md:border-l md:border-[#4e453b] md:pl-12">
           <h3 class="uppercase tracking-[0.2em] text-xs font-bold text-[#cda777] mb-6" style="font-family:'Newsreader',serif;">The Discerning</h3>
           <p class="text-lg text-[#9b8f82] italic" style="font-family:'Newsreader',serif;">For those who value their time and refuse to settle for anything less than a profound, meaningful connection.</p>
         </div>
       </div>
     </section>
 
-    <section class="px-12 mb-32">
-      <div class="bg-[#161b2b] p-24 text-center border border-[#4e453b]">
+    <section class="mb-24 px-6 md:mb-32 md:px-12">
+      <div class="border border-[#4e453b] bg-[#161b2b] p-8 text-center md:p-24">
         <h2 class="text-4xl text-[#eac290] mb-12 italic" style="font-family:'Noto Serif',serif;">Begin the Conversation</h2>
         <p class="text-[#9b8f82] text-xl max-w-2xl mx-auto mb-12" style="font-family:'Newsreader',serif;">
           Membership is by application only. Every journey begins with a private consultation to understand your legacy and your vision for the future.

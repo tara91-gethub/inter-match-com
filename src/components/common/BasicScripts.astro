@@ -45,6 +45,7 @@ import { UI } from 'astrowind:config';
     let ticking = true;
 
     attachEvent('#header nav', 'click', function () {
+      document.getElementById('mobile-menu')?.classList.add('hidden');
       document.querySelector('[data-aw-toggle-menu]')?.classList.remove('expanded');
       document.body.classList.remove('overflow-hidden');
       document.getElementById('header')?.classList.remove('h-screen');
@@ -54,7 +55,21 @@ import { UI } from 'astrowind:config';
       document.querySelector('#header > div > div:last-child')?.classList.add('hidden');
     });
 
+    attachEvent('#mobile-menu a', 'click', function () {
+      document.getElementById('mobile-menu')?.classList.add('hidden');
+      document.querySelector('[data-aw-toggle-menu]')?.classList.remove('expanded');
+      document.body.classList.remove('overflow-hidden');
+    });
+
     attachEvent('[data-aw-toggle-menu]', 'click', function (_, elem) {
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenu) {
+        elem.classList.toggle('expanded');
+        mobileMenu.classList.toggle('hidden');
+        document.body.classList.toggle('overflow-hidden');
+        return;
+      }
+
       elem.classList.toggle('expanded');
       document.body.classList.toggle('overflow-hidden');
       document.getElementById('header')?.classList.toggle('h-screen');
@@ -110,6 +125,7 @@ import { UI } from 'astrowind:config';
 
     const screenSize = window.matchMedia('(max-width: 767px)');
     screenSize.addEventListener('change', function () {
+      document.getElementById('mobile-menu')?.classList.add('hidden');
       document.querySelector('[data-aw-toggle-menu]')?.classList.remove('expanded');
       document.body.classList.remove('overflow-hidden');
       document.getElementById('header')?.classList.remove('h-screen');
@@ -151,6 +167,7 @@ import { UI } from 'astrowind:config';
     document.body.classList.remove('overflow-hidden');
     document.getElementById('header')?.classList.remove('h-screen');
     document.getElementById('header')?.classList.remove('expanded');
+    document.getElementById('mobile-menu')?.classList.add('hidden');
     document.querySelector('#header nav')?.classList.add('hidden');
   };
 

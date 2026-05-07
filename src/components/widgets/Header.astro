@@ -156,13 +156,3 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
     ))}
   </div>
 </header>
-
-<script>
-  const toggleMenu = document.querySelector('[data-aw-toggle-menu]');
-  const mobileMenu = document.getElementById('mobile-menu');
-  if (toggleMenu && mobileMenu) {
-    toggleMenu.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  }
-</script>
