@@ -11,7 +11,7 @@ const metadata = {
 <Layout metadata={metadata}>
   <main transition:animate="fade">
 
-    <header class="relative h-screen flex items-center pt-24 overflow-hidden">
+    <header class="relative flex min-h-[100svh] items-center overflow-hidden pb-16 pt-28 md:pt-24">
       <div class="absolute inset-0 z-0">
         <img class="w-full h-full object-cover opacity-40" alt="Auckland skyline at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlFMwl_jZEQ_o8eXYS5OKtfVrfzv6Vxvy5V7KFgaS54GMP6ZxRr6daCilWs-_hr9vviV1WE7v534ts8L0hI2Zw8ddClqimhLxgSi4YiVWX45mGZf_Y0gIz7RDKyuWIi6ZEhlS2jlcxOu4Suh3vwMS6AeDEGDfGGPWQWA_mBP7CEp9Jh6M5QrZVw1hQOU1P6-aBPR2JB4gSgaJTaNdlXIofhLCzpi7G0uKQt_BoDN6daiXwyb60LOAyFblFgW6r_7xqsX_tHpsF7YdW" />
         <div class="absolute inset-0 bg-gradient-to-t from-[#0e1322] via-transparent to-transparent"></div>
@@ -19,49 +19,49 @@ const metadata = {
       <div class="container z-10 mx-auto grid grid-cols-12 gap-6 px-6 md:px-12">
         <div class="col-span-12 lg:col-span-8">
           <span class="text-[#eac290] uppercase tracking-[0.25em] text-[0.75rem] mb-6 block" style="font-family:'Newsreader',serif;">PRIVATE MATCHMAKING</span>
-          <h1 class="text-white text-5xl md:text-7xl lg:text-8xl leading-tight mb-8" style="font-family:'Noto Serif',serif;">
+          <h1 class="mb-8 text-4xl leading-tight text-white sm:text-5xl md:text-7xl lg:text-8xl" style="font-family:'Noto Serif',serif;">
             Private matchmaking in <span class="italic font-light">Auckland</span>
           </h1>
-          <p class="text-[#d2c4b7] text-xl max-w-xl leading-relaxed" style="font-family:'Newsreader',serif;">
+          <p class="max-w-xl text-lg leading-relaxed text-[#d2c4b7] md:text-xl" style="font-family:'Newsreader',serif;">
             Discreet introductions for the Pacific's most discerning individuals. Where metropolitan grace meets the untamed beauty of the City of Sails.
           </p>
         </div>
       </div>
     </header>
 
-    <section class="bg-[#161b2b] py-32 border-b border-[#4e453b]/30">
+    <section class="border-b border-[#4e453b]/30 bg-[#161b2b] py-24 md:py-32">
       <div class="container mx-auto px-6 md:px-12">
         <div class="grid grid-cols-12 gap-12 items-start">
           <div class="col-span-12 lg:col-span-5 order-2 lg:order-1">
             <img class="w-full aspect-[4/5] object-cover grayscale hover:grayscale-0 transition-all duration-700" alt="Luxury yacht hull in Auckland harbor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXfvrGJjkIiP0JyO5YY1zJnaeunqc0zC74pvi6JGjh3jmWMnJCnUDWRJQNuqW5jxQCPRj3NhB9bA8Kmlol4z25_1jxthJvsztaipULSwckArRjnusmvFHXX3kjuyy8IrETVUlTkT7r9dZRcFGI61uQp5aF_uZwXCm47Ts0mJA0Hyc5lrETVwWBaI0Ib56Y99GwjwKx5SDMGORPlyMaTmxoUVLvYJ1ozoy-3RAOw4XezSt9ShWKNsNQQEQddsliRXKh8DVP24iddcuh" />
           </div>
           <div class="col-span-12 lg:col-span-7 order-1 lg:order-2 flex flex-col justify-center h-full lg:pl-24">
-            <h2 class="text-white text-4xl md:text-5xl mb-12" style="font-family:'Noto Serif',serif;">The City of Sails</h2>
+            <h2 class="mb-8 text-3xl text-white md:mb-12 md:text-5xl" style="font-family:'Noto Serif',serif;">The City of Sails</h2>
             <div class="space-y-8 text-[#d2c4b7] text-lg max-w-lg" style="font-family:'Newsreader',serif;">
               <p>Auckland is a city of distinct horizons—a convergence of high-stakes commerce and effortless coastal elegance. For those who command the skyline and the harbor, finding a partner of equal stature requires more than an algorithm.</p>
               <p>The Matchmaking Bureau offers a sanctuary for the city's elite. Our Auckland office operates at the intersection of cultural intuition and local reach, curating connections within the exclusive circles of Parnell, Herne Bay, and the Viaduct.</p>
             </div>
-            <div class="mt-16 h-[1px] w-24 bg-[#eac290]"></div>
+            <div class="mt-10 h-[1px] w-24 bg-[#eac290] md:mt-16"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="bg-[#0e1322] py-32">
+    <section class="bg-[#0e1322] py-24 md:py-32">
       <div class="container mx-auto px-6 md:px-12">
-        <div class="mb-24 text-center">
+        <div class="mb-16 text-center md:mb-24">
           <span class="text-[#eac290] uppercase tracking-[0.25em] text-[0.75rem] mb-4 block" style="font-family:'Newsreader',serif;">THE CURATION</span>
-          <h2 class="text-white text-4xl md:text-6xl" style="font-family:'Noto Serif',serif;">Metropolitan Grace</h2>
+          <h2 class="text-3xl text-white md:text-6xl" style="font-family:'Noto Serif',serif;">Metropolitan Grace</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
-          <div class="flex aspect-square flex-col justify-between border border-[#4e453b]/20 bg-[#25293a] p-8 md:p-12">
+          <div class="flex min-h-[280px] flex-col justify-between border border-[#4e453b]/20 bg-[#25293a] p-8 md:aspect-square md:p-12">
             <span class="text-[#eac290] text-3xl" style="font-family:'Noto Serif',serif;">01</span>
             <div>
               <h3 class="text-white text-xl mb-4" style="font-family:'Noto Serif',serif;">Unrivaled Discretion</h3>
               <p class="text-[#d2c4b7] text-sm leading-relaxed" style="font-family:'Newsreader',serif;">Your identity is guarded with absolute precision. We operate behind the scenes of Auckland's private clubs and high-profile events.</p>
             </div>
           </div>
-          <div class="relative aspect-square">
+          <div class="relative aspect-[4/3] md:aspect-square">
             <img class="w-full h-full object-cover grayscale opacity-60" alt="High-end cocktail bar in Auckland" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjum4UtL-IxH-MsO17CVxM3Z6pHT03m4Jz0Qu9YUO5EsvnfLChMK_DRAUfrQ3XYruppxc9jI2d6GFkC0rHyT_xJwgV5AVCMZAO079lzbmCnXCxoCB-catHye6oJq7AYBhTsWhLh2pQJ4AWT1XxKwC06OkSMUyX_yOiceTiClk5jtftPnulas5gGGi9th-5vARkOrATDkTfJBHwDXhfjWcAAQs-yc4CM9oh9D9S2QCoK9zRJf2AVP-tc0B95TD0HPXJE-gA5P_dYeh4" />
             <div class="absolute inset-0 bg-[#0e1322]/40 flex items-center justify-center">
               <div class="border border-[#eac290]/30 p-6 text-center md:p-8">
@@ -69,20 +69,20 @@ const metadata = {
               </div>
             </div>
           </div>
-          <div class="flex aspect-square flex-col justify-between border border-[#4e453b]/20 bg-[#161b2b] p-8 md:p-12">
+          <div class="flex min-h-[280px] flex-col justify-between border border-[#4e453b]/20 bg-[#161b2b] p-8 md:aspect-square md:p-12">
             <span class="text-[#eac290] text-3xl" style="font-family:'Noto Serif',serif;">02</span>
             <div>
               <h3 class="text-white text-xl mb-4" style="font-family:'Noto Serif',serif;">Values-First Curation</h3>
               <p class="text-[#d2c4b7] text-sm leading-relaxed" style="font-family:'Newsreader',serif;">We look beyond the resume. We match based on intellectual chemistry, shared lifestyle ambitions, and fundamental worldviews.</p>
             </div>
           </div>
-          <div class="relative aspect-square md:col-span-2">
+          <div class="relative aspect-[4/3] md:col-span-2 md:aspect-square">
             <img class="w-full h-full object-cover" alt="Waitemata Harbour panoramic view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzjhpuqcOyitWN39YiHmEwiNByyALjTbWk8h5Y5LvkfV9Ja9VSGwcoSOtuClyoJ7O_Sk3ngaqaIVyTBWJHFvELxxttxhjI-6Icegg22tfG-WNHHJ7XV4IGJcNAcZOYINgzaedMQAI6_aFhYHDHZo3epoFNuoiqo4etf-JprTLsreh7HI7ThjzYQS01nNTpTBYsjfan1oQAVUipMIs2miPobz2mmTbOeu2kFn5E31IDdpgENSPjslVCInVqhxEaVrqhTJCArSucq92L" />
-            <div class="absolute bottom-0 left-0 max-w-sm bg-[#0e1322]/80 p-8 md:p-12">
+            <div class="absolute bottom-0 left-0 max-w-sm bg-[#0e1322]/80 p-6 md:p-12">
               <h3 class="text-white text-2xl" style="font-family:'Noto Serif',serif;">The Auckland Network</h3>
             </div>
           </div>
-          <div class="flex aspect-square flex-col justify-between border border-[#4e453b]/20 bg-[#2f3445] p-8 md:p-12">
+          <div class="flex min-h-[280px] flex-col justify-between border border-[#4e453b]/20 bg-[#2f3445] p-8 md:aspect-square md:p-12">
             <span class="text-[#eac290] text-3xl" style="font-family:'Noto Serif',serif;">03</span>
             <div>
               <h3 class="text-white text-xl mb-4" style="font-family:'Noto Serif',serif;">New Zealand Reach</h3>
@@ -93,7 +93,7 @@ const metadata = {
       </div>
     </section>
 
-    <section class="py-32 bg-[#161b2b]">
+    <section class="bg-[#161b2b] py-24 md:py-32">
       <div class="container mx-auto flex flex-col items-center gap-12 px-6 md:px-12 lg:flex-row">
         <div class="w-full lg:w-1/2">
           <div class="relative aspect-video bg-[#2f3445] border border-[#4e453b]/40 flex items-center justify-center overflow-hidden">
@@ -126,7 +126,7 @@ const metadata = {
               <label class="block uppercase text-[0.7rem] tracking-widest text-[#eac290] mb-2" style="font-family:'Newsreader',serif;">EMAIL ADDRESS</label>
               <input type="email" name="email" required class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] focus:outline-none text-white py-3 transition-colors duration-300" />
             </div>
-            <button type="submit" class="w-full md:w-auto bg-[#cda777] text-[#573c15] px-12 py-4 uppercase tracking-widest text-[0.75rem] hover:bg-[#eac290] transition-all duration-300 mt-4" style="font-family:'Newsreader',serif;">
+            <button type="submit" class="mt-4 w-full bg-[#cda777] px-8 py-4 text-[0.75rem] uppercase tracking-[0.18em] text-[#573c15] transition-all duration-300 hover:bg-[#eac290] md:w-auto md:px-12 md:tracking-widest" style="font-family:'Newsreader',serif;">
               REQUEST CONSULTATION
             </button>
           </form>

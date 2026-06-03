@@ -11,25 +11,25 @@ const metadata = {
 <Layout metadata={metadata}>
   <main transition:animate="fade">
 
-    <section class="relative h-[921px] w-full flex items-center overflow-hidden">
+    <section class="relative flex min-h-[100svh] w-full items-center overflow-hidden py-28 md:h-[921px] md:py-0">
       <div class="absolute inset-0 z-0">
         <img class="w-full h-full object-cover opacity-60" alt="Snow-capped Southern Alps reflecting in Lake Wakatipu at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd3nrZrssZDzuNoFoTyyofkYaQ5TOA4utAxYdM5LYDGzaFiLCyi_KXN8XfcQIBE2Bj39Q4V4hfgLrvWaOly4FTI5wIv6a1f57kPbfx67CfOaz_LzLn4DlSm8omeqJRGUS3S5p_JRK3y-lo7UmoCbCLn552flXSXaIAoC0qQJKL_lVnQtwLXedmQ3vTZIASxYAgFWmjBNJCqP7nflrm6uolTuBgNcedMhDapxWNbfNNa7THUUjDFn9Mz6UfAqcANrRAmzwBSXBk6kgE" />
         <div class="absolute inset-0 bg-gradient-to-r from-[#0e1322] via-transparent to-transparent"></div>
       </div>
       <div class="container mx-auto px-6 md:px-12 relative z-10">
         <div class="max-w-4xl">
-          <span class="uppercase tracking-[0.4em] text-[#eac290] text-xs mb-6 block" style="font-family:'Newsreader',serif;">Queenstown Chapter</span>
-          <h1 class="text-5xl md:text-8xl font-light text-white leading-tight mb-8" style="font-family:'Noto Serif',serif;">
+          <span class="mb-6 block text-xs uppercase tracking-[0.28em] text-[#eac290] md:tracking-[0.4em]" style="font-family:'Newsreader',serif;">Queenstown Chapter</span>
+          <h1 class="mb-8 text-4xl font-light leading-tight text-white sm:text-5xl md:text-8xl" style="font-family:'Noto Serif',serif;">
             Private matchmaking in <br/><span class="italic text-[#eac290]">Queenstown</span>
           </h1>
-          <p class="text-xl md:text-2xl text-[#d2c4b7] max-w-2xl leading-relaxed mb-12" style="font-family:'Newsreader',serif;">
+          <p class="mb-10 max-w-2xl text-lg leading-relaxed text-[#d2c4b7] md:mb-12 md:text-2xl" style="font-family:'Newsreader',serif;">
             For those who seek connection amidst alpine luxury and intimate retreats. Our bespoke service caters to the South Island's most discerning individuals.
           </p>
-          <div class="flex flex-col md:flex-row gap-6">
-            <a href="/contact" class="bg-[#cda777] text-[#573c15] px-10 py-5 uppercase tracking-[0.2em] text-xs font-bold hover:bg-[#eac290] transition-colors" style="font-family:'Noto Serif',serif;">
+          <div class="flex flex-col gap-4 sm:flex-row md:gap-6">
+            <a href="/contact" class="bg-[#cda777] px-8 py-5 text-center text-xs font-bold uppercase tracking-[0.16em] text-[#573c15] transition-colors hover:bg-[#eac290] md:px-10 md:tracking-[0.2em]" style="font-family:'Noto Serif',serif;">
               Request an Introduction
             </a>
-            <a href="/process" class="border border-[#9b8f82] text-[#eac290] px-10 py-5 uppercase tracking-[0.2em] text-xs font-bold hover:bg-[#eac290]/10 transition-colors" style="font-family:'Noto Serif',serif;">
+            <a href="/process" class="border border-[#9b8f82] px-8 py-5 text-center text-xs font-bold uppercase tracking-[0.16em] text-[#eac290] transition-colors hover:bg-[#eac290]/10 md:px-10 md:tracking-[0.2em]" style="font-family:'Noto Serif',serif;">
               Our Methodology
             </a>
           </div>
@@ -59,28 +59,28 @@ const metadata = {
 
     <section class="border-y border-[#4e453b] bg-[#161b2b] py-24 md:py-32">
       <div class="container mx-auto px-6 md:px-12">
-        <div class="mb-24 text-center">
+        <div class="mb-16 text-center md:mb-24">
           <span class="uppercase tracking-[0.3em] text-[#eac290] text-xs mb-4 block" style="font-family:'Newsreader',serif;">The Journey</span>
           <h2 class="text-4xl md:text-6xl text-white font-light" style="font-family:'Noto Serif',serif;">How It Works</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-0">
           <div class="group relative border-b border-[#4e453b] bg-[#0e1322] p-8 transition-colors duration-500 hover:bg-[#1a1f2f] md:border-b-0 md:border-r md:p-12">
             <span class="text-6xl text-[#4e453b] opacity-30 absolute top-8 right-8" style="font-family:'Noto Serif',serif;">01</span>
-            <h3 class="text-2xl text-[#eac290] mb-6 uppercase tracking-widest" style="font-family:'Noto Serif',serif;">The Consultation</h3>
+            <h3 class="mb-6 pr-16 text-xl uppercase tracking-[0.18em] text-[#eac290] md:text-2xl md:tracking-widest" style="font-family:'Noto Serif',serif;">The Consultation</h3>
             <p class="text-[#d2c4b7] leading-relaxed" style="font-family:'Newsreader',serif;">
               An intimate dialogue to understand your history, aspirations, and the non-negotiables of your future partner. Conducted at a private lounge or your preferred retreat.
             </p>
           </div>
           <div class="group relative border-b border-[#4e453b] bg-[#0e1322] p-8 transition-colors duration-500 hover:bg-[#1a1f2f] md:border-b-0 md:border-r md:p-12">
             <span class="text-6xl text-[#4e453b] opacity-30 absolute top-8 right-8" style="font-family:'Noto Serif',serif;">02</span>
-            <h3 class="text-2xl text-[#eac290] mb-6 uppercase tracking-widest" style="font-family:'Noto Serif',serif;">The Search</h3>
+            <h3 class="mb-6 pr-16 text-xl uppercase tracking-[0.18em] text-[#eac290] md:text-2xl md:tracking-widest" style="font-family:'Noto Serif',serif;">The Search</h3>
             <p class="text-[#d2c4b7] leading-relaxed" style="font-family:'Newsreader',serif;">
               We leverage our deep-rooted network across Queenstown, Wanaka, Auckland, Wellington, and Christchurch to source candidates who meet our rigorous standards of character and stature.
             </p>
           </div>
           <div class="group relative bg-[#0e1322] p-8 transition-colors duration-500 hover:bg-[#1a1f2f] md:p-12">
             <span class="text-6xl text-[#4e453b] opacity-30 absolute top-8 right-8" style="font-family:'Noto Serif',serif;">03</span>
-            <h3 class="text-2xl text-[#eac290] mb-6 uppercase tracking-widest" style="font-family:'Noto Serif',serif;">The Introduction</h3>
+            <h3 class="mb-6 pr-16 text-xl uppercase tracking-[0.18em] text-[#eac290] md:text-2xl md:tracking-widest" style="font-family:'Noto Serif',serif;">The Introduction</h3>
             <p class="text-[#d2c4b7] leading-relaxed" style="font-family:'Newsreader',serif;">
               Curated first meetings in the region's most exclusive venues. We handle the logistics, ensuring the environment is as exceptional as the company.
             </p>
@@ -116,7 +116,7 @@ const metadata = {
         <p class="text-xl text-[#d2c4b7] mb-16 leading-relaxed" style="font-family:'Newsreader',serif;">
           Entry into The Matchmaking Bureau is by invitation or application. Start your journey by submitting a confidential profile for our review.
         </p>
-        <a href="/contact" class="inline-block bg-[#cda777] px-10 py-6 text-sm font-bold uppercase tracking-[0.3em] text-[#573c15] transition-colors hover:bg-[#eac290] md:px-16" style="font-family:'Noto Serif',serif;">
+        <a href="/contact" class="inline-block w-full bg-[#cda777] px-8 py-6 text-sm font-bold uppercase tracking-[0.2em] text-[#573c15] transition-colors hover:bg-[#eac290] sm:w-auto md:px-16 md:tracking-[0.3em]" style="font-family:'Noto Serif',serif;">
           Apply for Membership
         </a>
       </div>
