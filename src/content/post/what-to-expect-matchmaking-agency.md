@@ -36,7 +36,7 @@ This conversation typically runs between ninety minutes and three hours. It cove
 
 ## The Search
 
-Following your consultation, the active search begins. Our matchmakers review our private network — a curated circle of verified, vetted individuals across New Zealand and internationally — for potential matches.
+Following your consultation, the active search begins. Our matchmakers review our private network — a curated circle of verified, vetted individuals across New Zealand — for potential matches.
 
 We also conduct outreach through our wider circle. If the right person for you is not currently in our private network, we will find them. This might mean approaching individuals who are not actively seeking a matchmaker but who we believe represent an exceptional match for you specifically.
 

@@ -42,7 +42,7 @@ In **Wellington**, we work with individuals whose political and public service r
 
 In **Christchurch**, the tight-knit nature of the Canterbury business community means that a misstep in the personal sphere can have immediate professional consequences.
 
-In **Queenstown**, our members are often international figures — global executives, entrepreneurs, and investors — for whom privacy is simply a baseline expectation.
+In **Queenstown**, our members are often entrepreneurs, investors, senior professionals, and private individuals for whom privacy is simply a baseline expectation.
 
 In every city, the requirement is the same. Absolute discretion. Every time.
 
