@@ -5,7 +5,7 @@ excerpt: 'In a world of algorithms and swipe culture, the private introduction r
 image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDc-UVdUFszuciZOhnr8NiMd9FtEDd80C9-euyX-GQXpz-ctpWI01v18Jt-u1kEA5DuK_kWY_Q0S8Erzc2aoPOW3w3eN-ExY4_fmAp-NeqylG0Xqralb_O6salSTzGwqv31kwfpUCjQTICfcbePwv38Mk0eKBej-ZYsAgrWd_Y2JvsyzPVSUxA6xfzwAPPhwqley_cNZUyrvBeM_-x5rfJxCYf2JZi5-KJYXXSyR_ZoEXA0HLV6ZLzhmRVBwRscYPvMV6B5KMN4Q5fw'
 category: 'Matchmaking'
 tags: ['matchmaking', 'private introductions', 'luxury dating', 'New Zealand']
-author: 'The Match Bureau'
+author: 'The Matchmaking Bureau'
 ---
 
 ## The Lost Art of the Considered Introduction
@@ -14,7 +14,7 @@ There was a time when meeting someone of genuine compatibility was not left to c
 
 That tradition has not disappeared. It has simply become rare.
 
-At The Match Bureau, we have built our entire practice around the belief that the introduction is an art form. Not a transaction. Not a swipe. An introduction.
+At The Matchmaking Bureau, we have built our entire practice around the belief that the introduction is an art form. Not a transaction. Not a swipe. An introduction.
 
 ## Why Algorithms Cannot Replace Human Intuition
 
@@ -44,8 +44,8 @@ Timing matters enormously. Someone who has recently ended a significant relation
 
 The environment matters too. A first meeting in a comfortable, private setting — a quiet corner of a restaurant known to one party, a members-only venue, a curated experience — removes the awkwardness of the cold encounter and replaces it with ease.
 
-This is what The Match Bureau does. Not just introductions. The art of the introduction.
+This is what The Matchmaking Bureau does. Not just introductions. The art of the introduction.
 
 ---
 
-*The Match Bureau is New Zealand's premier private matchmaking agency, operating across Auckland, Wellington, Christchurch, and Queenstown.*
+*The Matchmaking Bureau is New Zealand's premier private matchmaking agency, operating across Auckland, Wellington, Christchurch, and Queenstown.*

@@ -5,7 +5,7 @@ excerpt: 'If you have never worked with a private matchmaking agency before, her
 image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDvRsUSBG0i67Qkt62mPcPgSJMGfk8Jcp0eon-4SXsb0lZEava6DvDCWhx-k7x55hJodV_NfEH2dLBFOTMBmrSwnz_PJZkA3QPQxXev91qNr423aYorzx7APa4Pho60g3nYcvOaazZ7Gk_u__4OpjW7q4enPaCbWfUIgV-cVX86bQg1rn0nwtYh5Bj0stf-4Y6dDPKV7Vd1g7uI72vxhIabkXCiniFZlYSKbPACpx_4oV4deKe2qvfcvqkMn4Os7l7RxgBugEew3pB5'
 category: 'Guide'
 tags: ['matchmaking agency', 'luxury dating agency Auckland', 'private matchmaking New Zealand', 'how matchmaking works']
-author: 'The Match Bureau'
+author: 'The Matchmaking Bureau'
 ---
 
 ## A Different Kind of Search
@@ -14,7 +14,7 @@ If you have spent any time on mainstream dating platforms, you know the experien
 
 A private matchmaking agency is the antithesis of all of this.
 
-When you work with The Match Bureau, you are not browsing. You are not being browsed. You are handing the search to someone whose entire professional focus is finding the right person for you specifically — and doing so with a level of care, intelligence, and discretion that no platform can replicate.
+When you work with The Matchmaking Bureau, you are not browsing. You are not being browsed. You are handing the search to someone whose entire professional focus is finding the right person for you specifically — and doing so with a level of care, intelligence, and discretion that no platform can replicate.
 
 Here is what that actually looks like.
 
@@ -62,4 +62,4 @@ If this resonates, we would welcome a conversation.
 
 ---
 
-*The Match Bureau operates across Auckland, Wellington, Christchurch, and Queenstown. Applications are reviewed on a rolling basis.*
+*The Matchmaking Bureau operates across Auckland, Wellington, Christchurch, and Queenstown. Applications are reviewed on a rolling basis.*

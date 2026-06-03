@@ -5,11 +5,11 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 _Last updated_: May 7, 2026
 
-These terms govern your use of The Match Bureau website and any inquiry you submit through it. By accessing the website, you agree to these terms.
+These terms govern your use of The Matchmaking Bureau website and any inquiry you submit through it. By accessing the website, you agree to these terms.
 
-## About The Match Bureau
+## About The Matchmaking Bureau
 
-The Match Bureau is a private matchmaking agency website for New Zealand. The website provides information about our philosophy, membership, city coverage, journal content, and application process.
+The Matchmaking Bureau is a private matchmaking agency website for New Zealand. The website provides information about our philosophy, membership, city coverage, journal content, and application process.
 
 Submitting an inquiry does not guarantee acceptance as a member, a consultation, or an introduction.
 
@@ -19,13 +19,13 @@ You must be at least 18 years old to submit an inquiry or application. By using 
 
 ## Applications and Membership
 
-Membership is selective and may be declined at our discretion. The Match Bureau may request additional information, verification, or consultation before deciding whether to proceed with an applicant.
+Membership is selective and may be declined at our discretion. The Matchmaking Bureau may request additional information, verification, or consultation before deciding whether to proceed with an applicant.
 
 No introduction, relationship outcome, or compatibility result is guaranteed.
 
 ## Confidentiality
 
-You agree to treat any communications, candidate information, or introductions provided through The Match Bureau as confidential. You must not publish, forward, screenshot, or disclose private information about another person without consent.
+You agree to treat any communications, candidate information, or introductions provided through The Matchmaking Bureau as confidential. You must not publish, forward, screenshot, or disclose private information about another person without consent.
 
 ## Website Content
 
@@ -43,7 +43,7 @@ The website may link to or use third-party services for hosting, forms, analytic
 
 ## Limitation of Liability
 
-To the maximum extent permitted by law, The Match Bureau is not liable for indirect, incidental, consequential, or special damages arising from your use of the website or reliance on its content.
+To the maximum extent permitted by law, The Matchmaking Bureau is not liable for indirect, incidental, consequential, or special damages arising from your use of the website or reliance on its content.
 
 ## Privacy
 
@@ -57,4 +57,4 @@ These terms are intended to be interpreted under the laws of New Zealand, unless
 
 Questions about these terms can be sent through:
 
-[Contact The Match Bureau](/contact)
+[Contact The Matchmaking Bureau](/contact)

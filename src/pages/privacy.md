@@ -5,7 +5,7 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 _Last updated_: May 7, 2026
 
-The Match Bureau is a private matchmaking agency serving discerning individuals across New Zealand. Privacy is central to our work. This policy explains how we collect, use, protect, and disclose information submitted through our website and consultation process.
+The Matchmaking Bureau is a private matchmaking agency serving discerning individuals across New Zealand. Privacy is central to our work. This policy explains how we collect, use, protect, and disclose information submitted through our website and consultation process.
 
 ## Information We Collect
 
@@ -22,7 +22,7 @@ We do not publish member profiles, operate a public dating database, or make app
 We use your information to:
 
 - Review applications and consultation requests.
-- Contact you about The Match Bureau membership process.
+- Contact you about The Matchmaking Bureau membership process.
 - Assess whether our private matchmaking service may be appropriate for you.
 - Improve the website, content, and inquiry experience.
 - Maintain safety, confidentiality, and service integrity.
@@ -31,7 +31,7 @@ We do not sell personal information.
 
 ## Confidentiality and Introductions
 
-Information submitted to The Match Bureau is treated as confidential. Your identity is not shared with a potential match unless there is a legitimate matchmaking purpose and appropriate consent or mutual interest has been established through our process.
+Information submitted to The Matchmaking Bureau is treated as confidential. Your identity is not shared with a potential match unless there is a legitimate matchmaking purpose and appropriate consent or mutual interest has been established through our process.
 
 Our service is designed for privacy. No public profile is created from your submission.
 
@@ -39,7 +39,7 @@ Our service is designed for privacy. No public profile is created from your subm
 
 Our website may use trusted third-party services for hosting, analytics, form processing, security, and communications. These providers process information only as needed to support the website or our inquiry workflow.
 
-Forms may be processed by a third-party form service before being delivered to The Match Bureau.
+Forms may be processed by a third-party form service before being delivered to The Matchmaking Bureau.
 
 ## Retention
 
@@ -59,6 +59,6 @@ You may request access, correction, or deletion of your personal information. Yo
 
 ## Contact
 
-For privacy requests, contact The Match Bureau through the application page:
+For privacy requests, contact The Matchmaking Bureau through the application page:
 
-[Contact The Match Bureau](/contact)
+[Contact The Matchmaking Bureau](/contact)

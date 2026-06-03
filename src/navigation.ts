@@ -23,5 +23,5 @@ export const footerData = {
     { text: 'Terms', href: '/terms' },
   ],
   socialLinks: [],
-  footNote: '© 2025 The Match Bureau. All rights reserved.',
+  footNote: '© 2025 The Matchmaking Bureau. All rights reserved.',
 };

@@ -1,20 +1,20 @@
 site:
-  name: 'The Match Bureau'
-  site: 'https://match-bureau.vercel.app'
+  name: 'The Matchmaking Bureau'
+  site: 'https://matchmakingbureau.co.nz'
   base: '/'
   trailingSlash: false
   googleSiteVerificationId: false
 
 metadata:
   title:
-    default: 'The Match Bureau | Private Matchmaking New Zealand'
-    template: '%s | The Match Bureau NZ'
-  description: 'Private matchmaking for discerning singles across Auckland, Wellington, Christchurch and Queenstown. The Match Bureau is where exceptional people connect.'
+    default: 'The Matchmaking Bureau | Private Matchmaking New Zealand'
+    template: '%s | The Matchmaking Bureau NZ'
+  description: 'Private matchmaking for discerning singles across Auckland, Wellington, Christchurch and Queenstown. The Matchmaking Bureau is where exceptional people connect.'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: 'The Match Bureau'
+    site_name: 'The Matchmaking Bureau'
     images:
       - url: '~/assets/images/default.png'
         width: 1200
