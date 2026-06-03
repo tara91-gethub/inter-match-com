@@ -3,8 +3,7 @@ publishDate: 2025-04-02T00:00:00Z
 title: "Why Discretion is Non-Negotiable for New Zealand's Private Members"
 excerpt: 'In a country where everyone knows everyone, the search for a life partner requires a level of privacy that mainstream dating cannot provide.'
 image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBeLHzNKXoMoCero0m9eiZBhs-Vq7MJSw3nTSCIDcfJxu06HGHQwVRF0IteUhowZgzS8RTquGjeB90eWDPRhRhLy2V2a9K9d-GJrE7XCx_R8Qi5fphlL6Sgh9VRwyejgtWb6ddkW68SiM2mSVIH32MIEvs8WEIsrJFSU6I_qkkmXHDxRHM95qDNL4T6kx776a3ygUHr6rc7xcw4QG-jDb9EK_i3gUX-nzeBfyXAc-DyksvPASVET0wRm8dAbzlgG6yaxYS5vTd7qDT8'
-category: 'Privacy'
-tags: ['discretion', 'privacy', 'luxury dating agency Auckland', 'private matchmaking New Zealand']
+category: 'Insights'
 author: 'The Matchmaking Bureau'
 ---
 

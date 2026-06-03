@@ -3,8 +3,7 @@ publishDate: 2025-03-15T00:00:00Z
 title: 'The Art of the Introduction'
 excerpt: 'In a world of algorithms and swipe culture, the private introduction remains the most powerful force in human connection. Here is why.'
 image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDc-UVdUFszuciZOhnr8NiMd9FtEDd80C9-euyX-GQXpz-ctpWI01v18Jt-u1kEA5DuK_kWY_Q0S8Erzc2aoPOW3w3eN-ExY4_fmAp-NeqylG0Xqralb_O6salSTzGwqv31kwfpUCjQTICfcbePwv38Mk0eKBej-ZYsAgrWd_Y2JvsyzPVSUxA6xfzwAPPhwqley_cNZUyrvBeM_-x5rfJxCYf2JZi5-KJYXXSyR_ZoEXA0HLV6ZLzhmRVBwRscYPvMV6B5KMN4Q5fw'
-category: 'Matchmaking'
-tags: ['matchmaking', 'private introductions', 'luxury dating', 'New Zealand']
+category: 'Insights'
 author: 'The Matchmaking Bureau'
 ---
 

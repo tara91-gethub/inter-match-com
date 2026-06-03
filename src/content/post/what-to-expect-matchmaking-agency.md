@@ -4,7 +4,6 @@ title: 'What to Expect from a Private Matchmaking Agency'
 excerpt: 'If you have never worked with a private matchmaking agency before, here is exactly what the process looks like — and what makes it different from anything else.'
 image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDvRsUSBG0i67Qkt62mPcPgSJMGfk8Jcp0eon-4SXsb0lZEava6DvDCWhx-k7x55hJodV_NfEH2dLBFOTMBmrSwnz_PJZkA3QPQxXev91qNr423aYorzx7APa4Pho60g3nYcvOaazZ7Gk_u__4OpjW7q4enPaCbWfUIgV-cVX86bQg1rn0nwtYh5Bj0stf-4Y6dDPKV7Vd1g7uI72vxhIabkXCiniFZlYSKbPACpx_4oV4deKe2qvfcvqkMn4Os7l7RxgBugEew3pB5'
 category: 'Guide'
-tags: ['matchmaking agency', 'luxury dating agency Auckland', 'private matchmaking New Zealand', 'how matchmaking works']
 author: 'The Matchmaking Bureau'
 ---
 
