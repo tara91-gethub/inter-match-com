@@ -48,7 +48,8 @@ apps:
       isEnabled: false
       pathname: 'tag'
       robots:
-        index: false
+        index: true
+        follow: true
     isRelatedPostsEnabled: true
     relatedPostsCount: 4
 
