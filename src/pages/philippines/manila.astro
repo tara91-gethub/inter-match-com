@@ -1,0 +1,30 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+const metadata = { title: "Private Matchmaking in Manila | The Matchmaking Bureau", description: "Private matchmaking in Manila for discerning Filipino professionals. Bonifacio Global City to Makati - absolute discretion guaranteed." };
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://matchmakingbureau.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Philippines",
+      "item": "https://matchmakingbureau.com/philippines"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Manila",
+      "item": "https://matchmakingbureau.com/philippines/manila"
+    }
+  ]
+};
+const links = [{ text: "Philippines", href: "/philippines" }];
+---
+<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Manila Bureau" body="Manila is the Philippines' centre of commerce, finance and culture. From the boardrooms of Makati to the residences of BGC, The Matchmaking Bureau serves Manila's most accomplished professionals with introductions built on genuine compatibility, shared values and absolute privacy." image="/assets/images/cities/manila.jpg" links={links} schema={schema} />

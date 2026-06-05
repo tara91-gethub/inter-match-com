@@ -1,0 +1,77 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/JsonLd.astro';
+const metadata = { title: 'FAQ', description: 'Frequently asked questions about private matchmaking in Southeast Asia - how it works, confidentiality, process and membership.' };
+const faqs = [["How does private matchmaking work?","The process begins with a confidential application and private consultation. We learn your values, lifestyle, intentions and relationship priorities, then curate introductions individually rather than giving access to a public database."],["Is my information kept confidential?","Yes. Confidentiality is central to the bureau. Your information is not published, browsed or shared casually. Identity details are handled carefully and only used for legitimate matchmaking purposes."],["How is this different from a dating app?","Dating apps rely on volume and visibility. The Matchmaking Bureau relies on discretion, judgment and curation. We do not ask accomplished professionals to swipe through strangers; we identify serious, compatible introductions."],["Which countries and cities do you serve?","We serve the Philippines, including Manila and Cebu; Thailand, including Bangkok; Indonesia, including Jakarta; Malaysia, including Kuala Lumpur; Singapore; and Vietnam, including Ho Chi Minh City."],["What kind of professionals do you work with?","We work with discerning professionals, founders, executives, doctors, lawyers, academics, creatives and accomplished individuals who are serious about a private search for meaningful connection."],["How long does the matchmaking process take?","Timelines vary because the process is selective. Some introductions can be identified quickly, while more specific searches require careful regional review and patience. Quality is never rushed."],["What happens after an introduction?","After an introduction, we collect private feedback from both parties. That feedback informs next steps, refines the search and helps preserve clarity, discretion and momentum."],["How do I apply?","You can apply through the confidential application page. A senior consultant will review your submission and contact you if your profile aligns with current membership criteria."]];
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does private matchmaking work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The process begins with a confidential application and private consultation. We learn your values, lifestyle, intentions and relationship priorities, then curate introductions individually rather than giving access to a public database."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my information kept confidential?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Confidentiality is central to the bureau. Your information is not published, browsed or shared casually. Identity details are handled carefully and only used for legitimate matchmaking purposes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is this different from a dating app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dating apps rely on volume and visibility. The Matchmaking Bureau relies on discretion, judgment and curation. We do not ask accomplished professionals to swipe through strangers; we identify serious, compatible introductions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which countries and cities do you serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We serve the Philippines, including Manila and Cebu; Thailand, including Bangkok; Indonesia, including Jakarta; Malaysia, including Kuala Lumpur; Singapore; and Vietnam, including Ho Chi Minh City."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What kind of professionals do you work with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We work with discerning professionals, founders, executives, doctors, lawyers, academics, creatives and accomplished individuals who are serious about a private search for meaningful connection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does the matchmaking process take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Timelines vary because the process is selective. Some introductions can be identified quickly, while more specific searches require careful regional review and patience. Quality is never rushed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens after an introduction?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "After an introduction, we collect private feedback from both parties. That feedback informs next steps, refines the search and helps preserve clarity, discretion and momentum."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I apply?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can apply through the confidential application page. A senior consultant will review your submission and contact you if your profile aligns with current membership criteria."
+      }
+    }
+  ]
+};
+---
+<Layout metadata={metadata}><JsonLd data={schema} /><main transition:animate="fade" class="max-w-5xl mx-auto px-6 py-24 md:py-32"><header class="mb-20 text-center"><p class="mb-6 text-xs uppercase tracking-[0.3em] text-[#eac290]" style="font-family:'Newsreader',serif;">Private Matchmaking</p><h1 class="text-5xl md:text-7xl mb-8 text-white" style="font-family:'Noto Serif',serif;">FAQ</h1><p class="text-xl md:text-2xl text-[#9b8f82] max-w-2xl mx-auto italic leading-relaxed" style="font-family:'Newsreader',serif;">Confidential answers for discerning professionals across Southeast Asia.</p></header><section class="border border-[#4e453b] divide-y divide-[#4e453b]">{faqs.map(([question, answer]) => <article class="bg-[#161b2b] p-8 md:p-12"><h2 class="mb-5 text-2xl text-[#eac290]" style="font-family:'Noto Serif',serif;">{question}</h2><p class="text-lg leading-relaxed text-[#d2c4b7]" style="font-family:'Newsreader',serif;">{answer}</p>{question === 'Which countries and cities do you serve?' && <p class="mt-5 text-[#d2c4b7]" style="font-family:'Newsreader',serif;"><a class="text-[#eac290]" href="/philippines">Philippines</a> (<a class="text-[#eac290]" href="/philippines/manila">Manila</a>, <a class="text-[#eac290]" href="/philippines/cebu">Cebu</a>), <a class="text-[#eac290]" href="/thailand">Thailand</a> (<a class="text-[#eac290]" href="/thailand/bangkok">Bangkok</a>), <a class="text-[#eac290]" href="/indonesia">Indonesia</a> (<a class="text-[#eac290]" href="/indonesia/jakarta">Jakarta</a>), <a class="text-[#eac290]" href="/malaysia">Malaysia</a> (<a class="text-[#eac290]" href="/malaysia/kuala-lumpur">Kuala Lumpur</a>), <a class="text-[#eac290]" href="/singapore">Singapore</a>, <a class="text-[#eac290]" href="/vietnam">Vietnam</a> (<a class="text-[#eac290]" href="/vietnam/ho-chi-minh-city">Ho Chi Minh City</a>).</p>}{question === 'How do I apply?' && <p class="mt-5"><a class="text-[#eac290] uppercase tracking-[0.2em] text-sm" href="/contact" style="font-family:'Newsreader',serif;">Apply Now</a></p>}</article>)}</section></main></Layout>

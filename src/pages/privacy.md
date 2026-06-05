@@ -3,29 +3,19 @@ title: 'Privacy Policy'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated_: May 7, 2026
+_Last updated_: June 5, 2026
 
-The Matchmaking Bureau is a private matchmaking agency serving discerning individuals across New Zealand. Privacy is central to our work. This policy explains how we collect, use, protect, and disclose information submitted through our website and consultation process.
+The Matchmaking Bureau is a private matchmaking agency serving discerning individuals across Southeast Asia. Privacy is central to our work. This policy explains how we collect, use, protect, and disclose information submitted through our website and consultation process.
 
 ## Information We Collect
 
-When you submit an application, consultation request, or general inquiry, we may collect:
+When you submit an application, consultation request, or general inquiry, we may collect your name, email address, current location, professional background, lifestyle information, relationship goals, personal values, and basic technical information about site usage.
 
-- Your name, email address, current location, and contact preferences.
-- Professional background, lifestyle information, relationship goals, and personal values that you choose to provide.
-- Technical information such as browser type, device information, pages visited, and general usage data.
-
-We do not publish member profiles, operate a public dating database, or make applicant information searchable by other visitors.
+We do not publish member profiles, operate a public dating database, or make applicant information searchable by visitors.
 
 ## How We Use Information
 
-We use your information to:
-
-- Review applications and consultation requests.
-- Contact you about The Matchmaking Bureau membership process.
-- Assess whether our private matchmaking service may be appropriate for you.
-- Improve the website, content, and inquiry experience.
-- Maintain safety, confidentiality, and service integrity.
+We use your information to review applications, contact you about the membership process, assess whether our private matchmaking service may be appropriate, improve the website, and maintain safety, confidentiality, and service integrity.
 
 We do not sell personal information.
 
@@ -33,32 +23,14 @@ We do not sell personal information.
 
 Information submitted to The Matchmaking Bureau is treated as confidential. Your identity is not shared with a potential match unless there is a legitimate matchmaking purpose and appropriate consent or mutual interest has been established through our process.
 
-Our service is designed for privacy. No public profile is created from your submission.
-
 ## Third-Party Services
 
-Our website may use trusted third-party services for hosting, analytics, form processing, security, and communications. These providers process information only as needed to support the website or our inquiry workflow.
-
-Forms may be processed by a third-party form service before being delivered to The Matchmaking Bureau.
+Our website may use trusted third-party services for hosting, analytics, form processing, security, and communications. These providers process information only as needed to support the website or inquiry workflow.
 
 ## Retention
 
-We retain inquiry and application information only for as long as reasonably necessary for matchmaking, consultation, legal, security, and administrative purposes. You may request that we delete or correct your information, subject to lawful retention requirements.
-
-## Security
-
-We use reasonable technical and organisational measures to protect information submitted through the website. No method of online transmission or storage is completely secure, so we cannot guarantee absolute security.
-
-## Cookies and Analytics
-
-The website may use basic cookies or analytics technologies to understand site performance and visitor behaviour. You can control cookies through your browser settings.
-
-## Your Choices
-
-You may request access, correction, or deletion of your personal information. You may also ask us not to contact you further.
+We retain inquiry and application information only for as long as reasonably necessary for matchmaking, consultation, legal, security, and administrative purposes.
 
 ## Contact
-
-For privacy requests, contact The Matchmaking Bureau through the application page:
 
 [Contact The Matchmaking Bureau](/contact)

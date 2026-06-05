@@ -2,16 +2,19 @@ export const headerData = {
   links: [
     { text: 'Membership', href: '/membership' },
     {
-      text: 'Cities',
+      text: 'Countries',
       links: [
-        { text: 'Auckland', href: '/cities/auckland' },
-        { text: 'Wellington', href: '/cities/wellington' },
-        { text: 'Christchurch', href: '/cities/christchurch' },
-        { text: 'Queenstown', href: '/cities/queenstown' },
+        { text: 'Philippines', href: '/philippines' },
+        { text: 'Thailand', href: '/thailand' },
+        { text: 'Indonesia', href: '/indonesia' },
+        { text: 'Malaysia', href: '/malaysia' },
+        { text: 'Singapore', href: '/singapore' },
+        { text: 'Vietnam', href: '/vietnam' },
       ],
     },
     { text: 'The Process', href: '/process' },
     { text: 'About', href: '/about' },
+    { text: 'FAQ', href: '/faq' },
   ],
   actions: [{ text: 'Apply Now', href: '/contact' }],
 };
@@ -23,5 +26,5 @@ export const footerData = {
     { text: 'Terms', href: '/terms' },
   ],
   socialLinks: [],
-  footNote: 'Copyright 2025 The Matchmaking Bureau. All rights reserved.',
+  footNote: 'Copyright 2025 The Matchmaking Bureau International. All rights reserved.',
 };

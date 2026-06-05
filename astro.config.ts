@@ -28,7 +28,18 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
-    sitemap(),
+    sitemap({
+      serialize(item) {
+        const rawPathname = new URL(item.url).pathname;
+        const pathname = rawPathname.length > 1 && rawPathname.endsWith('/') ? rawPathname.slice(0, -1) : rawPathname;
+        if (pathname === '/') item.priority = 1.0;
+        else if (pathname.startsWith('/category/')) item.priority = 0.6;
+        else if (['/philippines','/thailand','/indonesia','/malaysia','/singapore','/vietnam'].includes(pathname)) item.priority = 0.9;
+        else if (['/philippines/manila','/philippines/cebu','/thailand/bangkok','/indonesia/jakarta','/malaysia/kuala-lumpur','/vietnam/ho-chi-minh-city','/membership','/process','/faq'].includes(pathname)) item.priority = 0.8;
+        else if (pathname === '/blog' || pathname.startsWith('/blog/') || ['/about','/contact'].includes(pathname)) item.priority = 0.7;
+        return item;
+      },
+    }),
     mdx(),
     icon({
       include: {

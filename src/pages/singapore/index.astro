@@ -1,0 +1,24 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+const metadata = { title: "Private Matchmaking in Singapore | The Matchmaking Bureau", description: "Private matchmaking in Singapore for discerning professionals. Southeast Asia's global city served with absolute discretion." };
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://matchmakingbureau.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Singapore",
+      "item": "https://matchmakingbureau.com/singapore"
+    }
+  ]
+};
+const cards = [];
+---
+<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Singapore Bureau" body="Singapore is Southeast Asia's most international city - where the world's most ambitious professionals converge. In a city that values discretion, efficiency and substance, The Matchmaking Bureau offers something algorithms cannot: a singular, hand-selected introduction built on genuine compatibility." image="/assets/images/countries/singapore.jpg" cards={cards} links={[]} schema={schema} />

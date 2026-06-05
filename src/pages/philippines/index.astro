@@ -1,0 +1,24 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+const metadata = { title: "Private Matchmaking in the Philippines | The Matchmaking Bureau", description: "Private matchmaking in the Philippines for discerning professionals. Serving Manila and Cebu with absolute discretion." };
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://matchmakingbureau.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Philippines",
+      "item": "https://matchmakingbureau.com/philippines"
+    }
+  ]
+};
+const cards = [{"title":"Manila","href":"/philippines/manila","image":"/assets/images/cities/manila.jpg"},{"title":"Cebu","href":"/philippines/cebu","image":"/assets/images/cities/cebu.jpg"}];
+---
+<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Philippines Bureau" body="The Philippines is home to one of Southeast Asia's most dynamic professional classes - entrepreneurs, executives, doctors, lawyers and academics who have built exceptional careers and now seek equally exceptional private introductions. The Matchmaking Bureau serves the Philippines with hand-selected introductions and absolute confidentiality." image="/assets/images/countries/philippines.jpg" cards={cards} links={[]} schema={schema} />

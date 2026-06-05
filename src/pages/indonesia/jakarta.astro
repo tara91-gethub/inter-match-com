@@ -1,0 +1,30 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+const metadata = { title: "Private Matchmaking in Jakarta | The Matchmaking Bureau", description: "Private matchmaking in Jakarta for discerning Indonesian professionals. Indonesia's business capital served with absolute discretion." };
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://matchmakingbureau.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Indonesia",
+      "item": "https://matchmakingbureau.com/indonesia"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jakarta",
+      "item": "https://matchmakingbureau.com/indonesia/jakarta"
+    }
+  ]
+};
+const links = [{ text: "Indonesia", href: "/indonesia" }];
+---
+<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Jakarta Bureau" body="Jakarta is Indonesia's engine of ambition - a city where successful professionals, entrepreneurs and business leaders build empires and seek connection with equal determination. The Matchmaking Bureau operates in absolute privacy, serving Jakarta's most accomplished individuals with introductions of genuine substance." image="/assets/images/cities/jakarta.jpg" links={links} schema={schema} />

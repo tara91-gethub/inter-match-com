@@ -1,0 +1,30 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+const metadata = { title: "Private Matchmaking in Kuala Lumpur | The Matchmaking Bureau", description: "Private matchmaking in Kuala Lumpur for discerning Malaysian professionals. KL's most accomplished singles served with absolute discretion." };
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://matchmakingbureau.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Malaysia",
+      "item": "https://matchmakingbureau.com/malaysia"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Kuala Lumpur",
+      "item": "https://matchmakingbureau.com/malaysia/kuala-lumpur"
+    }
+  ]
+};
+const links = [{ text: "Malaysia", href: "/malaysia" }];
+---
+<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Kuala Lumpur Bureau" body="Kuala Lumpur is Malaysia's city of ambition - a skyline that mirrors the drive of its professional class. Executives, entrepreneurs, academics and creatives who have built exceptional careers here now seek equally exceptional connections. The Matchmaking Bureau serves Kuala Lumpur with precision and absolute privacy." image="/assets/images/cities/kuala-lumpur.jpg" links={links} schema={schema} />

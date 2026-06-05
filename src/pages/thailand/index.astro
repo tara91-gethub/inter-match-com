@@ -1,0 +1,24 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+const metadata = { title: "Private Matchmaking in Thailand | The Matchmaking Bureau", description: "Private matchmaking in Thailand for discerning professionals. Serving Bangkok with absolute discretion." };
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://matchmakingbureau.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Thailand",
+      "item": "https://matchmakingbureau.com/thailand"
+    }
+  ]
+};
+const cards = [{"title":"Bangkok","href":"/thailand/bangkok","image":"/assets/images/cities/bangkok.jpg"}];
+---
+<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Thailand Bureau" body="Thailand's professional class - spanning finance, hospitality, technology and international business - is among the most cosmopolitan in Asia. The Matchmaking Bureau serves Thailand with the same architectural approach to human connection that defines every bureau introduction." image="/assets/images/countries/thailand.jpg" cards={cards} links={[]} schema={schema} />

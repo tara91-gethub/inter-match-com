@@ -1,151 +1,48 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
+import JsonLd from '~/components/JsonLd.astro';
 const metadata = {
-  title: 'Private Matchmaking in New Zealand',
-  description:
-    'Private matchmaking in New Zealand for discerning singles across Auckland, Wellington, Christchurch and Queenstown.',
+  title: 'Private Matchmaking in Southeast Asia',
+  description: 'Private matchmaking across Southeast Asia for discerning professionals in the Philippines, Thailand, Indonesia, Malaysia, Singapore and Vietnam.',
+  openGraph: { images: [{ url: '~/assets/images/og-default-international.jpg', width: 1200, height: 630 }] },
 };
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "The Matchmaking Bureau",
+  "url": "https://matchmakingbureau.com",
+  "logo": "https://matchmakingbureau.com/favicon.svg",
+  "description": "Private matchmaking agency serving Southeast Asia - Philippines, Thailand, Indonesia, Malaysia, Singapore and Vietnam.",
+  "areaServed": [
+    "Philippines",
+    "Thailand",
+    "Indonesia",
+    "Malaysia",
+    "Singapore",
+    "Vietnam"
+  ],
+  "serviceType": "Private Matchmaking Agency",
+  "sameAs": []
+};
+const countries = [
+  ['Philippines','/philippines','/assets/images/countries/philippines.jpg','Manila and Cebu'],
+  ['Thailand','/thailand','/assets/images/countries/thailand.jpg','Bangkok'],
+  ['Indonesia','/indonesia','/assets/images/countries/indonesia.jpg','Jakarta'],
+  ['Malaysia','/malaysia','/assets/images/countries/malaysia.jpg','Kuala Lumpur'],
+  ['Singapore','/singapore','/assets/images/countries/singapore.jpg','Singapore'],
+  ['Vietnam','/vietnam','/assets/images/countries/vietnam.jpg','Ho Chi Minh City'],
+];
 ---
-
 <Layout metadata={metadata}>
+  <JsonLd data={schema} />
   <main transition:animate="fade">
     <header class="relative w-full min-h-screen flex items-center overflow-hidden bg-[#0e1322] px-6 py-32 md:px-12">
-      <div class="absolute inset-y-0 right-0 hidden w-1/2 lg:block">
-        <img class="h-full w-full object-cover grayscale opacity-40" alt="Luxury private interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA91CzkPvsIB_ejrkzW8KZPMS-K1p17RgAaVhf0ymHHClNCFVA1uu3bQABlGET0TE67OUAj0VzcNOGWQUDT4tFjtrFP-K7tw_WBsYkzIH5y_4mD4KQaNV-uT7BEigofIFMxgQy05CFSL4CmDsnF5JthwIZXOGEOudQvtHEuXvJtVBVQ0GNoE_X8oS7Sz98X408cVzpaiue001sArgEQw0Ye8dK4d6SXebAjsAwtxb4FPtYOeMuzRaqe_blPovIxjkess0QRcJvqhPyB" />
-        <div class="absolute inset-0 bg-gradient-to-r from-[#0e1322] via-[#0e1322]/45 to-transparent"></div>
-      </div>
-      <div class="relative z-10 max-w-7xl mx-auto w-full">
-        <div class="max-w-3xl">
-          <p class="mb-6 text-xs uppercase tracking-[0.3em] text-[#eac290]" style="font-family:'Newsreader',serif;">The Matchmaking Bureau</p>
-          <h1 class="mb-8 text-4xl leading-tight text-white sm:text-5xl md:text-7xl lg:text-8xl" style="font-family:'Noto Serif',serif;">
-            The Fine Art of <span class="italic text-[#eac290]">Human Connection</span>
-          </h1>
-          <div class="mb-10 h-px w-24 bg-[#eac290]"></div>
-          <p class="mb-12 max-w-2xl text-lg leading-relaxed text-[#d2c4b7] md:text-2xl" style="font-family:'Newsreader',serif;">
-            Exclusively serving New Zealand's most discerning individuals. We are not an app; we are an architectural approach to love.
-          </p>
-          <div class="flex flex-col gap-5 sm:flex-row">
-            <a href="/contact" class="inline-block bg-[#cda777] px-8 py-5 text-center text-xs font-bold uppercase tracking-[0.16em] text-[#573c15] transition-colors hover:bg-[#eac290] md:px-10 md:tracking-[0.25em]" style="font-family:'Noto Serif',serif;">
-              Begin Your Application
-            </a>
-            <a href="/about" class="inline-block border border-[#9b8f82] px-8 py-5 text-center text-xs font-bold uppercase tracking-[0.16em] text-[#eac290] transition-colors hover:bg-[#eac290]/10 md:px-10 md:tracking-[0.25em]" style="font-family:'Noto Serif',serif;">
-              The Philosophy
-            </a>
-          </div>
-        </div>
-      </div>
+      <div class="absolute inset-y-0 right-0 hidden w-1/2 lg:block"><img class="h-full w-full object-cover grayscale opacity-40" alt="Private Southeast Asia interior" src="/assets/images/private-interior-hero.jpg" /><div class="absolute inset-0 bg-gradient-to-r from-[#0e1322] via-[#0e1322]/45 to-transparent"></div></div>
+      <div class="relative z-10 max-w-7xl mx-auto w-full"><div class="max-w-3xl"><p class="mb-6 text-xs uppercase tracking-[0.3em] text-[#eac290]" style="font-family:'Newsreader',serif;">The Matchmaking Bureau</p><h1 class="mb-8 text-4xl leading-tight text-white sm:text-5xl md:text-7xl lg:text-8xl" style="font-family:'Noto Serif',serif;">The Fine Art of <span class="italic text-[#eac290]">Human Connection</span></h1><div class="mb-10 h-px w-24 bg-[#eac290]"></div><p class="mb-12 max-w-2xl text-lg leading-relaxed text-[#d2c4b7] md:text-2xl" style="font-family:'Newsreader',serif;">Exclusively serving Southeast Asia's most discerning individuals. We are not an app; we are an architectural approach to love.</p><div class="flex flex-col gap-5 sm:flex-row"><a href="/contact" class="inline-block bg-[#cda777] px-8 py-5 text-center text-xs font-bold uppercase tracking-[0.16em] text-[#573c15] transition-colors hover:bg-[#eac290] md:px-10 md:tracking-[0.25em]" style="font-family:'Noto Serif',serif;">Begin Your Application</a><a href="/about" class="inline-block border border-[#9b8f82] px-8 py-5 text-center text-xs font-bold uppercase tracking-[0.16em] text-[#eac290] transition-colors hover:bg-[#eac290]/10 md:px-10 md:tracking-[0.25em]" style="font-family:'Noto Serif',serif;">The Philosophy</a></div></div></div>
     </header>
-
-    <section class="bg-[#0e1322] px-6 py-24 md:px-12 md:py-32">
-      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
-        <div class="md:col-span-5 relative">
-          <div class="border border-[#4e453b] p-2">
-            <img class="h-[420px] w-full object-cover md:h-[600px]" alt="Luxury watch movement close-up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMUdn11VsAhWw8EuHK9943GS6IJmjfK62nd-FkEsxOBrsepcMR8MXPovgtNGYkXyoc78312JAtb_rRHRQe-gtS2-i-vUEGZAqnQVlcjIyYU1RWV6RUhCgMLbmv6K_Qvo9ki1xbGLSefjUOZsA_34-MkCRepBIFEcO4XJ-4cHUmnvKsGkRjK4DHaIVGCFN6t6kMMVetZa3ZO-4RWBFtGIh006nxS0jJ4S8oxTVXsO1hd89DtWcYMSCcjsJ_i4nrGxAIOq0EMtkH2m4M"/>
-          </div>
-          <div class="absolute -bottom-8 -right-8 bg-[#cda777] p-8 hidden lg:block">
-<p class="text-[#573c15] tracking-[0.25em] uppercase text-xs" style="font-family:'Newsreader',serif;">Est. 2025</p>
-          </div>
-        </div>
-        <div class="md:col-span-7 md:pl-12">
-          <p class="tracking-[0.25em] uppercase text-[#eac290] mb-6 text-sm" style="font-family:'Newsreader',serif;">The Private Atelier</p>
-          <h2 class="mb-8 text-3xl leading-tight text-white md:text-5xl" style="font-family:'Noto Serif',serif;">Precision in <br/>Human Connection.</h2>
-          <div class="space-y-6 text-lg text-[#d2c4b7] leading-relaxed max-w-xl" style="font-family:'Newsreader',serif;">
-            <p>The Bureau is more than a service; it is a private enclave designed for New Zealand's most successful and discerning individuals. We operate beyond the reach of standard platforms, catering to those who value discretion above all else.</p>
-            <p>Our approach is architectural, building relationships on foundations of shared intellectual rigor, lifestyle compatibility, and unspoken ambition. In the world of high-value introductions, we are the invisible architects.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-[#161b2b] px-6 py-24 md:px-12 md:py-32">
-      <div class="max-w-7xl mx-auto">
-        <div class="mb-16 flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
-          <div>
-            <p class="tracking-[0.25em] uppercase text-[#eac290] mb-4 text-sm" style="font-family:'Newsreader',serif;">Territories</p>
-          <h2 class="text-3xl text-white md:text-4xl" style="font-family:'Noto Serif',serif;">The City Bureau</h2>
-          </div>
-          <p class="italic text-[#d2c4b7] max-w-xs text-right hidden md:block" style="font-family:'Newsreader',serif;">Active mandates currently being fulfilled across four primary hubs.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
-          <a href="/cities/auckland" class="relative group aspect-[3/4] overflow-hidden bg-[#25293a]">
-            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60" alt="Auckland cityscape at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUILFGWlG8D1sxO67LduV9WfsFyAlAjh694don06Hj_-J6OIkzD8u0PZWEGfrmY9DOvkC4_yYymYWzM0Lhe7IIGNXG_-F4iUxYdVhiUyyLv1gPyOT6q3xhyFMlS8D8UUgIS6BsMKzusznQDHRgVM7Nw0RgCNTViD8KfxC5E4m0gIs_t38gYBh0wTKHF2QLCLLWJHfwYobCpgzdA_3hI9OHGn4zFQh5hQtd4CsNY8DFUUfEHSZZ5c56TQc598S73c5LA4ndQuDPrAWx"/>
-            <div class="absolute inset-0 flex flex-col justify-end p-8">
-              <h3 class="text-2xl text-[#eac290] tracking-widest uppercase mb-2" style="font-family:'Noto Serif',serif;">Auckland</h3>
-              <p class="text-xs tracking-[0.2em] text-[#d2c4b7] uppercase opacity-0 group-hover:opacity-100 transition-opacity" style="font-family:'Newsreader',serif;">Northern Portfolio</p>
-            </div>
-          </a>
-          <a href="/cities/wellington" class="relative group aspect-[3/4] overflow-hidden bg-[#25293a]">
-            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60" alt="Wellington coastline at blue hour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYBMFJPU6ZHvG1YWcsc1VYLax4P4ypjTo_sw9xSwfCfmKRc-YTh_JRv7xlpUjPgsxloxlSh53lEr-caFaw8OwmHzRHYOYsc7GpLhiTtDoZY8ElYOTa9N9w2eDHe16lELweyunNSGrHnNgRVvQknFzVpLyzlKGQZWNgAb6ULhlAXN3eX1Vbj8wJZuOKMEIQyjqlzFzsZMM2sh_9PsFuSin2htuqmCq0j1e0pl8VQtCSjTmNlK55mCG03oceqFUN_1SSZWiI0BRf3i0o"/>
-            <div class="absolute inset-0 flex flex-col justify-end p-8">
-              <h3 class="text-2xl text-[#eac290] tracking-widest uppercase mb-2" style="font-family:'Noto Serif',serif;">Wellington</h3>
-<p class="text-xs tracking-[0.2em] text-[#d2c4b7] uppercase opacity-0 group-hover:opacity-100 transition-opacity" style="font-family:'Newsreader',serif;">Capital Bureau</p>
-            </div>
-          </a>
-          <a href="/cities/christchurch" class="relative group aspect-[3/4] overflow-hidden bg-[#25293a]">
-            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60" alt="Christchurch modern architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAySM9Us59QEG1zXP_1HA1kmXS7JcfkfiH_XoJzw5RRzbyrr6YhEMxOGKJqHcbeS1VebwKNl9O-yTePNmdo3rM7MiAlN2AtRcJSyDSIAwaB5DS2tLG_JXS3lP5ETLsYsQqzy9U9Nu1MlvKmQ5X9v2DbXP4FO4sCjPqW1AQISunEUgIADtyDVyqVV5qM8s_k1latnI4tmSKFfoy-TUWWG9s0EEy9U72THHZr8mIk0_whjTonw7S-WkNrOc3p8EsBj3Pbys1b_U8smmaR"/>
-            <div class="absolute inset-0 flex flex-col justify-end p-8">
-              <h3 class="text-2xl text-[#eac290] tracking-widest uppercase mb-2" style="font-family:'Noto Serif',serif;">Christchurch</h3>
-              <p class="text-xs tracking-[0.2em] text-[#d2c4b7] uppercase opacity-0 group-hover:opacity-100 transition-opacity" style="font-family:'Newsreader',serif;">Canterbury Hub</p>
-            </div>
-          </a>
-          <a href="/cities/queenstown" class="relative group aspect-[3/4] overflow-hidden bg-[#25293a]">
-            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60" alt="Lake Wakatipu and Remarkables at nightfall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMIgH5jILyAPY00nGVYvDi89bEzdAUYYgi912nba-C96PlZIWXFHh-EjjYwaewAf3NrenEB0XgICeNc0kJmYPoGUsGamX7Veg-B1n7QEynD7LPc1h3d_Yv3GM9DQaWa7WfEpL0sx2qHp5tliEd1DNsTed3vewQc6shcJxFOUhJv6IqT9Gx1dqYh7rJomfhY6wc8dYhYhsSTIyEracCwG7gvnfjSkWXXWKyblHvUx_2DWJ7HYNTUjxgn67zMDGQclvN-JdwuDqijXei"/>
-            <div class="absolute inset-0 flex flex-col justify-end p-8">
-              <h3 class="text-2xl text-[#eac290] tracking-widest uppercase mb-2" style="font-family:'Noto Serif',serif;">Queenstown</h3>
-              <p class="text-xs tracking-[0.2em] text-[#d2c4b7] uppercase opacity-0 group-hover:opacity-100 transition-opacity" style="font-family:'Newsreader',serif;">Alpine Collection</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-[#0e1322] px-6 py-24 md:px-12 md:py-32">
-      <div class="max-w-5xl mx-auto">
-        <div class="text-center mb-24">
-          <p class="tracking-[0.25em] uppercase text-[#eac290] mb-4 text-sm" style="font-family:'Newsreader',serif;">Methodology</p>
-          <h2 class="text-3xl text-white md:text-4xl" style="font-family:'Noto Serif',serif;">The Protocol</h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-[#4e453b]">
-          <div class="border-b border-[#4e453b] p-8 transition-colors hover:bg-[#161b2b] md:border-b-0 md:border-r md:p-12">
-            <p class="text-xs tracking-[0.2em] text-[#eac290] mb-4 uppercase" style="font-family:'Newsreader',serif;">Phase 01</p>
-            <h3 class="text-2xl text-white mb-6" style="font-family:'Noto Serif',serif;">Intake</h3>
-            <p class="text-[#d2c4b7] leading-relaxed" style="font-family:'Newsreader',serif;">A comprehensive assessment of personal values, professional trajectories, and intellectual prerequisites conducted in absolute privacy.</p>
-          </div>
-          <div class="border-b border-[#4e453b] p-8 transition-colors hover:bg-[#161b2b] md:border-b-0 md:border-r md:p-12">
-            <p class="text-xs tracking-[0.2em] text-[#eac290] mb-4 uppercase" style="font-family:'Newsreader',serif;">Phase 02</p>
-            <h3 class="text-2xl text-white mb-6" style="font-family:'Noto Serif',serif;">Curation</h3>
-<p class="text-[#d2c4b7] leading-relaxed" style="font-family:'Newsreader',serif;">Our private network is meticulously reviewed. We don't provide lists; we provide singular, high-probability introductions vetted by our senior partners.</p>
-          </div>
-          <div class="p-8 transition-colors hover:bg-[#161b2b] md:p-12">
-            <p class="text-xs tracking-[0.2em] text-[#eac290] mb-4 uppercase" style="font-family:'Newsreader',serif;">Phase 03</p>
-            <h3 class="text-2xl text-white mb-6" style="font-family:'Noto Serif',serif;">Integration</h3>
-            <p class="text-[#d2c4b7] leading-relaxed" style="font-family:'Newsreader',serif;">The debut introduction is managed with white-glove precision, ensuring the environment is as carefully curated as the connection itself.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-[#090e1c] px-6 py-28 border-y border-[#4e453b] md:px-12 md:py-40">
-      <div class="max-w-4xl mx-auto text-center">
-        <div class="text-[#eac290] text-6xl mb-12">"</div>
-        <blockquote class="mb-10 text-2xl italic leading-snug text-white md:text-4xl" style="font-family:'Newsreader',serif;">
-          "The Bureau operates with a level of sophistication previously unseen in the New Zealand market. Their discretion is absolute, and their intuition is flawless."
-        </blockquote>
-<cite class="not-italic tracking-[0.25em] uppercase text-[#eac290] text-sm" style="font-family:'Newsreader',serif;">Member, Christchurch Bureau</cite>
-      </div>
-    </section>
-
-    <section class="bg-[#0e1322] px-6 py-24 md:px-12 md:py-32">
-      <div class="max-w-4xl mx-auto text-center border border-[#eac290] p-2">
-        <div class="border border-[#eac290] px-6 py-16 md:px-12 md:py-24">
-          <h2 class="text-4xl md:text-5xl text-white mb-8" style="font-family:'Noto Serif',serif;">Begin the Dialogue</h2>
-          <p class="text-xl text-[#d2c4b7] mb-12 max-w-lg mx-auto" style="font-family:'Newsreader',serif;">Membership is strictly by application. We invite you to initiate a confidential inquiry to begin your journey with the Bureau.</p>
-          <a href="/contact" class="inline-block bg-[#cda777] text-[#573c15] px-12 py-5 tracking-[0.25em] uppercase text-sm hover:bg-[#eac290] transition-colors" style="font-family:'Noto Serif',serif;">
-            APPLY NOW
-          </a>
-        </div>
-      </div>
-    </section>
+    <section class="bg-[#0e1322] px-6 py-24 md:px-12 md:py-32"><div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-center"><div class="md:col-span-5 relative"><div class="border border-[#4e453b] p-2"><img class="h-[420px] w-full object-cover md:h-[600px]" alt="Private introduction detail" src="/assets/images/watch-movement-detail.jpg"/></div></div><div class="md:col-span-7 md:pl-12"><p class="tracking-[0.25em] uppercase text-[#eac290] mb-6 text-sm" style="font-family:'Newsreader',serif;">The Private Atelier</p><h2 class="mb-8 text-3xl leading-tight text-white md:text-5xl" style="font-family:'Noto Serif',serif;">Precision in <br/>Human Connection.</h2><div class="space-y-6 text-lg text-[#d2c4b7] leading-relaxed max-w-xl" style="font-family:'Newsreader',serif;"><p>The Bureau is a private enclave for accomplished professionals across Southeast Asia who value discretion, substance and genuine compatibility.</p><p>Serving the Philippines, Thailand, Indonesia, Malaysia, Singapore and Vietnam, our approach is curated, selective and deeply human.</p></div></div></div></section>
+    <section class="bg-[#161b2b] px-6 py-24 md:px-12 md:py-32"><div class="max-w-7xl mx-auto"><div class="mb-16 flex flex-col items-start justify-between gap-6 md:flex-row md:items-end"><div><p class="tracking-[0.25em] uppercase text-[#eac290] mb-4 text-sm" style="font-family:'Newsreader',serif;">Countries</p><h2 class="text-3xl text-white md:text-4xl" style="font-family:'Noto Serif',serif;">The Southeast Asia Bureau</h2></div></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">{countries.map(([name, href, image, label]) => <a href={href} class="relative group aspect-[3/4] overflow-hidden bg-[#25293a]"><img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60" alt={name} src={image}/><div class="absolute inset-0 flex flex-col justify-end p-8"><h3 class="text-2xl text-[#eac290] tracking-widest uppercase mb-2" style="font-family:'Noto Serif',serif;">{name}</h3><p class="text-xs tracking-[0.2em] text-[#d2c4b7] uppercase opacity-0 group-hover:opacity-100 transition-opacity" style="font-family:'Newsreader',serif;">{label}</p></div></a>)}</div></div></section>
+    <section class="bg-[#0e1322] px-6 py-24 md:px-12 md:py-32"><div class="max-w-5xl mx-auto"><div class="text-center mb-24"><p class="tracking-[0.25em] uppercase text-[#eac290] mb-4 text-sm" style="font-family:'Newsreader',serif;">Methodology</p><h2 class="text-3xl text-white md:text-4xl" style="font-family:'Noto Serif',serif;">The Protocol</h2></div><div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-[#4e453b]"><div class="border-b border-[#4e453b] p-8 transition-colors hover:bg-[#161b2b] md:border-b-0 md:border-r md:p-12"><p class="text-xs tracking-[0.2em] text-[#eac290] mb-4 uppercase" style="font-family:'Newsreader',serif;">Phase 01</p><h3 class="text-2xl text-white mb-6" style="font-family:'Noto Serif',serif;">Intake</h3><p class="text-[#d2c4b7] leading-relaxed" style="font-family:'Newsreader',serif;">A private assessment of values, lifestyle, intent and professional context.</p></div><div class="border-b border-[#4e453b] p-8 transition-colors hover:bg-[#161b2b] md:border-b-0 md:border-r md:p-12"><p class="text-xs tracking-[0.2em] text-[#eac290] mb-4 uppercase" style="font-family:'Newsreader',serif;">Phase 02</p><h3 class="text-2xl text-white mb-6" style="font-family:'Noto Serif',serif;">Curation</h3><p class="text-[#d2c4b7] leading-relaxed" style="font-family:'Newsreader',serif;">A carefully reviewed search across trusted regional circles.</p></div><div class="p-8 transition-colors hover:bg-[#161b2b] md:p-12"><p class="text-xs tracking-[0.2em] text-[#eac290] mb-4 uppercase" style="font-family:'Newsreader',serif;">Phase 03</p><h3 class="text-2xl text-white mb-6" style="font-family:'Noto Serif',serif;">Introduction</h3><p class="text-[#d2c4b7] leading-relaxed" style="font-family:'Newsreader',serif;">A singular, high-probability introduction managed with discretion.</p></div></div></div></section>
+    <section class="bg-[#0e1322] px-6 py-24 md:px-12 md:py-32"><div class="max-w-4xl mx-auto text-center border border-[#eac290] p-2"><div class="border border-[#eac290] px-6 py-16 md:px-12 md:py-24"><h2 class="text-4xl md:text-5xl text-white mb-8" style="font-family:'Noto Serif',serif;">Begin the Dialogue</h2><p class="text-xl text-[#d2c4b7] mb-12 max-w-lg mx-auto" style="font-family:'Newsreader',serif;">Membership is by application only. Start with a confidential inquiry.</p><a href="/contact" class="inline-block bg-[#cda777] text-[#573c15] px-12 py-5 tracking-[0.25em] uppercase text-sm hover:bg-[#eac290] transition-colors" style="font-family:'Noto Serif',serif;">Apply Now</a></div></div></section>
   </main>
 </Layout>

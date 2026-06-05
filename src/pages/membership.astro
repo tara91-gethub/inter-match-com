@@ -1,163 +1,26 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
-const metadata = {
-  title: 'Membership',
-  description: 'The Matchmaking Bureau membership tiers — The Private Circle, The Bureau Select, and The Founding Member. Private matchmaking for New Zealand\'s most discerning individuals.',
+import JsonLd from '~/components/JsonLd.astro';
+const metadata = { title: 'Membership', description: 'The Matchmaking Bureau membership tiers - Private Circle, Bureau Select and Founding Member. Private matchmaking across Southeast Asia.' };
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Private Matchmaking Service",
+  "provider": {
+    "@type": "Organization",
+    "name": "The Matchmaking Bureau",
+    "url": "https://matchmakingbureau.com"
+  },
+  "areaServed": [
+    "Philippines",
+    "Thailand",
+    "Indonesia",
+    "Malaysia",
+    "Singapore",
+    "Vietnam"
+  ],
+  "description": "Hand-selected private introductions for discerning professionals across Southeast Asia.",
+  "serviceType": "Matchmaking"
 };
 ---
-
-<Layout metadata={metadata}>
-  <main transition:animate="fade">
-
-    <section class="relative h-[819px] flex flex-col justify-center items-center text-center px-6 overflow-hidden">
-      <div class="absolute inset-0 z-0 opacity-40">
-        <img class="w-full h-full object-cover grayscale" alt="Private members club interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATslzuf8O6EEVosSxgJ1casjTpe6GubWqQNXXngpdF1kg2Gn96iH_1nR9poj2bvwX_ElyfklrwCpGYopSX6ANEWg9zjD6HkFV2qOR526-7YKOYIOVV1DL1H9r6uz3J8EoZL9i1VXXabMCTmQTemO0oiADWR9-J_H2OmvVIPSrNhSRA_nnO6lUWCPfm4ANf_EGYcvJnExgCdh2rqkaVjbMIkpm8SBJTsObFdBj1rIp33GkdhCmQF7JquuPUfN1hJCuhx_q8WmCmB4FJ" />
-      </div>
-      <div class="relative z-10 max-w-4xl">
-        <h1 class="mb-8 text-5xl leading-tight tracking-tight text-[#eac290] md:text-[8rem] md:leading-none md:tracking-tighter" style="font-family:'Noto Serif',serif;">Membership</h1>
-        <p class="text-lg md:text-2xl text-[#d2c4b7] max-w-2xl mx-auto italic leading-relaxed" style="font-family:'Newsreader',serif;">
-          A curated entry into New Zealand's most exclusive private bureau. Entry is by selective inquiry only.
-        </p>
-        <div class="mt-12">
-          <div class="w-px h-24 bg-[#eac290] mx-auto"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-[#0e1322] px-6 py-24 md:px-12 md:py-32">
-      <div class="max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-[#4e453b]">
-          <div class="flex flex-col justify-between border-b border-[#4e453b] p-8 transition-colors duration-500 hover:bg-[#161b2b] md:border-b-0 md:border-r md:p-12">
-            <div>
-              <h2 class="uppercase tracking-[0.25em] text-[#eac290] mb-12 text-xs" style="font-family:'Newsreader',serif;">Tier 01</h2>
-              <h3 class="text-3xl mb-8 text-white md:text-4xl" style="font-family:'Noto Serif',serif;">The Private Circle</h3>
-              <ul class="space-y-6 mb-16">
-                <li class="flex items-start gap-4">
-                  <span class="text-[#eac290] text-sm mt-1">✦</span>
-                  <span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">Access to our silent database</span>
-                </li>
-                <li class="flex items-start gap-4">
-                  <span class="text-[#eac290] text-sm mt-1">✦</span>
-                  <span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">Quarterly newsletter</span>
-                </li>
-                <li class="flex items-start gap-4">
-                  <span class="text-[#eac290] text-sm mt-1">✦</span>
-                  <span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">Basic vetting</span>
-                </li>
-              </ul>
-            </div>
-            <a href="/contact" class="block w-full border border-[#9b8f82] text-[#eac290] text-center uppercase tracking-[0.2em] py-5 hover:bg-[#eac290] hover:text-[#442b06] transition-all duration-300 text-xs" style="font-family:'Newsreader',serif;">INQUIRE</a>
-          </div>
-          <div class="flex flex-col justify-between border-b border-[#4e453b] bg-[#161b2b] p-8 md:border-b-0 md:border-r md:p-12">
-            <div>
-              <h2 class="uppercase tracking-[0.25em] text-[#eac290] mb-12 text-xs" style="font-family:'Newsreader',serif;">Tier 02</h2>
-              <h3 class="text-3xl mb-8 text-white md:text-4xl" style="font-family:'Noto Serif',serif;">The Bureau Select</h3>
-              <ul class="space-y-6 mb-16">
-                <li class="flex items-start gap-4">
-                  <span class="text-[#eac290] text-sm mt-1">✦</span>
-                  <span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">Active headhunting</span>
-                </li>
-                <li class="flex items-start gap-4">
-                  <span class="text-[#eac290] text-sm mt-1">✦</span>
-                  <span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">Dedicated matchmaker</span>
-                </li>
-                <li class="flex items-start gap-4">
-                  <span class="text-[#eac290] text-sm mt-1">✦</span>
-                  <span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">Preliminary vetting</span>
-                </li>
-                <li class="flex items-start gap-4">
-                  <span class="text-[#eac290] text-sm mt-1">✦</span>
-                  <span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">Bi-monthly introductions</span>
-                </li>
-              </ul>
-            </div>
-            <a href="/contact" class="block w-full bg-[#cda777] text-[#573c15] text-center uppercase tracking-[0.2em] py-5 hover:bg-[#eac290] transition-all duration-300 text-xs" style="font-family:'Newsreader',serif;">APPLY NOW</a>
-          </div>
-          <div class="flex flex-col justify-between p-8 transition-colors duration-500 hover:bg-[#161b2b] md:p-12">
-            <div>
-              <h2 class="uppercase tracking-[0.25em] text-[#eac290] mb-12 text-xs" style="font-family:'Newsreader',serif;">Tier 03</h2>
-              <h3 class="text-3xl mb-8 text-white md:text-4xl" style="font-family:'Noto Serif',serif;">The Founding Member</h3>
-              <ul class="space-y-6 mb-16">
-                <li class="flex items-start gap-4">
-                  <span class="text-[#eac290] text-sm mt-1">✦</span>
-                  <span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">Global search</span>
-                </li>
-                <li class="flex items-start gap-4">
-                  <span class="text-[#eac290] text-sm mt-1">✦</span>
-                  <span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">Private concierge</span>
-                </li>
-                <li class="flex items-start gap-4">
-                  <span class="text-[#eac290] text-sm mt-1">✦</span>
-                  <span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">Lifetime priority</span>
-                </li>
-                <li class="flex items-start gap-4">
-                  <span class="text-[#eac290] text-sm mt-1">✦</span>
-                  <span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">24/7 advisory</span>
-                </li>
-                <li class="flex items-start gap-4">
-                  <span class="text-[#eac290] text-sm mt-1">✦</span>
-                  <span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">Unlimited introductions</span>
-                </li>
-              </ul>
-            </div>
-            <a href="/contact" class="block w-full border border-[#9b8f82] text-[#eac290] text-center uppercase tracking-[0.2em] py-5 hover:bg-[#eac290] hover:text-[#442b06] transition-all duration-300 text-xs" style="font-family:'Newsreader',serif;">INQUIRE</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-[#161b2b] px-6 py-24 md:px-12 md:py-32">
-      <div class="max-w-7xl mx-auto">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
-          <div class="max-w-2xl">
-            <h2 class="uppercase tracking-[0.25em] text-[#eac290] mb-6 text-xs" style="font-family:'Newsreader',serif;">The Foundations</h2>
-            <h3 class="text-3xl leading-tight text-white md:text-6xl" style="font-family:'Noto Serif',serif;">The Pillars of Membership</h3>
-          </div>
-          <p class="text-xl text-[#d2c4b7] max-w-sm italic" style="font-family:'Newsreader',serif;">
-            Built upon a legacy of trust and absolute structural integrity.
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-[#4e453b] border border-[#4e453b]">
-          <div class="bg-[#0e1322] p-10 flex flex-col gap-8 hover:bg-[#25293a] transition-all duration-500">
-            <div class="w-12 h-px bg-[#eac290]"></div>
-            <h4 class="text-2xl uppercase tracking-widest text-white" style="font-family:'Noto Serif',serif;">Absolute Discretion</h4>
-            <p class="text-lg text-[#d2c4b7] leading-relaxed" style="font-family:'Newsreader',serif;">A guarantee of total anonymity for our members. Your identity and search remain strictly confidential within our closed-loop system.</p>
-          </div>
-          <div class="bg-[#0e1322] p-10 flex flex-col gap-8 hover:bg-[#25293a] transition-all duration-500">
-            <div class="w-12 h-px bg-[#eac290]"></div>
-            <h4 class="text-2xl uppercase tracking-widest text-white" style="font-family:'Noto Serif',serif;">Concierge Service</h4>
-            <p class="text-lg text-[#d2c4b7] leading-relaxed" style="font-family:'Newsreader',serif;">From venue selection to travel logistics, our team handles every detail of the encounter, ensuring seamless, premium experiences.</p>
-          </div>
-          <div class="bg-[#0e1322] p-10 flex flex-col gap-8 hover:bg-[#25293a] transition-all duration-500">
-            <div class="w-12 h-px bg-[#eac290]"></div>
-            <h4 class="text-2xl uppercase tracking-widest text-white" style="font-family:'Noto Serif',serif;">Bespoke Introductions</h4>
-            <p class="text-lg text-[#d2c4b7] leading-relaxed" style="font-family:'Newsreader',serif;">We do not use algorithms. Every connection is hand-selected based on shared values, intellectual resonance, and aesthetic compatibility.</p>
-          </div>
-          <div class="bg-[#0e1322] p-10 flex flex-col gap-8 hover:bg-[#25293a] transition-all duration-500">
-            <div class="w-12 h-px bg-[#eac290]"></div>
-            <h4 class="text-2xl uppercase tracking-widest text-white" style="font-family:'Noto Serif',serif;">Relationship Coaching</h4>
-            <p class="text-lg text-[#d2c4b7] leading-relaxed" style="font-family:'Newsreader',serif;">Strategic advisory for the modern romantic landscape. Expert guidance to ensure long-term alignment and success.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="relative overflow-hidden bg-[#090e1c] px-6 py-32 md:px-12 md:py-48">
-      <div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
-        <img class="w-full h-full object-cover" alt="Antique brass key on dark navy silk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1OkhPVElB32yfUx75Gzsoqoz8n8XZwzMx83zEhZuZ2WZE84dibKjD765R2uFeDCKxTrs2oAlkoA6ohftE9GJALlX6KrAnYLfQxrsw1nk5PcSuaiTlUaG8Se8WilFhBatBl1yV5Zp-sZyRIfSBItkEJlDkCfEsWmcYAdryuJzEvfknpo75dGj0NOJLHbDST4kJfVGhkgOwc6LPXYlXt35DB-jlHudGJ00dgeE7ipdqYJFYyzA3myAf5wVkuWW8vb7Cg36FGPEg5BqI" />
-      </div>
-      <div class="relative z-10 max-w-4xl mx-auto text-center">
-        <h2 class="mb-12 text-4xl text-white md:text-8xl" style="font-family:'Noto Serif',serif;">Begin the Dialogue</h2>
-        <p class="text-lg md:text-2xl text-[#d2c4b7] mb-16 italic max-w-2xl mx-auto" style="font-family:'Newsreader',serif;">
-          Your journey into the bureau begins with a single conversation. We invite you to initiate the process.
-        </p>
-        <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
-          <a href="/contact" class="inline-block w-full bg-[#cda777] px-8 py-6 text-sm uppercase tracking-[0.18em] text-[#573c15] transition-all duration-500 hover:bg-[#eac290] md:w-auto md:px-16 md:tracking-[0.3em]" style="font-family:'Newsreader',serif;">APPLY NOW</a>
-          <a href="/process" class="inline-block w-full border border-[#9b8f82] px-8 py-6 text-sm uppercase tracking-[0.18em] text-[#eac290] transition-all duration-500 hover:bg-[#cda777]/10 md:w-auto md:px-16 md:tracking-[0.3em]" style="font-family:'Newsreader',serif;">VIEW PROCESS</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-</Layout>
+<Layout metadata={metadata}><JsonLd data={schema} /><main transition:animate="fade"><section class="relative h-[819px] flex flex-col justify-center items-center text-center px-6 overflow-hidden"><div class="absolute inset-0 z-0 opacity-40"><img class="w-full h-full object-cover grayscale" alt="Private members club interior" src="/assets/images/private-members-club-interior.jpg" /></div><div class="relative z-10 max-w-4xl"><h1 class="mb-8 text-5xl leading-tight tracking-tight text-[#eac290] md:text-[8rem] md:leading-none md:tracking-tighter" style="font-family:'Noto Serif',serif;">Membership</h1><p class="text-lg md:text-2xl text-[#d2c4b7] max-w-2xl mx-auto italic leading-relaxed" style="font-family:'Newsreader',serif;">A curated entry into Southeast Asia's private bureau. Now serving the Philippines, Thailand, Indonesia, Malaysia, Singapore and Vietnam.</p><div class="mt-12"><div class="w-px h-24 bg-[#eac290] mx-auto"></div></div></div></section><section class="bg-[#0e1322] px-6 py-24 md:px-12 md:py-32"><div class="max-w-7xl mx-auto"><div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-[#4e453b]">{['The Private Circle','The Bureau Select','The Founding Member'].map((tier, index) => <div class:list={['flex flex-col justify-between p-8 md:p-12 transition-colors duration-500 hover:bg-[#161b2b]', index < 2 && 'border-b border-[#4e453b] md:border-b-0 md:border-r', index === 1 && 'bg-[#161b2b]']}><div><h2 class="uppercase tracking-[0.25em] text-[#eac290] mb-12 text-xs" style="font-family:'Newsreader',serif;">Tier 0{index + 1}</h2><h3 class="text-3xl mb-8 text-white md:text-4xl" style="font-family:'Noto Serif',serif;">{tier}</h3><ul class="space-y-6 mb-16"><li class="flex items-start gap-4"><span class="text-[#eac290] text-sm mt-1">*</span><span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">Private curation and discreet review</span></li><li class="flex items-start gap-4"><span class="text-[#eac290] text-sm mt-1">*</span><span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">Hand-selected introductions</span></li><li class="flex items-start gap-4"><span class="text-[#eac290] text-sm mt-1">*</span><span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">Confidential consultant guidance</span></li></ul></div><a href="/contact" class="block w-full bg-[#cda777] text-[#573c15] text-center uppercase tracking-[0.2em] py-5 hover:bg-[#eac290] transition-all duration-300 text-xs" style="font-family:'Newsreader',serif;">Apply Now</a></div>)}</div></div></section><section class="relative overflow-hidden bg-[#090e1c] px-6 py-32 md:px-12 md:py-48"><div class="absolute inset-0 z-0 opacity-20 pointer-events-none"><img class="w-full h-full object-cover" alt="Antique brass key" src="/assets/images/antique-brass-key.jpg" /></div><div class="relative z-10 max-w-4xl mx-auto text-center"><h2 class="mb-12 text-4xl text-white md:text-8xl" style="font-family:'Noto Serif',serif;">Begin the Dialogue</h2><p class="text-lg md:text-2xl text-[#d2c4b7] mb-16 italic max-w-2xl mx-auto" style="font-family:'Newsreader',serif;">Your journey into the bureau begins with a single confidential conversation.</p><a href="/contact" class="inline-block bg-[#cda777] px-8 py-6 text-sm uppercase tracking-[0.18em] text-[#573c15] transition-all duration-500 hover:bg-[#eac290] md:px-16 md:tracking-[0.3em]" style="font-family:'Newsreader',serif;">Apply Now</a></div></section></main></Layout>

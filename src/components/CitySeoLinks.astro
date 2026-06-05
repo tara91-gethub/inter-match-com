@@ -1,60 +1,20 @@
 ---
-interface City {
-  name: string;
-  href: string;
-}
-
-export interface Props {
-  currentCity: string;
-}
-
+interface Props { currentCity?: string; }
 const { currentCity } = Astro.props;
-
-const cities: Array<City> = [
-  { name: 'Auckland', href: '/cities/auckland' },
-  { name: 'Wellington', href: '/cities/wellington' },
-  { name: 'Christchurch', href: '/cities/christchurch' },
-  { name: 'Queenstown', href: '/cities/queenstown' },
-];
-
-const otherCities = cities.filter(({ name }) => name !== currentCity);
+const links = [
+  { name: 'Manila', href: '/philippines/manila' },
+  { name: 'Cebu', href: '/philippines/cebu' },
+  { name: 'Bangkok', href: '/thailand/bangkok' },
+  { name: 'Jakarta', href: '/indonesia/jakarta' },
+  { name: 'Kuala Lumpur', href: '/malaysia/kuala-lumpur' },
+  { name: 'Ho Chi Minh City', href: '/vietnam/ho-chi-minh-city' },
+].filter((link) => link.name !== currentCity);
 ---
-
-<section class="bg-[#161b2b] border-t border-[#4e453b] px-6 py-24 md:px-12">
-  <div class="mx-auto max-w-7xl">
-    <div class="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-      <div>
-        <p class="mb-4 text-xs uppercase tracking-[0.3em] text-[#eac290]" style="font-family:'Newsreader',serif;">
-          Explore Other Cities
-        </p>
-        <h2 class="text-4xl text-white md:text-5xl" style="font-family:'Noto Serif',serif;">
-          The New Zealand Bureau
-        </h2>
-      </div>
-      <a
-        href="/blog"
-        class="inline-block border border-[#9b8f82] px-8 py-4 text-xs uppercase tracking-[0.25em] text-[#eac290] transition-colors hover:bg-[#eac290]/10"
-        style="font-family:'Noto Serif',serif;"
-      >
-        Read The Bureau Journal
-      </a>
-    </div>
-    <div class="grid grid-cols-1 gap-px bg-[#4e453b] border border-[#4e453b] md:grid-cols-3">
-      {
-        otherCities.map(({ name, href }) => (
-          <a href={href} class="bg-[#0e1322] p-10 transition-colors hover:bg-[#25293a]">
-            <span
-              class="mb-4 block text-xs uppercase tracking-[0.25em] text-[#eac290]"
-              style="font-family:'Newsreader',serif;"
-            >
-              City Bureau
-            </span>
-            <h3 class="text-3xl text-white" style="font-family:'Noto Serif',serif;">
-              {name}
-            </h3>
-          </a>
-        ))
-      }
+<section class="bg-[#0e1322] px-6 py-16 md:px-12">
+  <div class="mx-auto max-w-5xl border-t border-[#4e453b] pt-10">
+    <h2 class="mb-6 text-center text-sm uppercase tracking-[0.25em] text-[#eac290]" style="font-family:'Newsreader',serif;">The Southeast Asia Bureau</h2>
+    <div class="flex flex-wrap justify-center gap-4">
+      {links.map((link) => <a href={link.href} class="text-sm uppercase tracking-[0.18em] text-[#d2c4b7] hover:text-[#eac290]" style="font-family:'Newsreader',serif;">{link.name}</a>)}
     </div>
   </div>
 </section>

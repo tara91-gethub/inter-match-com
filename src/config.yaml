@@ -1,24 +1,24 @@
 site:
   name: 'The Matchmaking Bureau'
-  site: 'https://matchmakingbureau.co.nz'
+  site: 'https://matchmakingbureau.com'
   base: '/'
   trailingSlash: false
   googleSiteVerificationId: false
 
 metadata:
   title:
-    default: 'The Matchmaking Bureau | Private Matchmaking New Zealand'
-    template: '%s | The Matchmaking Bureau NZ'
-  description: 'Private matchmaking for discerning singles across Auckland, Wellington, Christchurch and Queenstown. The Matchmaking Bureau is where exceptional people connect.'
+    default: 'The Matchmaking Bureau | Private Matchmaking Southeast Asia'
+    template: '%s | The Matchmaking Bureau'
+  description: 'Private matchmaking across Southeast Asia for discerning professionals in the Philippines, Thailand, Indonesia, Malaysia, Singapore and Vietnam.'
   robots:
     index: true
     follow: true
   openGraph:
     site_name: 'The Matchmaking Bureau'
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/og-default-international.jpg'
         width: 1200
-        height: 628
+        height: 630
     type: website
 
 i18n:
@@ -48,8 +48,8 @@ apps:
       isEnabled: false
       pathname: 'tag'
       robots:
-        index: true
-        follow: true
+        index: false
+        follow: false
     isRelatedPostsEnabled: true
     relatedPostsCount: 4
 
