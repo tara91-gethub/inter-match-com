@@ -1,5 +1,7 @@
 ---
 import RegionPage from '~/components/RegionPage.astro';
+import indonesiaImg from '~/assets/images/countries/indonesia.jpg';
+import jakartaImg from '~/assets/images/cities/jakarta.jpg';
 const metadata = { title: "Private Matchmaking in Indonesia | The Matchmaking Bureau", description: "Private matchmaking in Indonesia for discerning professionals. Serving Jakarta with absolute discretion." };
 const schema = {
   "@context": "https://schema.org",
@@ -19,6 +21,6 @@ const schema = {
     }
   ]
 };
-const cards = [{"title":"Jakarta","href":"/indonesia/jakarta","image":"/assets/images/cities/jakarta.jpg"}];
+const cards = [{"title":"Jakarta","href":"/indonesia/jakarta","image":jakartaImg}];
 ---
-<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Indonesia Bureau" body="Indonesia is Southeast Asia's largest economy - a nation of extraordinary ambition where a new generation of entrepreneurs and professionals are building remarkable careers and seeking equally remarkable connections. The Matchmaking Bureau serves Indonesia with absolute privacy." image="/assets/images/countries/indonesia.jpg" cards={cards} links={[]} schema={schema} />
+<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Indonesia Bureau" body="Indonesia is Southeast Asia's largest economy - a nation of extraordinary ambition where a new generation of entrepreneurs and professionals are building remarkable careers and seeking equally remarkable connections. The Matchmaking Bureau serves Indonesia with absolute privacy." image={indonesiaImg} cards={cards} links={[]} schema={schema} />

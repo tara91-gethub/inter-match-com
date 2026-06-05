@@ -1,5 +1,6 @@
 ---
 import RegionPage from '~/components/RegionPage.astro';
+import singaporeImg from '~/assets/images/countries/singapore.jpg';
 const metadata = { title: "Private Matchmaking in Singapore | The Matchmaking Bureau", description: "Private matchmaking in Singapore for discerning professionals. Southeast Asia's global city served with absolute discretion." };
 const schema = {
   "@context": "https://schema.org",
@@ -21,4 +22,4 @@ const schema = {
 };
 const cards = [];
 ---
-<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Singapore Bureau" body="Singapore is Southeast Asia's most international city - where the world's most ambitious professionals converge. In a city that values discretion, efficiency and substance, The Matchmaking Bureau offers something algorithms cannot: a singular, hand-selected introduction built on genuine compatibility." image="/assets/images/countries/singapore.jpg" cards={cards} links={[]} schema={schema} />
+<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Singapore Bureau" body="Singapore is Southeast Asia's most international city - where the world's most ambitious professionals converge. In a city that values discretion, efficiency and substance, The Matchmaking Bureau offers something algorithms cannot: a singular, hand-selected introduction built on genuine compatibility." image={singaporeImg} cards={cards} links={[]} schema={schema} />

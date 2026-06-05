@@ -1,5 +1,7 @@
 ---
 import RegionPage from '~/components/RegionPage.astro';
+import vietnamImg from '~/assets/images/countries/vietnam.jpg';
+import hoChiMinhCityImg from '~/assets/images/cities/ho-chi-minh-city.jpg';
 const metadata = { title: "Private Matchmaking in Vietnam | The Matchmaking Bureau", description: "Private matchmaking in Vietnam for discerning professionals. Serving Ho Chi Minh City with absolute discretion." };
 const schema = {
   "@context": "https://schema.org",
@@ -19,6 +21,6 @@ const schema = {
     }
   ]
 };
-const cards = [{"title":"Ho Chi Minh City","href":"/vietnam/ho-chi-minh-city","image":"/assets/images/cities/ho-chi-minh-city.jpg"}];
+const cards = [{"title":"Ho Chi Minh City","href":"/vietnam/ho-chi-minh-city","image":hoChiMinhCityImg}];
 ---
-<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Vietnam Bureau" body="Vietnam is Southeast Asia's fastest rising economy - a country where a new generation of entrepreneurs, professionals and innovators are redefining what success looks like. The Matchmaking Bureau serves Vietnam's most accomplished individuals with private, curated introductions." image="/assets/images/countries/vietnam.jpg" cards={cards} links={[]} schema={schema} />
+<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Vietnam Bureau" body="Vietnam is Southeast Asia's fastest rising economy - a country where a new generation of entrepreneurs, professionals and innovators are redefining what success looks like. The Matchmaking Bureau serves Vietnam's most accomplished individuals with private, curated introductions." image={vietnamImg} cards={cards} links={[]} schema={schema} />

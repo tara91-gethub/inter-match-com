@@ -1,5 +1,6 @@
 ---
 import RegionPage from '~/components/RegionPage.astro';
+import hoChiMinhCityImg from '~/assets/images/cities/ho-chi-minh-city.jpg';
 const metadata = { title: "Private Matchmaking in Ho Chi Minh City | The Matchmaking Bureau", description: "Private matchmaking in Ho Chi Minh City for discerning Vietnamese professionals. HCMC's most accomplished singles served with absolute discretion." };
 const schema = {
   "@context": "https://schema.org",
@@ -27,4 +28,4 @@ const schema = {
 };
 const links = [{ text: "Vietnam", href: "/vietnam" }];
 ---
-<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Ho Chi Minh City Bureau" body="Ho Chi Minh City is Vietnam's commercial capital - a city of extraordinary energy where entrepreneurs, professionals and innovators build careers of genuine significance. The Matchmaking Bureau brings private, curated introductions to HCMC's most accomplished and discerning individuals." image="/assets/images/cities/ho-chi-minh-city.jpg" links={links} schema={schema} />
+<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Ho Chi Minh City Bureau" body="Ho Chi Minh City is Vietnam's commercial capital - a city of extraordinary energy where entrepreneurs, professionals and innovators build careers of genuine significance. The Matchmaking Bureau brings private, curated introductions to HCMC's most accomplished and discerning individuals." image={hoChiMinhCityImg} links={links} schema={schema} />

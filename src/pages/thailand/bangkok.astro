@@ -1,5 +1,6 @@
 ---
 import RegionPage from '~/components/RegionPage.astro';
+import bangkokImg from '~/assets/images/cities/bangkok.jpg';
 const metadata = { title: "Private Matchmaking in Bangkok | The Matchmaking Bureau", description: "Private matchmaking in Bangkok for discerning professionals. Southeast Asia's most dynamic city served with absolute discretion." };
 const schema = {
   "@context": "https://schema.org",
@@ -27,4 +28,4 @@ const schema = {
 };
 const links = [{ text: "Thailand", href: "/thailand" }];
 ---
-<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Bangkok Bureau" body="Bangkok sits at the intersection of tradition and ambition. Its executives, entrepreneurs and professionals operate in one of Asia's most sophisticated cities. The Matchmaking Bureau serves Bangkok's most discerning individuals with hand-selected introductions and complete confidentiality." image="/assets/images/cities/bangkok.jpg" links={links} schema={schema} />
+<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Bangkok Bureau" body="Bangkok sits at the intersection of tradition and ambition. Its executives, entrepreneurs and professionals operate in one of Asia's most sophisticated cities. The Matchmaking Bureau serves Bangkok's most discerning individuals with hand-selected introductions and complete confidentiality." image={bangkokImg} links={links} schema={schema} />

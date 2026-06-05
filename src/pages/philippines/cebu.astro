@@ -1,5 +1,6 @@
 ---
 import RegionPage from '~/components/RegionPage.astro';
+import cebuImg from '~/assets/images/cities/cebu.jpg';
 const metadata = { title: "Private Matchmaking in Cebu | The Matchmaking Bureau", description: "Private matchmaking in Cebu for discerning professionals. The Queen City of the South served with absolute discretion." };
 const schema = {
   "@context": "https://schema.org",
@@ -27,4 +28,4 @@ const schema = {
 };
 const links = [{ text: "Philippines", href: "/philippines" }];
 ---
-<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Cebu Bureau" body="Cebu is the Philippines' second city - a rising hub of business, medicine, technology and education where ambitious professionals build careers away from the noise of Manila. The Matchmaking Bureau brings private, curated introductions to Cebu's most accomplished and discerning singles." image="/assets/images/cities/cebu.jpg" links={links} schema={schema} />
+<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Cebu Bureau" body="Cebu is the Philippines' second city - a rising hub of business, medicine, technology and education where ambitious professionals build careers away from the noise of Manila. The Matchmaking Bureau brings private, curated introductions to Cebu's most accomplished and discerning singles." image={cebuImg} links={links} schema={schema} />

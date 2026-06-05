@@ -1,5 +1,8 @@
 ---
 import RegionPage from '~/components/RegionPage.astro';
+import philippinesImg from '~/assets/images/countries/philippines.jpg';
+import manilaImg from '~/assets/images/cities/manila.jpg';
+import cebuImg from '~/assets/images/cities/cebu.jpg';
 const metadata = { title: "Private Matchmaking in the Philippines | The Matchmaking Bureau", description: "Private matchmaking in the Philippines for discerning professionals. Serving Manila and Cebu with absolute discretion." };
 const schema = {
   "@context": "https://schema.org",
@@ -19,6 +22,6 @@ const schema = {
     }
   ]
 };
-const cards = [{"title":"Manila","href":"/philippines/manila","image":"/assets/images/cities/manila.jpg"},{"title":"Cebu","href":"/philippines/cebu","image":"/assets/images/cities/cebu.jpg"}];
+const cards = [{"title":"Manila","href":"/philippines/manila","image":manilaImg},{"title":"Cebu","href":"/philippines/cebu","image":cebuImg}];
 ---
-<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Philippines Bureau" body="The Philippines is home to one of Southeast Asia's most dynamic professional classes - entrepreneurs, executives, doctors, lawyers and academics who have built exceptional careers and now seek equally exceptional private introductions. The Matchmaking Bureau serves the Philippines with hand-selected introductions and absolute confidentiality." image="/assets/images/countries/philippines.jpg" cards={cards} links={[]} schema={schema} />
+<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Philippines Bureau" body="The Philippines is home to one of Southeast Asia's most dynamic professional classes - entrepreneurs, executives, doctors, lawyers and academics who have built exceptional careers and now seek equally exceptional private introductions. The Matchmaking Bureau serves the Philippines with hand-selected introductions and absolute confidentiality." image={philippinesImg} cards={cards} links={[]} schema={schema} />

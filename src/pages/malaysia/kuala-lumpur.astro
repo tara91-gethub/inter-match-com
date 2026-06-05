@@ -1,5 +1,6 @@
 ---
 import RegionPage from '~/components/RegionPage.astro';
+import kualaLumpurImg from '~/assets/images/cities/kuala-lumpur.jpg';
 const metadata = { title: "Private Matchmaking in Kuala Lumpur | The Matchmaking Bureau", description: "Private matchmaking in Kuala Lumpur for discerning Malaysian professionals. KL's most accomplished singles served with absolute discretion." };
 const schema = {
   "@context": "https://schema.org",
@@ -27,4 +28,4 @@ const schema = {
 };
 const links = [{ text: "Malaysia", href: "/malaysia" }];
 ---
-<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Kuala Lumpur Bureau" body="Kuala Lumpur is Malaysia's city of ambition - a skyline that mirrors the drive of its professional class. Executives, entrepreneurs, academics and creatives who have built exceptional careers here now seek equally exceptional connections. The Matchmaking Bureau serves Kuala Lumpur with precision and absolute privacy." image="/assets/images/cities/kuala-lumpur.jpg" links={links} schema={schema} />
+<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Kuala Lumpur Bureau" body="Kuala Lumpur is Malaysia's city of ambition - a skyline that mirrors the drive of its professional class. Executives, entrepreneurs, academics and creatives who have built exceptional careers here now seek equally exceptional connections. The Matchmaking Bureau serves Kuala Lumpur with precision and absolute privacy." image={kualaLumpurImg} links={links} schema={schema} />
