@@ -1,26 +1,132 @@
 ---
+import { Image } from 'astro:assets';
+
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/JsonLd.astro';
-const metadata = { title: 'Membership', description: 'The Matchmaking Bureau membership tiers - Private Circle, Bureau Select and Founding Member. Private matchmaking across Southeast Asia.' };
+import privateMembersClubInteriorImg from '~/assets/images/private-members-club-interior.jpg';
+import antiqueBrassKeyImg from '~/assets/images/antique-brass-key.jpg';
+
+const metadata = {
+  title: 'Membership',
+  description:
+    'The Matchmaking Bureau membership tiers - Private Circle, Bureau Select and Founding Member. Private matchmaking across Southeast Asia.',
+};
 const schema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Private Matchmaking Service",
-  "provider": {
-    "@type": "Organization",
-    "name": "The Matchmaking Bureau",
-    "url": "https://matchmakingbureau.com"
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Private Matchmaking Service',
+  provider: {
+    '@type': 'Organization',
+    name: 'The Matchmaking Bureau',
+    url: 'https://matchmakingbureau.com',
   },
-  "areaServed": [
-    "Philippines",
-    "Thailand",
-    "Indonesia",
-    "Malaysia",
-    "Singapore",
-    "Vietnam"
-  ],
-  "description": "Hand-selected private introductions for discerning professionals across Southeast Asia.",
-  "serviceType": "Matchmaking"
+  areaServed: ['Philippines', 'Thailand', 'Indonesia', 'Malaysia', 'Singapore', 'Vietnam'],
+  description: 'Hand-selected private introductions for discerning professionals across Southeast Asia.',
+  serviceType: 'Matchmaking',
 };
 ---
-<Layout metadata={metadata}><JsonLd data={schema} /><main transition:animate="fade"><section class="relative h-[819px] flex flex-col justify-center items-center text-center px-6 overflow-hidden"><div class="absolute inset-0 z-0 opacity-40"><img class="w-full h-full object-cover grayscale" alt="Private members club interior" src="/assets/images/private-members-club-interior.jpg" /></div><div class="relative z-10 max-w-4xl"><h1 class="mb-8 text-5xl leading-tight tracking-tight text-[#eac290] md:text-[8rem] md:leading-none md:tracking-tighter" style="font-family:'Noto Serif',serif;">Membership</h1><p class="text-lg md:text-2xl text-[#d2c4b7] max-w-2xl mx-auto italic leading-relaxed" style="font-family:'Newsreader',serif;">A curated entry into Southeast Asia's private bureau. Now serving the Philippines, Thailand, Indonesia, Malaysia, Singapore and Vietnam.</p><div class="mt-12"><div class="w-px h-24 bg-[#eac290] mx-auto"></div></div></div></section><section class="bg-[#0e1322] px-6 py-24 md:px-12 md:py-32"><div class="max-w-7xl mx-auto"><div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-[#4e453b]">{['The Private Circle','The Bureau Select','The Founding Member'].map((tier, index) => <div class:list={['flex flex-col justify-between p-8 md:p-12 transition-colors duration-500 hover:bg-[#161b2b]', index < 2 && 'border-b border-[#4e453b] md:border-b-0 md:border-r', index === 1 && 'bg-[#161b2b]']}><div><h2 class="uppercase tracking-[0.25em] text-[#eac290] mb-12 text-xs" style="font-family:'Newsreader',serif;">Tier 0{index + 1}</h2><h3 class="text-3xl mb-8 text-white md:text-4xl" style="font-family:'Noto Serif',serif;">{tier}</h3><ul class="space-y-6 mb-16"><li class="flex items-start gap-4"><span class="text-[#eac290] text-sm mt-1">*</span><span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">Private curation and discreet review</span></li><li class="flex items-start gap-4"><span class="text-[#eac290] text-sm mt-1">*</span><span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">Hand-selected introductions</span></li><li class="flex items-start gap-4"><span class="text-[#eac290] text-sm mt-1">*</span><span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">Confidential consultant guidance</span></li></ul></div><a href="/contact" class="block w-full bg-[#cda777] text-[#573c15] text-center uppercase tracking-[0.2em] py-5 hover:bg-[#eac290] transition-all duration-300 text-xs" style="font-family:'Newsreader',serif;">Apply Now</a></div>)}</div></div></section><section class="relative overflow-hidden bg-[#090e1c] px-6 py-32 md:px-12 md:py-48"><div class="absolute inset-0 z-0 opacity-20 pointer-events-none"><img class="w-full h-full object-cover" alt="Antique brass key" src="/assets/images/antique-brass-key.jpg" /></div><div class="relative z-10 max-w-4xl mx-auto text-center"><h2 class="mb-12 text-4xl text-white md:text-8xl" style="font-family:'Noto Serif',serif;">Begin the Dialogue</h2><p class="text-lg md:text-2xl text-[#d2c4b7] mb-16 italic max-w-2xl mx-auto" style="font-family:'Newsreader',serif;">Your journey into the bureau begins with a single confidential conversation.</p><a href="/contact" class="inline-block bg-[#cda777] px-8 py-6 text-sm uppercase tracking-[0.18em] text-[#573c15] transition-all duration-500 hover:bg-[#eac290] md:px-16 md:tracking-[0.3em]" style="font-family:'Newsreader',serif;">Apply Now</a></div></section></main></Layout>
+
+<Layout metadata={metadata}>
+  <JsonLd data={schema} />
+  <main transition:animate="fade">
+    <section class="relative flex h-[819px] flex-col items-center justify-center overflow-hidden px-6 text-center">
+      <div class="absolute inset-0 z-0 opacity-40">
+        <Image
+          class="h-full w-full object-cover grayscale"
+          alt="Private members club interior"
+          src={privateMembersClubInteriorImg}
+        />
+      </div>
+      <div class="relative z-10 max-w-4xl">
+        <h1
+          class="mb-8 text-5xl leading-tight tracking-tight text-[#eac290] md:text-[8rem] md:leading-none md:tracking-tighter"
+          style="font-family:'Noto Serif',serif;"
+        >
+          Membership
+        </h1>
+        <p class="mx-auto max-w-2xl text-lg italic leading-relaxed text-[#d2c4b7] md:text-2xl" style="font-family:'Newsreader',serif;">
+          A curated entry into Southeast Asia's private bureau. Now serving the Philippines, Thailand, Indonesia,
+          Malaysia, Singapore and Vietnam.
+        </p>
+        <div class="mt-12">
+          <div class="mx-auto h-24 w-px bg-[#eac290]"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#0e1322] px-6 py-24 md:px-12 md:py-32">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid grid-cols-1 gap-0 border border-[#4e453b] md:grid-cols-3">
+          {
+            ['The Private Circle', 'The Bureau Select', 'The Founding Member'].map((tier, index) => (
+              <div
+                class:list={[
+                  'flex flex-col justify-between p-8 transition-colors duration-500 hover:bg-[#161b2b] md:p-12',
+                  index < 2 && 'border-b border-[#4e453b] md:border-b-0 md:border-r',
+                  index === 1 && 'bg-[#161b2b]',
+                ]}
+              >
+                <div>
+                  <h2 class="mb-12 text-xs uppercase tracking-[0.25em] text-[#eac290]" style="font-family:'Newsreader',serif;">
+                    Tier 0{index + 1}
+                  </h2>
+                  <h3 class="mb-8 text-3xl text-white md:text-4xl" style="font-family:'Noto Serif',serif;">
+                    {tier}
+                  </h3>
+                  <ul class="mb-16 space-y-6">
+                    <li class="flex items-start gap-4">
+                      <span class="mt-1 text-sm text-[#eac290]">*</span>
+                      <span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">
+                        Private curation and discreet review
+                      </span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                      <span class="mt-1 text-sm text-[#eac290]">*</span>
+                      <span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">
+                        Hand-selected introductions
+                      </span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                      <span class="mt-1 text-sm text-[#eac290]">*</span>
+                      <span class="text-lg text-[#d2c4b7]" style="font-family:'Newsreader',serif;">
+                        Confidential consultant guidance
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="/contact"
+                  class="block w-full bg-[#cda777] py-5 text-center text-xs uppercase tracking-[0.2em] text-[#573c15] transition-all duration-300 hover:bg-[#eac290]"
+                  style="font-family:'Newsreader',serif;"
+                >
+                  Apply Now
+                </a>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <section class="relative overflow-hidden bg-[#090e1c] px-6 py-32 md:px-12 md:py-48">
+      <div class="pointer-events-none absolute inset-0 z-0 opacity-20">
+        <Image class="h-full w-full object-cover" alt="Antique brass key" src={antiqueBrassKeyImg} />
+      </div>
+      <div class="relative z-10 mx-auto max-w-4xl text-center">
+        <h2 class="mb-12 text-4xl text-white md:text-8xl" style="font-family:'Noto Serif',serif;">
+          Begin the Dialogue
+        </h2>
+        <p class="mx-auto mb-16 max-w-2xl text-lg italic text-[#d2c4b7] md:text-2xl" style="font-family:'Newsreader',serif;">
+          Your journey into the bureau begins with a single confidential conversation.
+        </p>
+        <a
+          href="/contact"
+          class="inline-block bg-[#cda777] px-8 py-6 text-sm uppercase tracking-[0.18em] text-[#573c15] transition-all duration-500 hover:bg-[#eac290] md:px-16 md:tracking-[0.3em]"
+          style="font-family:'Newsreader',serif;"
+        >
+          Apply Now
+        </a>
+      </div>
+    </section>
+  </main>
+</Layout>

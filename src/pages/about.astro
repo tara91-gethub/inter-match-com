@@ -1,5 +1,131 @@
 ---
+import { Image } from 'astro:assets';
+
 import Layout from '~/layouts/PageLayout.astro';
-const metadata = { title: 'Our Philosophy', description: "The Matchmaking Bureau philosophy - private matchmaking for Southeast Asia's most discerning professionals. Quality over quantity. Discretion above all." };
+import privateLibraryInteriorImg from '~/assets/images/private-library-interior.jpg';
+import bespokeSuitCufflinksImg from '~/assets/images/bespoke-suit-cufflinks.jpg';
+
+const metadata = {
+  title: 'Our Philosophy',
+  description:
+    "The Matchmaking Bureau philosophy - private matchmaking for Southeast Asia's most discerning professionals. Quality over quantity. Discretion above all.",
+};
 ---
-<Layout metadata={metadata}><main transition:animate="fade"><header class="mb-20 px-6 pt-8 md:mb-32 md:px-12 md:pt-0"><div class="grid grid-cols-12 gap-8"><div class="col-span-12 md:col-span-8"><span class="mb-6 block text-[10px] uppercase tracking-[0.24em] text-[#cda777] md:tracking-[0.3em]">Introduction</span><h1 class="text-4xl font-light italic leading-tight tracking-tight text-[#eac290] sm:text-5xl md:text-8xl" style="font-family:'Noto Serif',serif;">Our Philosophy</h1></div><div class="col-span-12 md:col-span-4 flex items-end"><p class="border-l border-[#4e453b] pl-6 text-lg italic leading-relaxed text-[#9b8f82] md:pl-8 md:text-2xl" style="font-family:'Newsreader',serif;">In an era of algorithmic convenience, we defend human intuition and the depth of private selection.</p></div></div></header><section class="mb-28 px-6 md:mb-40 md:px-12"><div class="relative h-[420px] w-full overflow-hidden bg-[#161b2b] md:h-[716px]"><img class="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-1000" alt="Private library interior" src="/assets/images/private-library-interior.jpg" /><div class="absolute inset-0 bg-gradient-to-t from-[#0e1322] via-transparent to-transparent"></div></div></section><section class="mb-28 px-6 md:mb-40 md:px-12"><div class="grid grid-cols-12 gap-10 md:gap-16"><div class="col-span-12 md:col-span-4"><h2 class="mb-8 text-3xl text-[#cda777]" style="font-family:'Noto Serif',serif;">Quality over Quantity</h2><div class="w-12 h-px bg-[#cda777] mb-8"></div></div><div class="col-span-12 md:col-span-7 md:col-start-6"><p class="mb-8 text-xl leading-relaxed text-[#dee1f7] md:text-2xl" style="font-family:'Newsreader',serif;">We reject the digital carousel of modern dating. Our approach is curated, deliberate and finite.</p><p class="text-lg text-[#9b8f82] leading-relaxed max-w-xl" style="font-family:'Newsreader',serif;">Across Southeast Asia, our members are not profiles; they are people with legacies, standards and aspirations. We limit active clientele to protect quality and privacy.</p></div></div></section><section class="mb-28 bg-[#161b2b] px-6 py-28 md:mb-40 md:px-12 md:py-40"><div class="grid grid-cols-12 gap-10 items-center md:gap-16"><div class="col-span-12 md:col-span-5 order-2 md:order-1"><div class="aspect-[4/5] bg-[#0e1322] relative"><img class="w-full h-full object-cover opacity-40 grayscale" alt="Bespoke suit cufflinks" src="/assets/images/bespoke-suit-cufflinks.jpg" /></div></div><div class="col-span-12 md:col-span-6 md:col-start-7 order-1 md:order-2"><span class="mb-8 block text-[10px] uppercase tracking-[0.22em] text-[#cda777] md:tracking-[0.25em]" style="font-family:'Newsreader',serif;">The Discretion Promise</span><h2 class="mb-10 text-3xl italic leading-tight text-[#eac290] md:mb-12 md:text-5xl" style="font-family:'Noto Serif',serif;">Your life is private. <br/>Your search should be too.</h2><div class="space-y-8 max-w-lg"><p class="text-xl italic text-[#dee1f7]" style="font-family:'Newsreader',serif;">Discretion is not merely a policy; it is our foundational pillar.</p><p class="text-lg text-[#9b8f82] leading-relaxed" style="font-family:'Newsreader',serif;">We serve executives, founders and accomplished professionals who value anonymity. Your identity is only revealed when mutual interest and strict compatibility are established.</p></div></div></div></section><section class="mb-24 px-6 md:mb-32 md:px-12"><div class="border border-[#4e453b] bg-[#161b2b] p-6 text-center sm:p-8 md:p-24"><h2 class="mb-8 text-3xl italic text-[#eac290] md:mb-12 md:text-4xl" style="font-family:'Noto Serif',serif;">Begin the Conversation</h2><p class="mx-auto mb-10 max-w-2xl text-lg text-[#9b8f82] md:mb-12 md:text-xl" style="font-family:'Newsreader',serif;">Membership is by application only. Every journey begins with a private consultation.</p><div class="flex flex-col md:flex-row gap-6 justify-center"><a href="/contact" class="inline-block bg-[#cda777] px-8 py-5 text-xs font-bold uppercase tracking-[0.2em] text-[#573c15] transition-all hover:bg-[#eac290] md:px-12 md:tracking-[0.3em]" style="font-family:'Noto Serif',serif;">Request Invitation</a><a href="/process" class="inline-block border border-[#9b8f82] px-8 py-5 text-xs font-bold uppercase tracking-[0.2em] text-[#cda777] transition-all hover:bg-[#cda777]/10 md:px-12 md:tracking-[0.3em]" style="font-family:'Noto Serif',serif;">View Process</a></div></div></section></main></Layout>
+
+<Layout metadata={metadata}>
+  <main transition:animate="fade">
+    <header class="mb-20 px-6 pt-8 md:mb-32 md:px-12 md:pt-0">
+      <div class="grid grid-cols-12 gap-8">
+        <div class="col-span-12 md:col-span-8">
+          <span class="mb-6 block text-[10px] uppercase tracking-[0.24em] text-[#cda777] md:tracking-[0.3em]">
+            Introduction
+          </span>
+          <h1
+            class="text-4xl font-light italic leading-tight tracking-tight text-[#eac290] sm:text-5xl md:text-8xl"
+            style="font-family:'Noto Serif',serif;"
+          >
+            Our Philosophy
+          </h1>
+        </div>
+        <div class="col-span-12 flex items-end md:col-span-4">
+          <p
+            class="border-l border-[#4e453b] pl-6 text-lg italic leading-relaxed text-[#9b8f82] md:pl-8 md:text-2xl"
+            style="font-family:'Newsreader',serif;"
+          >
+            In an era of algorithmic convenience, we defend human intuition and the depth of private selection.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section class="mb-28 px-6 md:mb-40 md:px-12">
+      <div class="relative h-[420px] w-full overflow-hidden bg-[#161b2b] md:h-[716px]">
+        <Image
+          class="h-full w-full object-cover opacity-60 grayscale transition-all duration-1000 hover:grayscale-0"
+          alt="Private library interior"
+          src={privateLibraryInteriorImg}
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0e1322] via-transparent to-transparent"></div>
+      </div>
+    </section>
+
+    <section class="mb-28 px-6 md:mb-40 md:px-12">
+      <div class="grid grid-cols-12 gap-10 md:gap-16">
+        <div class="col-span-12 md:col-span-4">
+          <h2 class="mb-8 text-3xl text-[#cda777]" style="font-family:'Noto Serif',serif;">Quality over Quantity</h2>
+          <div class="mb-8 h-px w-12 bg-[#cda777]"></div>
+        </div>
+        <div class="col-span-12 md:col-span-7 md:col-start-6">
+          <p class="mb-8 text-xl leading-relaxed text-[#dee1f7] md:text-2xl" style="font-family:'Newsreader',serif;">
+            We reject the digital carousel of modern dating. Our approach is curated, deliberate and finite.
+          </p>
+          <p class="max-w-xl text-lg leading-relaxed text-[#9b8f82]" style="font-family:'Newsreader',serif;">
+            Across Southeast Asia, our members are not profiles; they are people with legacies, standards and
+            aspirations. We limit active clientele to protect quality and privacy.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-28 bg-[#161b2b] px-6 py-28 md:mb-40 md:px-12 md:py-40">
+      <div class="grid grid-cols-12 items-center gap-10 md:gap-16">
+        <div class="order-2 col-span-12 md:order-1 md:col-span-5">
+          <div class="relative aspect-[4/5] bg-[#0e1322]">
+            <Image
+              class="h-full w-full object-cover opacity-40 grayscale"
+              alt="Bespoke suit cufflinks"
+              src={bespokeSuitCufflinksImg}
+            />
+          </div>
+        </div>
+        <div class="order-1 col-span-12 md:order-2 md:col-span-6 md:col-start-7">
+          <span
+            class="mb-8 block text-[10px] uppercase tracking-[0.22em] text-[#cda777] md:tracking-[0.25em]"
+            style="font-family:'Newsreader',serif;"
+          >
+            The Discretion Promise
+          </span>
+          <h2 class="mb-10 text-3xl italic leading-tight text-[#eac290] md:mb-12 md:text-5xl" style="font-family:'Noto Serif',serif;">
+            Your life is private. <br />Your search should be too.
+          </h2>
+          <div class="max-w-lg space-y-8">
+            <p class="text-xl italic text-[#dee1f7]" style="font-family:'Newsreader',serif;">
+              Discretion is not merely a policy; it is our foundational pillar.
+            </p>
+            <p class="text-lg leading-relaxed text-[#9b8f82]" style="font-family:'Newsreader',serif;">
+              We serve executives, founders and accomplished professionals who value anonymity. Your identity is only
+              revealed when mutual interest and strict compatibility are established.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-24 px-6 md:mb-32 md:px-12">
+      <div class="border border-[#4e453b] bg-[#161b2b] p-6 text-center sm:p-8 md:p-24">
+        <h2 class="mb-8 text-3xl italic text-[#eac290] md:mb-12 md:text-4xl" style="font-family:'Noto Serif',serif;">
+          Begin the Conversation
+        </h2>
+        <p class="mx-auto mb-10 max-w-2xl text-lg text-[#9b8f82] md:mb-12 md:text-xl" style="font-family:'Newsreader',serif;">
+          Membership is by application only. Every journey begins with a private consultation.
+        </p>
+        <div class="flex flex-col justify-center gap-6 md:flex-row">
+          <a
+            href="/contact"
+            class="inline-block bg-[#cda777] px-8 py-5 text-xs font-bold uppercase tracking-[0.2em] text-[#573c15] transition-all hover:bg-[#eac290] md:px-12 md:tracking-[0.3em]"
+            style="font-family:'Noto Serif',serif;"
+          >
+            Request Invitation
+          </a>
+          <a
+            href="/process"
+            class="inline-block border border-[#9b8f82] px-8 py-5 text-xs font-bold uppercase tracking-[0.2em] text-[#cda777] transition-all hover:bg-[#cda777]/10 md:px-12 md:tracking-[0.3em]"
+            style="font-family:'Noto Serif',serif;"
+          >
+            View Process
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
