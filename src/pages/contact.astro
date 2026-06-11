@@ -156,21 +156,63 @@ const locations = ['Manila', 'Cebu', 'Bangkok', 'Jakarta', 'Kuala Lumpur', 'Sing
     const params = new URLSearchParams(window.location.search);
     const status = document.getElementById('form-status');
     const form = document.getElementById('application-form');
+    const button = form?.querySelector('button[type="submit"]');
+
+    const showStatus = (message) => {
+      if (!status) return;
+      status.textContent = message;
+      status.classList.remove('hidden');
+      status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    };
 
     if (status && params.get('sent') === '1') {
-      status.textContent = 'Thank you. Your application has been sent.';
-      status.classList.remove('hidden');
+      showStatus('Thank you. Your application has been sent.');
     }
 
     if (status && params.get('error')) {
-      status.textContent = 'Please complete the required fields before submitting.';
-      status.classList.remove('hidden');
+      showStatus('Please complete the required fields before submitting.');
     }
 
-    form?.addEventListener('submit', (event) => {
+    form?.addEventListener('submit', async (event) => {
       if (!form.checkValidity()) {
         event.preventDefault();
         form.reportValidity();
+        return;
+      }
+
+      event.preventDefault();
+
+      if (button) {
+        button.disabled = true;
+        button.textContent = 'Sending...';
+      }
+
+      try {
+        const body = new URLSearchParams(new FormData(form));
+        const response = await fetch(form.action, {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body,
+        });
+
+        const result = await response.json();
+        if (!response.ok || !result.ok) {
+          throw new Error(result.error || 'send-failed');
+        }
+
+        form.reset();
+        showStatus('Thank you. Your application has been sent.');
+        window.history.replaceState({}, '', '/contact?sent=1');
+      } catch (error) {
+        showStatus('Something went wrong sending the form. Please try again or email admin@matchmakingbureau.com.');
+      } finally {
+        if (button) {
+          button.disabled = false;
+          button.textContent = 'Submit Application';
+        }
       }
     });
   </script>

@@ -16,6 +16,18 @@ const redirect = (res, location) => {
   res.end();
 };
 
+const sendResult = (req, res, statusCode, payload, location) => {
+  const accept = req.headers.accept || '';
+  if (accept.includes('application/json')) {
+    res.statusCode = statusCode;
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify(payload));
+    return;
+  }
+
+  redirect(res, location);
+};
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
@@ -25,7 +37,13 @@ export default async function handler(req, res) {
   const form = await readBody(req);
 
   const missingField = requiredFields.find((field) => !String(form[field] || '').trim());
-  if (missingField) return redirect(res, '/contact?error=required');
+  if (missingField) {
+    return sendResult(req, res, 400, { ok: false, error: 'required', field: missingField }, '/contact?error=required');
+  }
+
+  if (form.discretion_agreement !== 'Accepted') {
+    return sendResult(req, res, 400, { ok: false, error: 'agreement' }, '/contact?error=required');
+  }
 
   const smtpHost = process.env.SMTP_HOST || 'smtp.hostinger.com';
   const smtpPort = Number(process.env.SMTP_PORT || 465);
@@ -36,7 +54,7 @@ export default async function handler(req, res) {
 
   if (!smtpPass) {
     console.error('SMTP_PASS is not configured.');
-    return redirect(res, '/contact?error=email-config');
+    return sendResult(req, res, 500, { ok: false, error: 'email-config' }, '/contact?error=email-config');
   }
 
   const transporter = nodemailer.createTransport({
@@ -62,7 +80,7 @@ export default async function handler(req, res) {
   ];
 
   try {
-    await transporter.sendMail({
+    const info = await transporter.sendMail({
       from: `"The Matchmaking Bureau" <${smtpUser}>`,
       to: contactTo,
       replyTo: form.email,
@@ -70,9 +88,10 @@ export default async function handler(req, res) {
       text: lines.join('\n'),
     });
 
-    return redirect(res, '/contact?sent=1');
+    console.log('Contact form email accepted', { messageId: info.messageId, to: contactTo });
+    return sendResult(req, res, 200, { ok: true }, '/contact?sent=1');
   } catch (error) {
     console.error('Contact form email failed:', error);
-    return redirect(res, '/contact?error=email-send');
+    return sendResult(req, res, 500, { ok: false, error: 'email-send' }, '/contact?error=email-send');
   }
 }
