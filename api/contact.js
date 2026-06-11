@@ -24,8 +24,6 @@ export default async function handler(req, res) {
 
   const form = await readBody(req);
 
-  if (form.website) return redirect(res, '/contact?sent=1');
-
   const missingField = requiredFields.find((field) => !String(form[field] || '').trim());
   if (missingField) return redirect(res, '/contact?error=required');
 
