@@ -140,11 +140,21 @@ const locations = ['Manila', 'Cebu', 'Bangkok', 'Jakarta', 'Kuala Lumpur', 'Sing
 
         <button
           type="submit"
-          class="w-full bg-[#cda777] py-6 text-sm uppercase tracking-[0.3em] text-[#573c15] transition-all duration-300 hover:bg-[#eac290]"
+          class="flex w-full items-center justify-center gap-3 bg-[#cda777] py-6 text-sm uppercase tracking-[0.3em] text-[#573c15] transition-all duration-300 hover:bg-[#eac290] disabled:cursor-wait disabled:opacity-75"
           style="font-family:'Newsreader',serif;"
         >
-          Submit Application
+          <span class="submit-spinner hidden h-5 w-5 rounded-full border-2 border-[#573c15]/30 border-t-[#573c15]"></span>
+          <span class="submit-label">Submit Application</span>
         </button>
+
+        <p
+          id="submit-help"
+          class="hidden text-center text-sm italic text-[#9b8f82]"
+          style="font-family:'Newsreader',serif;"
+          aria-live="polite"
+        >
+          Submitting your application. Please wait, this can take a few seconds.
+        </p>
       </section>
     </form>
   </main>
@@ -154,6 +164,9 @@ const locations = ['Manila', 'Cebu', 'Bangkok', 'Jakarta', 'Kuala Lumpur', 'Sing
     const status = document.getElementById('form-status');
     const form = document.getElementById('application-form');
     const button = form?.querySelector('button[type="submit"]');
+    const buttonLabel = button?.querySelector('.submit-label');
+    const spinner = button?.querySelector('.submit-spinner');
+    const submitHelp = document.getElementById('submit-help');
 
     const showStatus = (message) => {
       if (!status) return;
@@ -177,7 +190,17 @@ const locations = ['Manila', 'Cebu', 'Bangkok', 'Jakarta', 'Kuala Lumpur', 'Sing
 
       if (button) {
         button.disabled = true;
-        button.textContent = 'Sending...';
+        button.setAttribute('aria-busy', 'true');
+      }
+      if (buttonLabel) {
+        buttonLabel.textContent = 'Submitting...';
+      }
+      if (spinner) {
+        spinner.classList.remove('hidden');
+        spinner.classList.add('animate-spin');
+      }
+      if (submitHelp) {
+        submitHelp.classList.remove('hidden');
       }
 
       try {
@@ -202,7 +225,17 @@ const locations = ['Manila', 'Cebu', 'Bangkok', 'Jakarta', 'Kuala Lumpur', 'Sing
       } finally {
         if (button) {
           button.disabled = false;
-          button.textContent = 'Submit Application';
+          button.removeAttribute('aria-busy');
+        }
+        if (buttonLabel) {
+          buttonLabel.textContent = 'Submit Application';
+        }
+        if (spinner) {
+          spinner.classList.add('hidden');
+          spinner.classList.remove('animate-spin');
+        }
+        if (submitHelp) {
+          submitHelp.classList.add('hidden');
         }
       }
     });
