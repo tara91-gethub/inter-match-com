@@ -2,13 +2,38 @@ import nodemailer from 'nodemailer';
 
 const requiredFields = ['full_name', 'email'];
 
+const parseMultipartBody = (body, contentType) => {
+  const boundaryMatch = contentType.match(/boundary=(?:"([^"]+)"|([^;]+))/i);
+  const boundary = boundaryMatch?.[1] || boundaryMatch?.[2];
+  if (!boundary) return {};
+
+  return body.split(`--${boundary}`).reduce((fields, part) => {
+    const nameMatch = part.match(/name="([^"]+)"/);
+    if (!nameMatch) return fields;
+
+    const [, name] = nameMatch;
+    const valueStart = part.indexOf('\r\n\r\n');
+    if (valueStart === -1) return fields;
+
+    fields[name] = part.slice(valueStart + 4).replace(/\r\n$/, '').trim();
+    return fields;
+  }, {});
+};
+
 const readBody = async (req) => {
   if (req.body && typeof req.body === 'object') return req.body;
   if (typeof req.body === 'string') return Object.fromEntries(new URLSearchParams(req.body));
 
   const chunks = [];
   for await (const chunk of req) chunks.push(chunk);
-  return Object.fromEntries(new URLSearchParams(Buffer.concat(chunks).toString('utf8')));
+  const body = Buffer.concat(chunks).toString('utf8');
+  const contentType = req.headers['content-type'] || '';
+
+  if (contentType.includes('multipart/form-data')) {
+    return parseMultipartBody(body, contentType);
+  }
+
+  return Object.fromEntries(new URLSearchParams(body));
 };
 
 const redirect = (res, location) => {
