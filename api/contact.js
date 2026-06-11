@@ -27,7 +27,7 @@ export default async function handler(req, res) {
   if (form.website) return redirect(res, '/contact?sent=1');
 
   const missingField = requiredFields.find((field) => !String(form[field] || '').trim());
-  if (missingField) return redirect(res, `/contact?error=missing-${missingField}`);
+  if (missingField) return redirect(res, '/contact?error=required');
 
   const smtpHost = process.env.SMTP_HOST || 'smtp.hostinger.com';
   const smtpPort = Number(process.env.SMTP_PORT || 465);

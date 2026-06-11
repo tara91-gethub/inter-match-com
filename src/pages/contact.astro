@@ -1,6 +1,179 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-const metadata = { title: 'Apply Now', description: 'Apply to The Matchmaking Bureau - private matchmaking across Southeast Asia.' };
-const locations = ['Manila','Cebu','Bangkok','Jakarta','Kuala Lumpur','Singapore','Ho Chi Minh City','Other'];
+
+const metadata = {
+  title: 'Apply Now',
+  description: 'Apply to The Matchmaking Bureau - private matchmaking across Southeast Asia.',
+};
+
+const locations = ['Manila', 'Cebu', 'Bangkok', 'Jakarta', 'Kuala Lumpur', 'Singapore', 'Ho Chi Minh City', 'Other'];
 ---
-<Layout metadata={metadata}><main transition:animate="fade" class="max-w-4xl mx-auto px-6 py-24 md:py-32"><header class="mb-24 text-center"><h1 class="text-5xl md:text-7xl mb-8 tracking-[-0.02em] text-white" style="font-family:'Noto Serif',serif;">The Entry Bureau</h1><p class="text-xl md:text-2xl text-[#9b8f82] max-w-2xl mx-auto italic leading-relaxed" style="font-family:'Newsreader',serif;">Refining the search for exceptional connection. Please provide your details with the utmost discretion.</p></header><form class="space-y-32" action="/api/contact" method="POST"><input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" /><section class="space-y-12"><div class="flex items-baseline gap-4 border-b border-[#4e453b] pb-4 mb-12"><span class="text-xs tracking-widest text-[#eac290] uppercase" style="font-family:'Newsreader',serif;">01</span><h2 class="text-2xl uppercase tracking-widest text-white" style="font-family:'Noto Serif',serif;">Basic Information</h2></div><div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16"><div class="space-y-2"><label class="text-xs tracking-[0.25em] uppercase text-[#9b8f82]" style="font-family:'Newsreader',serif;">Full Legal Name <span class="text-[#eac290]">*</span></label><input name="full_name" class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 text-white" type="text" required style="font-family:'Newsreader',serif;" /></div><div class="space-y-2"><label class="text-xs tracking-[0.25em] uppercase text-[#9b8f82]" style="font-family:'Newsreader',serif;">Email Address <span class="text-[#eac290]">*</span></label><input name="email" class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 text-white" type="email" required style="font-family:'Newsreader',serif;" /></div><div class="space-y-2 md:col-span-2"><label class="text-xs tracking-[0.25em] uppercase text-[#9b8f82]" style="font-family:'Newsreader',serif;">Current Location <span class="text-[#eac290]">*</span></label><select name="location" required class="w-full bg-[#0e1322] border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 text-white appearance-none" style="font-family:'Newsreader',serif;">{locations.map((location) => <option>{location}</option>)}</select></div></div></section><section class="space-y-12"><div class="flex items-baseline gap-4 border-b border-[#4e453b] pb-4 mb-12"><span class="text-xs tracking-widest text-[#eac290] uppercase" style="font-family:'Newsreader',serif;">02</span><h2 class="text-2xl uppercase tracking-widest text-white" style="font-family:'Noto Serif',serif;">Professional Background</h2></div><div class="space-y-16"><div class="space-y-2"><label class="text-xs tracking-[0.25em] uppercase text-[#9b8f82]" style="font-family:'Newsreader',serif;">Industry and Occupation <span class="text-[#eac290]">*</span></label><input name="occupation" class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 text-white" type="text" required style="font-family:'Newsreader',serif;" /></div><div class="space-y-2"><label class="text-xs tracking-[0.25em] uppercase text-[#9b8f82]" style="font-family:'Newsreader',serif;">Relationship Intentions</label><textarea name="intentions" class="w-full bg-transparent border-b border-[#4e453b] focus:border-[#eac290] px-0 py-3 text-lg transition-colors duration-300 resize-none text-white" rows="4" style="font-family:'Newsreader',serif;"></textarea></div></div></section><section class="space-y-12 pt-12"><label class="flex items-start gap-4 cursor-pointer group"><input name="discretion_agreement" value="Accepted" required class="mt-1 w-5 h-5 border border-[#4e453b] bg-transparent accent-[#eac290] cursor-pointer" type="checkbox" /><span class="text-sm leading-relaxed text-[#9b8f82] group-hover:text-white transition-colors" style="font-family:'Newsreader',serif;">I understand that The Matchmaking Bureau operates with absolute discretion. <span class="text-[#eac290]">*</span></span></label><button type="submit" class="w-full bg-[#cda777] text-[#573c15] text-sm tracking-[0.3em] uppercase py-6 transition-all duration-300 hover:bg-[#eac290]" style="font-family:'Newsreader',serif;">Submit Application</button></section></form></main></Layout>
+
+<Layout metadata={metadata}>
+  <main transition:animate="fade" class="mx-auto max-w-4xl px-6 py-24 md:py-32">
+    <header class="mb-24 text-center">
+      <h1 class="mb-8 text-5xl tracking-[-0.02em] text-white md:text-7xl" style="font-family:'Noto Serif',serif;">
+        The Entry Bureau
+      </h1>
+      <p
+        class="mx-auto max-w-2xl text-xl italic leading-relaxed text-[#9b8f82] md:text-2xl"
+        style="font-family:'Newsreader',serif;"
+      >
+        Refining the search for exceptional connection. Please provide your details with the utmost discretion.
+      </p>
+    </header>
+
+    <p
+      id="form-status"
+      class="mb-12 hidden border border-[#4e453b] bg-[#161b2b] px-6 py-5 text-center text-lg text-[#d2c4b7]"
+      style="font-family:'Newsreader',serif;"
+      role="status"
+    >
+    </p>
+
+    <form id="application-form" class="space-y-32" action="/api/contact" method="POST">
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
+
+      <section class="space-y-12">
+        <div class="mb-12 flex items-baseline gap-4 border-b border-[#4e453b] pb-4">
+          <span class="text-xs uppercase tracking-widest text-[#eac290]" style="font-family:'Newsreader',serif;">01</span>
+          <h2 class="text-2xl uppercase tracking-widest text-white" style="font-family:'Noto Serif',serif;">
+            Basic Information
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 gap-x-12 gap-y-16 md:grid-cols-2">
+          <div class="space-y-2">
+            <label for="full_name" class="text-xs uppercase tracking-[0.25em] text-[#9b8f82]" style="font-family:'Newsreader',serif;">
+              Full Legal Name <span class="text-[#eac290]">*</span>
+            </label>
+            <input
+              id="full_name"
+              name="full_name"
+              class="w-full border-b border-[#4e453b] bg-transparent px-0 py-3 text-lg text-white transition-colors duration-300 focus:border-[#eac290]"
+              type="text"
+              autocomplete="name"
+              required
+              style="font-family:'Newsreader',serif;"
+            />
+          </div>
+
+          <div class="space-y-2">
+            <label for="email" class="text-xs uppercase tracking-[0.25em] text-[#9b8f82]" style="font-family:'Newsreader',serif;">
+              Email Address <span class="text-[#eac290]">*</span>
+            </label>
+            <input
+              id="email"
+              name="email"
+              class="w-full border-b border-[#4e453b] bg-transparent px-0 py-3 text-lg text-white transition-colors duration-300 focus:border-[#eac290]"
+              type="email"
+              autocomplete="email"
+              required
+              style="font-family:'Newsreader',serif;"
+            />
+          </div>
+
+          <div class="space-y-2 md:col-span-2">
+            <label for="location" class="text-xs uppercase tracking-[0.25em] text-[#9b8f82]" style="font-family:'Newsreader',serif;">
+              Current Location <span class="text-[#eac290]">*</span>
+            </label>
+            <select
+              id="location"
+              name="location"
+              required
+              class="w-full appearance-none border-b border-[#4e453b] bg-[#0e1322] px-0 py-3 text-lg text-white transition-colors duration-300 focus:border-[#eac290]"
+              style="font-family:'Newsreader',serif;"
+            >
+              {locations.map((location) => <option>{location}</option>)}
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section class="space-y-12">
+        <div class="mb-12 flex items-baseline gap-4 border-b border-[#4e453b] pb-4">
+          <span class="text-xs uppercase tracking-widest text-[#eac290]" style="font-family:'Newsreader',serif;">02</span>
+          <h2 class="text-2xl uppercase tracking-widest text-white" style="font-family:'Noto Serif',serif;">
+            Professional Background
+          </h2>
+        </div>
+
+        <div class="space-y-16">
+          <div class="space-y-2">
+            <label for="occupation" class="text-xs uppercase tracking-[0.25em] text-[#9b8f82]" style="font-family:'Newsreader',serif;">
+              Industry and Occupation <span class="text-[#eac290]">*</span>
+            </label>
+            <input
+              id="occupation"
+              name="occupation"
+              class="w-full border-b border-[#4e453b] bg-transparent px-0 py-3 text-lg text-white transition-colors duration-300 focus:border-[#eac290]"
+              type="text"
+              autocomplete="organization-title"
+              required
+              style="font-family:'Newsreader',serif;"
+            />
+          </div>
+
+          <div class="space-y-2">
+            <label for="intentions" class="text-xs uppercase tracking-[0.25em] text-[#9b8f82]" style="font-family:'Newsreader',serif;">
+              Relationship Intentions
+            </label>
+            <textarea
+              id="intentions"
+              name="intentions"
+              class="w-full resize-none border-b border-[#4e453b] bg-transparent px-0 py-3 text-lg text-white transition-colors duration-300 focus:border-[#eac290]"
+              rows="4"
+              style="font-family:'Newsreader',serif;"
+            ></textarea>
+          </div>
+        </div>
+      </section>
+
+      <section class="space-y-12 pt-12">
+        <label class="group flex cursor-pointer items-start gap-4">
+          <input
+            name="discretion_agreement"
+            value="Accepted"
+            required
+            class="mt-1 h-5 w-5 cursor-pointer border border-[#4e453b] bg-transparent accent-[#eac290]"
+            type="checkbox"
+          />
+          <span class="text-sm leading-relaxed text-[#9b8f82] transition-colors group-hover:text-white" style="font-family:'Newsreader',serif;">
+            I understand that The Matchmaking Bureau operates with absolute discretion. <span class="text-[#eac290]">*</span>
+          </span>
+        </label>
+
+        <button
+          type="submit"
+          class="w-full bg-[#cda777] py-6 text-sm uppercase tracking-[0.3em] text-[#573c15] transition-all duration-300 hover:bg-[#eac290]"
+          style="font-family:'Newsreader',serif;"
+        >
+          Submit Application
+        </button>
+      </section>
+    </form>
+  </main>
+
+  <script is:inline>
+    const params = new URLSearchParams(window.location.search);
+    const status = document.getElementById('form-status');
+    const form = document.getElementById('application-form');
+
+    if (status && params.get('sent') === '1') {
+      status.textContent = 'Thank you. Your application has been sent.';
+      status.classList.remove('hidden');
+    }
+
+    if (status && params.get('error')) {
+      status.textContent = 'Please complete the required fields before submitting.';
+      status.classList.remove('hidden');
+    }
+
+    form?.addEventListener('submit', (event) => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        form.reportValidity();
+      }
+    });
+  </script>
+</Layout>
