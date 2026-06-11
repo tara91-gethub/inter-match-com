@@ -1,0 +1,41 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Application Received',
+  description: 'Thank you for contacting The Matchmaking Bureau. Your private application has been received.',
+};
+---
+
+<Layout metadata={metadata}>
+  <main transition:animate="fade" class="mx-auto flex min-h-[70vh] max-w-4xl items-center px-6 py-24 text-center md:py-32">
+    <section class="w-full">
+      <p class="mb-6 text-xs uppercase tracking-[0.3em] text-[#eac290]" style="font-family:'Newsreader',serif;">
+        Application Received
+      </p>
+      <h1 class="mb-8 text-5xl text-white md:text-7xl" style="font-family:'Noto Serif',serif;">
+        Thank You
+      </h1>
+      <div class="mx-auto mb-10 h-px w-24 bg-[#eac290]"></div>
+      <p class="mx-auto mb-12 max-w-2xl text-xl leading-relaxed text-[#d2c4b7] md:text-2xl" style="font-family:'Newsreader',serif;">
+        Your confidential application has been received. A senior consultant will review your details and contact you if your profile aligns with the bureau.
+      </p>
+      <div class="flex flex-col justify-center gap-5 sm:flex-row">
+        <a
+          href="/"
+          class="inline-block border border-[#9b8f82] px-8 py-5 text-center text-xs font-bold uppercase tracking-[0.16em] text-[#eac290] transition-colors hover:bg-[#eac290]/10 md:px-10 md:tracking-[0.25em]"
+          style="font-family:'Noto Serif',serif;"
+        >
+          Return Home
+        </a>
+        <a
+          href="/membership"
+          class="inline-block bg-[#cda777] px-8 py-5 text-center text-xs font-bold uppercase tracking-[0.16em] text-[#573c15] transition-colors hover:bg-[#eac290] md:px-10 md:tracking-[0.25em]"
+          style="font-family:'Noto Serif',serif;"
+        >
+          View Membership
+        </a>
+      </div>
+    </section>
+  </main>
+</Layout>

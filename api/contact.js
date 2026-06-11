@@ -114,7 +114,7 @@ export default async function handler(req, res) {
     });
 
     console.log('Contact form email accepted', { messageId: info.messageId, to: contactTo });
-    return sendResult(req, res, 200, { ok: true }, '/contact?sent=1');
+    return sendResult(req, res, 200, { ok: true, redirect: '/thank-you' }, '/thank-you');
   } catch (error) {
     console.error('Contact form email failed:', error);
     return sendResult(req, res, 500, { ok: false, error: 'email-send' }, '/contact?error=email-send');

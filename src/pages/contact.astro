@@ -162,10 +162,6 @@ const locations = ['Manila', 'Cebu', 'Bangkok', 'Jakarta', 'Kuala Lumpur', 'Sing
       status.scrollIntoView({ behavior: 'smooth', block: 'center' });
     };
 
-    if (status && params.get('sent') === '1') {
-      showStatus('Thank you. Your application has been sent.');
-    }
-
     if (status && params.get('error')) {
       showStatus('Please complete the required fields before submitting.');
     }
@@ -200,9 +196,7 @@ const locations = ['Manila', 'Cebu', 'Bangkok', 'Jakarta', 'Kuala Lumpur', 'Sing
           throw new Error(result.error || 'send-failed');
         }
 
-        form.reset();
-        showStatus('Thank you. Your application has been sent.');
-        window.history.replaceState({}, '', '/contact?sent=1');
+        window.location.assign(result.redirect || '/thank-you');
       } catch (error) {
         showStatus('Something went wrong sending the form. Please try again or email admin@matchmakingbureau.com.');
       } finally {
