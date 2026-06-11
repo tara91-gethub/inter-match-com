@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer';
 
-const requiredFields = ['full_name', 'email', 'location', 'occupation'];
+const requiredFields = ['full_name', 'email'];
 
 const readBody = async (req) => {
   if (req.body && typeof req.body === 'object') return req.body;
@@ -38,11 +38,11 @@ export default async function handler(req, res) {
 
   const missingField = requiredFields.find((field) => !String(form[field] || '').trim());
   if (missingField) {
+    console.warn('Contact form missing required field', {
+      missingField,
+      receivedFields: Object.keys(form),
+    });
     return sendResult(req, res, 400, { ok: false, error: 'required', field: missingField }, '/contact?error=required');
-  }
-
-  if (form.discretion_agreement !== 'Accepted') {
-    return sendResult(req, res, 400, { ok: false, error: 'agreement' }, '/contact?error=required');
   }
 
   const smtpHost = process.env.SMTP_HOST || 'smtp.hostinger.com';
@@ -70,8 +70,8 @@ export default async function handler(req, res) {
   const lines = [
     `Full name: ${form.full_name}`,
     `Email: ${form.email}`,
-    `Location: ${form.location}`,
-    `Occupation: ${form.occupation}`,
+    `Location: ${form.location || 'Not provided'}`,
+    `Occupation: ${form.occupation || 'Not provided'}`,
     '',
     'Relationship intentions:',
     form.intentions || 'Not provided',
