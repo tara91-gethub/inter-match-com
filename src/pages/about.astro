@@ -4,6 +4,7 @@ import { Image } from 'astro:assets';
 import Layout from '~/layouts/PageLayout.astro';
 import privateLibraryInteriorImg from '~/assets/images/private-library-interior.jpg';
 import bespokeSuitCufflinksImg from '~/assets/images/bespoke-suit-cufflinks.jpg';
+import matchmakerDelImg from '~/assets/images/matchmaker-del.jpg';
 
 const metadata = {
   title: 'Our Philosophy',
@@ -63,6 +64,41 @@ const metadata = {
             Across Southeast Asia, our members are not profiles; they are people with legacies, standards and
             aspirations. We limit active clientele to protect quality and privacy.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-28 px-6 md:mb-40 md:px-12">
+      <div class="grid grid-cols-12 items-center gap-10 border-y border-[#4e453b] py-20 md:gap-16 md:py-28">
+        <div class="col-span-12 md:col-span-5">
+          <div class="relative aspect-[4/5] overflow-hidden bg-[#161b2b]">
+            <Image
+              class="h-full w-full object-cover"
+              alt="Del, matchmaker at The Matchmaking Bureau"
+              src={matchmakerDelImg}
+            />
+          </div>
+        </div>
+        <div class="col-span-12 md:col-span-6 md:col-start-7">
+          <span
+            class="mb-6 block text-[10px] uppercase tracking-[0.22em] text-[#cda777] md:tracking-[0.25em]"
+            style="font-family:'Newsreader',serif;"
+          >
+            Matchmaker
+          </span>
+          <h2 class="mb-8 text-4xl italic leading-tight text-[#eac290] md:text-6xl" style="font-family:'Noto Serif',serif;">
+            Meet Del
+          </h2>
+          <div class="max-w-xl space-y-7">
+            <p class="text-xl leading-relaxed text-[#dee1f7] md:text-2xl" style="font-family:'Newsreader',serif;">
+              Del believes meaningful relationships can't be reduced to profiles and algorithms. She takes the time to
+              understand each person individually, bringing a thoughtful and human approach to every introduction.
+            </p>
+            <p class="text-lg leading-relaxed text-[#9b8f82]" style="font-family:'Newsreader',serif;">
+              Her focus is simple:
+              <strong class="font-normal text-[#eac290]">quality over quantity, genuine compatibility, and complete discretion.</strong>
+            </p>
+          </div>
         </div>
       </div>
     </section>
