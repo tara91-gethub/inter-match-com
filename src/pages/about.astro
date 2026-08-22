@@ -5,6 +5,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import privateLibraryInteriorImg from '~/assets/images/private-library-interior.jpg';
 import bespokeSuitCufflinksImg from '~/assets/images/bespoke-suit-cufflinks.jpg';
 import matchmakerDelImg from '~/assets/images/matchmaker-del.jpg';
+import matchmakerDelFullImg from '~/assets/images/matchmaker-del-full.jpg';
 
 const metadata = {
   title: 'Our Philosophy',
@@ -75,8 +76,18 @@ const metadata = {
             <Image
               class="h-full w-full object-cover"
               alt="Del, matchmaker at The Matchmaking Bureau"
+              src={matchmakerDelFullImg}
+            />
+          </div>
+          <div class="mt-6 hidden grid-cols-5 gap-6 md:grid">
+            <div class="col-span-3"></div>
+            <div class="col-span-2 aspect-[4/5] overflow-hidden bg-[#161b2b]">
+              <Image
+                class="h-full w-full object-cover"
+                alt="Del in a relaxed outdoor portrait"
               src={matchmakerDelImg}
             />
+            </div>
           </div>
         </div>
         <div class="col-span-12 md:col-span-6 md:col-start-7">
