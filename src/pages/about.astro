@@ -2,7 +2,6 @@
 import { Image } from 'astro:assets';
 
 import Layout from '~/layouts/PageLayout.astro';
-import privateLibraryInteriorImg from '~/assets/images/private-library-interior.jpg';
 import matchmakerDelImg from '~/assets/images/matchmaker-del.jpg';
 import matchmakerDelFullImg from '~/assets/images/matchmaker-del-full.jpg';
 
@@ -40,13 +39,31 @@ const metadata = {
     </header>
 
     <section class="mb-28 px-6 md:mb-40 md:px-12">
-      <div class="relative h-[420px] w-full overflow-hidden bg-[#161b2b] md:h-[716px]">
-        <Image
-          class="h-full w-full object-cover opacity-60 grayscale transition-all duration-1000 hover:grayscale-0"
-          alt="Private library interior"
-          src={privateLibraryInteriorImg}
-        />
-        <div class="absolute inset-0 bg-gradient-to-t from-[#0e1322] via-transparent to-transparent"></div>
+      <div class="grid grid-cols-12 items-center gap-10 border border-[#4e453b] bg-[#161b2b] p-6 md:gap-16 md:p-12">
+        <div class="col-span-12 md:col-span-6">
+          <span
+            class="mb-6 block text-[10px] uppercase tracking-[0.22em] text-[#cda777] md:tracking-[0.25em]"
+            style="font-family:'Newsreader',serif;"
+          >
+            Our Philosophy
+          </span>
+          <h2 class="mb-8 text-3xl italic leading-tight text-[#eac290] md:text-6xl" style="font-family:'Noto Serif',serif;">
+            Human Judgment, Not Algorithms
+          </h2>
+          <p class="max-w-xl text-lg leading-relaxed text-[#d2c4b7] md:text-2xl" style="font-family:'Newsreader',serif;">
+            Private matchmaking built on discretion, intuition and genuine compatibility.
+          </p>
+        </div>
+        <div class="col-span-12 md:col-span-6">
+          <div class="relative h-[420px] overflow-hidden bg-[#0e1322] md:h-[620px]">
+            <Image
+              class="h-full w-full object-cover object-[center_28%] opacity-85 grayscale transition-all duration-1000 hover:opacity-100 hover:grayscale-0"
+              alt="Del, matchmaker at The Matchmaking Bureau"
+              src={matchmakerDelFullImg}
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0e1322]/60 via-transparent to-transparent"></div>
+          </div>
+        </div>
       </div>
     </section>
 
