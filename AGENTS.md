@@ -162,6 +162,27 @@ import VercelAnalytics from '@vercel/analytics/astro';
 <VercelAnalytics />
 ```
 
+## IndexNow / Bing
+
+IndexNow should use a Vercel environment variable instead of committing the key value to Git.
+
+Accepted environment variable names:
+
+- `INDEXNOW_KEY`
+- `INDEX_NOW_KEY`
+- `BING_INDEXNOW_KEY`
+
+The public key file URL is:
+
+`https://www.matchmakingbureau.com/indexnow.txt`
+
+Implementation:
+
+- `api/indexnow-key.js` returns the IndexNow key as `text/plain`.
+- `vercel.json` rewrites `/indexnow.txt` to `/api/indexnow-key`.
+
+If Bing cannot verify IndexNow, confirm the Vercel env var is set in Production and the latest deployment is live, then open `/indexnow.txt` in the browser. It should show only the key.
+
 ## Design Direction
 
 The site should feel:
@@ -187,6 +208,7 @@ Do not over-personalize the country/city SEO pages with Del content. Keep Del ma
 - Added `/thank-you` page and successful form redirects.
 - Added visible submitting state to the contact form button.
 - Replaced watermarked city/country images.
+- Added IndexNow key-file route using a Vercel environment variable.
 
 ## Working Style With The Site Owner
 

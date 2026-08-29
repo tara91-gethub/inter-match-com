@@ -1,6 +1,12 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/indexnow.txt",
+      "destination": "/api/indexnow-key"
+    }
+  ],
   "headers": [
     {
       "source": "/_astro/(.*)",
