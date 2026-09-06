@@ -52,6 +52,7 @@ npm run build
 - `src/pages/thank-you.astro` - successful form submission page
 - `src/pages/membership.astro` - membership page
 - `src/pages/process.astro` - process page
+- `src/pages/matchmaking-process.astro` - detailed candidate-facing process explanation
 - `src/pages/faq.astro` - FAQ page
 - `src/pages/[country]/` - country and city pages
 - `src/content/post/` - blog posts
@@ -210,6 +211,7 @@ Do not over-personalize the country/city SEO pages with Del content. Keep Del ma
 - Replaced watermarked city/country images.
 - Added IndexNow key-file route using a Vercel environment variable.
 - Added blog post `international-matchmaking-relocation`.
+- Added detailed `/matchmaking-process` page and linked it from `/process` and FAQ.
 
 ## Working Style With The Site Owner
 
