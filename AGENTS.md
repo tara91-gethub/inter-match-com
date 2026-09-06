@@ -209,6 +209,7 @@ Do not over-personalize the country/city SEO pages with Del content. Keep Del ma
 - Added visible submitting state to the contact form button.
 - Replaced watermarked city/country images.
 - Added IndexNow key-file route using a Vercel environment variable.
+- Added blog post `international-matchmaking-relocation`.
 
 ## Working Style With The Site Owner
 
