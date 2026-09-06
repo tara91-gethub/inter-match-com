@@ -211,7 +211,7 @@ Do not over-personalize the country/city SEO pages with Del content. Keep Del ma
 - Replaced watermarked city/country images.
 - Added IndexNow key-file route using a Vercel environment variable.
 - Added blog post `international-matchmaking-relocation`.
-- Added detailed `/matchmaking-process` page and linked it from `/process` and FAQ.
+- Added detailed `/matchmaking-process` page and linked it from `/process`, FAQ, and footer.
 
 ## Working Style With The Site Owner
 
