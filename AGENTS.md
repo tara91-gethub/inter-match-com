@@ -216,6 +216,7 @@ Do not over-personalize the country/city SEO pages with Del content. Keep Del ma
 - Added detailed `/matchmaking-process` page and linked it from `/process`, FAQ, and footer.
 - Standardized canonical/sitemap/schema URLs to `https://www.matchmakingbureau.com`.
 - Removed thin `/category/...` archive pages from the build and sitemap; keep real country/city pages indexed instead.
+- Improved schema markup: richer Article schema, Organization contact email/contactPoint, and shared Organization `@id` references in Service schemas.
 
 ## Working Style With The Site Owner
 

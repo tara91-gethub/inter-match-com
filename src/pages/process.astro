@@ -8,16 +8,17 @@ const schema = {
   "name": "Private Matchmaking Service",
   "provider": {
     "@type": "Organization",
+    "@id": "https://www.matchmakingbureau.com/#organization",
     "name": "The Matchmaking Bureau",
     "url": "https://www.matchmakingbureau.com"
   },
   "areaServed": [
-    "Philippines",
-    "Thailand",
-    "Indonesia",
-    "Malaysia",
-    "Singapore",
-    "Vietnam"
+    { "@type": "Country", "name": "Philippines" },
+    { "@type": "Country", "name": "Thailand" },
+    { "@type": "Country", "name": "Indonesia" },
+    { "@type": "Country", "name": "Malaysia" },
+    { "@type": "Country", "name": "Singapore" },
+    { "@type": "Country", "name": "Vietnam" }
   ],
   "description": "Hand-selected private introductions for discerning professionals across Southeast Asia.",
   "serviceType": "Matchmaking"

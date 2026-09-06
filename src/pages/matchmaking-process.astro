@@ -14,10 +14,18 @@ const schema = {
   name: 'Private Matchmaking Process',
   provider: {
     '@type': 'Organization',
+    '@id': 'https://www.matchmakingbureau.com/#organization',
     name: 'The Matchmaking Bureau',
     url: 'https://www.matchmakingbureau.com',
   },
-  areaServed: ['Philippines', 'Thailand', 'Indonesia', 'Malaysia', 'Singapore', 'Vietnam'],
+  areaServed: [
+    { '@type': 'Country', name: 'Philippines' },
+    { '@type': 'Country', name: 'Thailand' },
+    { '@type': 'Country', name: 'Indonesia' },
+    { '@type': 'Country', name: 'Malaysia' },
+    { '@type': 'Country', name: 'Singapore' },
+    { '@type': 'Country', name: 'Vietnam' },
+  ],
   description:
     'A personal, patient and handpicked matchmaking process for discerning people seeking a serious relationship.',
   serviceType: 'Private Matchmaking',

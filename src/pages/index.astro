@@ -18,17 +18,25 @@ const metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://www.matchmakingbureau.com/#organization",
   "name": "The Matchmaking Bureau",
   "url": "https://www.matchmakingbureau.com",
   "logo": "https://www.matchmakingbureau.com/favicon.svg",
+  "email": "admin@matchmakingbureau.com",
   "description": "Private matchmaking agency serving Southeast Asia - Philippines, Thailand, Indonesia, Malaysia, Singapore and Vietnam.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "admin@matchmakingbureau.com",
+    "contactType": "customer enquiries",
+    "availableLanguage": "English"
+  },
   "areaServed": [
-    "Philippines",
-    "Thailand",
-    "Indonesia",
-    "Malaysia",
-    "Singapore",
-    "Vietnam"
+    { "@type": "Country", "name": "Philippines" },
+    { "@type": "Country", "name": "Thailand" },
+    { "@type": "Country", "name": "Indonesia" },
+    { "@type": "Country", "name": "Malaysia" },
+    { "@type": "Country", "name": "Singapore" },
+    { "@type": "Country", "name": "Vietnam" }
   ],
   "serviceType": "Private Matchmaking Agency",
   "sameAs": []
