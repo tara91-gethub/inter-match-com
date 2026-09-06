@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://matchmakingbureau.com/sitemap-index.xml
+Sitemap: https://www.matchmakingbureau.com/sitemap-index.xml

@@ -1,6 +1,6 @@
 site:
   name: 'The Matchmaking Bureau'
-  site: 'https://matchmakingbureau.com'
+  site: 'https://www.matchmakingbureau.com'
   base: '/'
   trailingSlash: false
   googleSiteVerificationId: false
@@ -40,10 +40,11 @@ apps:
       robots:
         index: true
     category:
-      isEnabled: true
+      isEnabled: false
       pathname: 'category'
       robots:
-        index: true
+        index: false
+        follow: true
     tag:
       isEnabled: false
       pathname: 'tag'

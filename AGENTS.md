@@ -134,6 +134,8 @@ Known image notes:
 
 ## SEO / Social Preview
 
+Use `https://www.matchmakingbureau.com` as the canonical production domain everywhere: config, sitemap, robots.txt, schema, and social metadata.
+
 The default social sharing preview is configured to use:
 
 `src/assets/images/og-default-international.jpg`
@@ -212,6 +214,8 @@ Do not over-personalize the country/city SEO pages with Del content. Keep Del ma
 - Added IndexNow key-file route using a Vercel environment variable.
 - Added blog post `international-matchmaking-relocation`.
 - Added detailed `/matchmaking-process` page and linked it from `/process`, FAQ, and footer.
+- Standardized canonical/sitemap/schema URLs to `https://www.matchmakingbureau.com`.
+- Removed thin `/category/...` archive pages from the build and sitemap; keep real country/city pages indexed instead.
 
 ## Working Style With The Site Owner
 
