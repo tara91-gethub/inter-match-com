@@ -3,7 +3,7 @@ title: 'Why More Dating Matches Do Not Always Lead to the Right Person'
 excerpt: 'More dating options can feel useful, but too much choice can make it harder to slow down, notice real compatibility and give one person a fair chance.'
 category: 'Insights'
 publishDate: 2026-09-06
-image: '~/assets/images/watch-movement-detail.jpg'
+image: '~/assets/images/blog/too-many-dating-options.png'
 author: 'The Matchmaking Bureau'
 ---
 
