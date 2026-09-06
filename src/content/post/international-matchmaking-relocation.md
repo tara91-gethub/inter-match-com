@@ -3,7 +3,7 @@ title: 'International Matchmaking: Why the Right Person Matters More Than the Co
 excerpt: 'Why international matchmaking should begin with genuine compatibility, not only relocation, checklists or practical arrangements.'
 category: 'Guide'
 publishDate: 2026-09-06
-image: '~/assets/images/blog/post-2.jpg'
+image: '~/assets/images/antique-brass-key.jpg'
 author: 'The Matchmaking Bureau'
 ---
 
