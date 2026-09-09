@@ -95,7 +95,7 @@ That is the important part.
 
 If something is genuinely important, such as marriage intentions, children, religion, major cultural expectations or another clear requirement, a good matchmaker should understand that before recommending an introduction.
 
-That is part of the reason for using **private matchmaking**.
+That is part of the reason for using [**private matchmaking**](/membership).
 
 At The Matchmaking Bureau, we speak directly with people who are looking for serious relationships. We ask questions, understand what they are looking for and consider whether there is a genuine reason to introduce two people.
 
