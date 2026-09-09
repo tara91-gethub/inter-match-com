@@ -15,7 +15,10 @@ const parseMultipartBody = (body, contentType) => {
     const valueStart = part.indexOf('\r\n\r\n');
     if (valueStart === -1) return fields;
 
-    fields[name] = part.slice(valueStart + 4).replace(/\r\n$/, '').trim();
+    fields[name] = part
+      .slice(valueStart + 4)
+      .replace(/\r\n$/, '')
+      .trim();
     return fields;
   }, {});
 };

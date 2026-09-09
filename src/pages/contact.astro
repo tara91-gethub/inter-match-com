@@ -31,10 +31,18 @@ const locations = ['Manila', 'Cebu', 'Bangkok', 'Jakarta', 'Kuala Lumpur', 'Sing
     >
     </p>
 
-    <form id="application-form" class="space-y-32" action="/api/contact" method="POST" enctype="application/x-www-form-urlencoded">
+    <form
+      id="application-form"
+      class="space-y-32"
+      action="/api/contact"
+      method="POST"
+      enctype="application/x-www-form-urlencoded"
+    >
       <section class="space-y-12">
         <div class="mb-12 flex items-baseline gap-4 border-b border-[#4e453b] pb-4">
-          <span class="text-xs uppercase tracking-widest text-[#eac290]" style="font-family:'Newsreader',serif;">01</span>
+          <span class="text-xs uppercase tracking-widest text-[#eac290]" style="font-family:'Newsreader',serif;"
+            >01</span
+          >
           <h2 class="text-2xl uppercase tracking-widest text-white" style="font-family:'Noto Serif',serif;">
             Basic Information
           </h2>
@@ -42,7 +50,11 @@ const locations = ['Manila', 'Cebu', 'Bangkok', 'Jakarta', 'Kuala Lumpur', 'Sing
 
         <div class="grid grid-cols-1 gap-x-12 gap-y-16 md:grid-cols-2">
           <div class="space-y-2">
-            <label for="full_name" class="text-xs uppercase tracking-[0.25em] text-[#9b8f82]" style="font-family:'Newsreader',serif;">
+            <label
+              for="full_name"
+              class="text-xs uppercase tracking-[0.25em] text-[#9b8f82]"
+              style="font-family:'Newsreader',serif;"
+            >
               Full Legal Name <span class="text-[#eac290]">*</span>
             </label>
             <input
@@ -57,7 +69,11 @@ const locations = ['Manila', 'Cebu', 'Bangkok', 'Jakarta', 'Kuala Lumpur', 'Sing
           </div>
 
           <div class="space-y-2">
-            <label for="email" class="text-xs uppercase tracking-[0.25em] text-[#9b8f82]" style="font-family:'Newsreader',serif;">
+            <label
+              for="email"
+              class="text-xs uppercase tracking-[0.25em] text-[#9b8f82]"
+              style="font-family:'Newsreader',serif;"
+            >
               Email Address <span class="text-[#eac290]">*</span>
             </label>
             <input
@@ -72,7 +88,11 @@ const locations = ['Manila', 'Cebu', 'Bangkok', 'Jakarta', 'Kuala Lumpur', 'Sing
           </div>
 
           <div class="space-y-2 md:col-span-2">
-            <label for="location" class="text-xs uppercase tracking-[0.25em] text-[#9b8f82]" style="font-family:'Newsreader',serif;">
+            <label
+              for="location"
+              class="text-xs uppercase tracking-[0.25em] text-[#9b8f82]"
+              style="font-family:'Newsreader',serif;"
+            >
               Current Location
             </label>
             <select
@@ -89,7 +109,9 @@ const locations = ['Manila', 'Cebu', 'Bangkok', 'Jakarta', 'Kuala Lumpur', 'Sing
 
       <section class="space-y-12">
         <div class="mb-12 flex items-baseline gap-4 border-b border-[#4e453b] pb-4">
-          <span class="text-xs uppercase tracking-widest text-[#eac290]" style="font-family:'Newsreader',serif;">02</span>
+          <span class="text-xs uppercase tracking-widest text-[#eac290]" style="font-family:'Newsreader',serif;"
+            >02</span
+          >
           <h2 class="text-2xl uppercase tracking-widest text-white" style="font-family:'Noto Serif',serif;">
             Professional Background
           </h2>
@@ -97,7 +119,11 @@ const locations = ['Manila', 'Cebu', 'Bangkok', 'Jakarta', 'Kuala Lumpur', 'Sing
 
         <div class="space-y-16">
           <div class="space-y-2">
-            <label for="occupation" class="text-xs uppercase tracking-[0.25em] text-[#9b8f82]" style="font-family:'Newsreader',serif;">
+            <label
+              for="occupation"
+              class="text-xs uppercase tracking-[0.25em] text-[#9b8f82]"
+              style="font-family:'Newsreader',serif;"
+            >
               Industry and Occupation
             </label>
             <input
@@ -111,7 +137,11 @@ const locations = ['Manila', 'Cebu', 'Bangkok', 'Jakarta', 'Kuala Lumpur', 'Sing
           </div>
 
           <div class="space-y-2">
-            <label for="intentions" class="text-xs uppercase tracking-[0.25em] text-[#9b8f82]" style="font-family:'Newsreader',serif;">
+            <label
+              for="intentions"
+              class="text-xs uppercase tracking-[0.25em] text-[#9b8f82]"
+              style="font-family:'Newsreader',serif;"
+            >
               Relationship Intentions
             </label>
             <textarea
@@ -119,8 +149,7 @@ const locations = ['Manila', 'Cebu', 'Bangkok', 'Jakarta', 'Kuala Lumpur', 'Sing
               name="intentions"
               class="w-full resize-none border-b border-[#4e453b] bg-transparent px-0 py-3 text-lg text-white transition-colors duration-300 focus:border-[#eac290]"
               rows="4"
-              style="font-family:'Newsreader',serif;"
-            ></textarea>
+              style="font-family:'Newsreader',serif;"></textarea>
           </div>
         </div>
       </section>
@@ -133,8 +162,13 @@ const locations = ['Manila', 'Cebu', 'Bangkok', 'Jakarta', 'Kuala Lumpur', 'Sing
             class="mt-1 h-5 w-5 cursor-pointer border border-[#4e453b] bg-transparent accent-[#eac290]"
             type="checkbox"
           />
-          <span class="text-sm leading-relaxed text-[#9b8f82] transition-colors group-hover:text-white" style="font-family:'Newsreader',serif;">
-            I understand that The Matchmaking Bureau operates with absolute discretion. <span class="text-[#eac290]">*</span>
+          <span
+            class="text-sm leading-relaxed text-[#9b8f82] transition-colors group-hover:text-white"
+            style="font-family:'Newsreader',serif;"
+          >
+            I understand that The Matchmaking Bureau operates with absolute discretion. <span class="text-[#eac290]"
+              >*</span
+            >
           </span>
         </label>
 
@@ -143,7 +177,8 @@ const locations = ['Manila', 'Cebu', 'Bangkok', 'Jakarta', 'Kuala Lumpur', 'Sing
           class="flex w-full items-center justify-center gap-3 bg-[#cda777] py-6 text-sm uppercase tracking-[0.3em] text-[#573c15] transition-all duration-300 hover:bg-[#eac290] disabled:cursor-wait disabled:opacity-75"
           style="font-family:'Newsreader',serif;"
         >
-          <span class="submit-spinner hidden h-5 w-5 rounded-full border-2 border-[#573c15]/30 border-t-[#573c15]"></span>
+          <span class="submit-spinner hidden h-5 w-5 rounded-full border-2 border-[#573c15]/30 border-t-[#573c15]"
+          ></span>
           <span class="submit-label">Submit Application</span>
         </button>
 
@@ -220,7 +255,7 @@ const locations = ['Manila', 'Cebu', 'Bangkok', 'Jakarta', 'Kuala Lumpur', 'Sing
         }
 
         window.location.assign(result.redirect || '/thank-you');
-      } catch (error) {
+      } catch {
         showStatus('Something went wrong sending the form. Please try again or email admin@matchmakingbureau.com.');
       } finally {
         if (button) {

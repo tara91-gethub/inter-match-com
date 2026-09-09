@@ -1,31 +1,44 @@
 ---
 import RegionPage from '~/components/RegionPage.astro';
 import bangkokImg from '~/assets/images/cities/bangkok.jpg';
-const metadata = { title: "Private Matchmaking in Bangkok | The Matchmaking Bureau", description: "Private matchmaking in Bangkok for discerning professionals. Southeast Asia's most dynamic city served with absolute discretion." };
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.matchmakingbureau.com"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Thailand",
-      "item": "https://www.matchmakingbureau.com/thailand"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Bangkok",
-      "item": "https://www.matchmakingbureau.com/thailand/bangkok"
-    }
-  ]
+const metadata = {
+  title: 'Private Matchmaking in Bangkok | The Matchmaking Bureau',
+  description:
+    "Private matchmaking in Bangkok for discerning professionals. Southeast Asia's most dynamic city served with absolute discretion.",
 };
-const links = [{ text: "Thailand", href: "/thailand" }];
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://www.matchmakingbureau.com',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Thailand',
+      item: 'https://www.matchmakingbureau.com/thailand',
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'Bangkok',
+      item: 'https://www.matchmakingbureau.com/thailand/bangkok',
+    },
+  ],
+};
+const links = [{ text: 'Thailand', href: '/thailand' }];
 ---
-<RegionPage metadata={metadata} eyebrow="Private Matchmaking" hero="Bangkok Bureau" body="Bangkok sits at the intersection of tradition and ambition. Its executives, entrepreneurs and professionals operate in one of Asia's most sophisticated cities. The Matchmaking Bureau serves Bangkok's most discerning individuals with hand-selected introductions and complete confidentiality." image={bangkokImg} links={links} schema={schema} />
+
+<RegionPage
+  metadata={metadata}
+  eyebrow="Private Matchmaking"
+  hero="Bangkok Bureau"
+  body="Bangkok sits at the intersection of tradition and ambition. Its executives, entrepreneurs and professionals operate in one of Asia's most sophisticated cities. The Matchmaking Bureau serves Bangkok's most discerning individuals with hand-selected introductions and complete confidentiality."
+  image={bangkokImg}
+  links={links}
+  schema={schema}
+/>

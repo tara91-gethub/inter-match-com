@@ -120,8 +120,7 @@ Avoid:
 Use:
 
 ```astro
-import imageName from '~/assets/images/example.jpg';
-import { Image } from 'astro:assets';
+import imageName from '~/assets/images/example.jpg'; import {Image} from 'astro:assets';
 
 <Image src={imageName} alt="Useful alt text" />
 ```

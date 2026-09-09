@@ -1,7 +1,7 @@
 const getIndexNowKey = () =>
   process.env.INDEXNOW_KEY || process.env.INDEX_NOW_KEY || process.env.BING_INDEXNOW_KEY || '';
 
-export default function handler(req, res) {
+export default function handler(_req, res) {
   const key = getIndexNowKey().trim();
 
   if (!key) {

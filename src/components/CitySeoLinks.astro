@@ -1,5 +1,7 @@
 ---
-interface Props { currentCity?: string; }
+interface Props {
+  currentCity?: string;
+}
 const { currentCity } = Astro.props;
 const links = [
   { name: 'Manila', href: '/philippines/manila' },
@@ -10,11 +12,27 @@ const links = [
   { name: 'Ho Chi Minh City', href: '/vietnam/ho-chi-minh-city' },
 ].filter((link) => link.name !== currentCity);
 ---
+
 <section class="bg-[#0e1322] px-6 py-16 md:px-12">
   <div class="mx-auto max-w-5xl border-t border-[#4e453b] pt-10">
-    <h2 class="mb-6 text-center text-sm uppercase tracking-[0.25em] text-[#eac290]" style="font-family:'Newsreader',serif;">The Southeast Asia Bureau</h2>
+    <h2
+      class="mb-6 text-center text-sm uppercase tracking-[0.25em] text-[#eac290]"
+      style="font-family:'Newsreader',serif;"
+    >
+      The Southeast Asia Bureau
+    </h2>
     <div class="flex flex-wrap justify-center gap-4">
-      {links.map((link) => <a href={link.href} class="text-sm uppercase tracking-[0.18em] text-[#d2c4b7] hover:text-[#eac290]" style="font-family:'Newsreader',serif;">{link.name}</a>)}
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            class="text-sm uppercase tracking-[0.18em] text-[#d2c4b7] hover:text-[#eac290]"
+            style="font-family:'Newsreader',serif;"
+          >
+            {link.name}
+          </a>
+        ))
+      }
     </div>
   </div>
 </section>
