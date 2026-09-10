@@ -16,7 +16,7 @@ That is the separate live New Zealand website.
 
 ## Project Summary
 
-This is the international/Southeast Asia site for The Matchmaking Bureau.
+This is the international/Asia site for The Matchmaking Bureau.
 
 - Production domain: `https://www.matchmakingbureau.com`
 - Vercel URL: `https://inter-match-com.vercel.app`
@@ -87,10 +87,23 @@ Location options currently include:
 - Cebu
 - Davao
 - Bangkok
+- Chiang Mai
 - Jakarta
+- Bali
 - Kuala Lumpur
+- Penang
 - Singapore
 - Ho Chi Minh City
+- Hanoi
+- Da Nang
+- Shanghai
+- Beijing
+- Shenzhen
+- Guangzhou
+- Hong Kong
+- Mumbai
+- Delhi
+- Bangalore
 - Other
 
 Country/city SEO pages currently include:
@@ -101,6 +114,8 @@ Country/city SEO pages currently include:
 - Malaysia: `/malaysia`, `/malaysia/kuala-lumpur`, `/malaysia/penang`
 - Singapore: `/singapore`
 - Vietnam: `/vietnam`, `/vietnam/ho-chi-minh-city`, `/vietnam/hanoi`, `/vietnam/da-nang`
+- China: `/china`, `/china/shanghai`, `/china/beijing`, `/china/shenzhen`, `/china/guangzhou`, `/china/hong-kong`
+- India: `/india`, `/india/mumbai`, `/india/delhi`, `/india/bangalore`
 
 ## About Page / Del
 
@@ -151,8 +166,8 @@ The default social sharing preview is configured to use:
 
 Current homepage sharing metadata:
 
-- Title: `Private Matchmaking in Southeast Asia`
-- Description: `Private matchmaking across Southeast Asia for discerning professionals in the Philippines, Thailand, Indonesia, Malaysia, Singapore and Vietnam.`
+- Title: `Private Matchmaking in Asia`
+- Description: `Private matchmaking across Asia for discerning professionals in the Philippines, Thailand, Indonesia, Malaysia, Singapore, Vietnam, China and India.`
 - Image size: 1200 x 630
 
 ## Vercel Analytics
@@ -228,6 +243,7 @@ Do not over-personalize the country/city SEO pages with Del content. Keep Del ma
 - Improved schema markup: richer Article schema, Organization contact email/contactPoint, and shared Organization `@id` references in Service schemas.
 - Added new city SEO pages for Bali, Hanoi, Da Nang, Chiang Mai, and Penang using the existing `RegionPage` pattern.
 - Added Davao as an additional Philippines city SEO page using the same `RegionPage` pattern.
+- Added China and India country SEO pages with city pages for Shanghai, Beijing, Shenzhen, Guangzhou, Hong Kong, Mumbai, Delhi and Bangalore.
 
 ## Working Style With The Site Owner
 

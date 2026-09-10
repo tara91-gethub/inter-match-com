@@ -1,0 +1,30 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+import shenzhenImg from '~/assets/images/cities/shenzhen.jpg';
+const metadata = {
+  title: 'Private Matchmaking in Shenzhen | The Matchmaking Bureau',
+  description:
+    'Private matchmaking in Shenzhen for discerning technology, finance and business professionals seeking serious introductions.',
+};
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.matchmakingbureau.com' },
+    { '@type': 'ListItem', position: 2, name: 'China', item: 'https://www.matchmakingbureau.com/china' },
+    { '@type': 'ListItem', position: 3, name: 'Shenzhen', item: 'https://www.matchmakingbureau.com/china/shenzhen' },
+  ],
+};
+const links = [{ text: 'China', href: '/china' }];
+---
+
+<RegionPage
+  metadata={metadata}
+  eyebrow="Private Matchmaking"
+  hero="Shenzhen Bureau"
+  body="Shenzhen is a city of innovation, entrepreneurship and fast-moving professional lives. The Matchmaking Bureau serves Shenzhen with a calmer and more selective path for serious people who want thoughtful introductions without the noise of public dating."
+  image={shenzhenImg}
+  imageAlt="Shenzhen skyline at blue hour"
+  links={links}
+  schema={schema}
+/>

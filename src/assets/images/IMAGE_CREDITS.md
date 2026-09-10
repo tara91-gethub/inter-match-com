@@ -17,3 +17,13 @@ These local city and country images replace watermarked placeholder downloads.
 - `cities/chiang-mai.jpg` - Generated local city image for this project.
 - `cities/penang.jpg` - Generated local city image for this project.
 - `cities/davao.jpg` - Generated local city image for this project.
+- `countries/china.jpg` - Generated local country image for this project.
+- `countries/india.jpg` - Generated local country image for this project.
+- `cities/shanghai.jpg` - Generated local city image for this project.
+- `cities/beijing.jpg` - Generated local city image for this project.
+- `cities/shenzhen.jpg` - Generated local city image for this project.
+- `cities/guangzhou.jpg` - Generated local city image for this project.
+- `cities/hong-kong.jpg` - Generated local city image for this project.
+- `cities/mumbai.jpg` - Generated local city image for this project.
+- `cities/delhi.jpg` - Generated local city image for this project.
+- `cities/bangalore.jpg` - Generated local city image for this project.

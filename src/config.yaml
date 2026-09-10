@@ -7,9 +7,9 @@ site:
 
 metadata:
   title:
-    default: 'The Matchmaking Bureau | Private Matchmaking Southeast Asia'
+    default: 'The Matchmaking Bureau | Private Matchmaking Asia'
     template: '%s | The Matchmaking Bureau'
-  description: 'Private matchmaking across Southeast Asia for discerning professionals in the Philippines, Thailand, Indonesia, Malaysia, Singapore and Vietnam.'
+  description: 'Private matchmaking across Asia for discerning professionals in the Philippines, Thailand, Indonesia, Malaysia, Singapore, Vietnam, China and India.'
   robots:
     index: true
     follow: true

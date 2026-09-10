@@ -9,7 +9,7 @@ These terms govern your use of The Matchmaking Bureau website and any inquiry yo
 
 ## About The Matchmaking Bureau
 
-The Matchmaking Bureau is a private matchmaking agency website for Southeast Asia. The website provides information about our philosophy, membership, country and city coverage, journal content, and application process.
+The Matchmaking Bureau is a private matchmaking agency website for Asia. The website provides information about our philosophy, membership, country and city coverage, journal content, and application process.
 
 Submitting an inquiry does not guarantee acceptance as a member, a consultation, or an introduction.
 

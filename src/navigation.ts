@@ -10,6 +10,8 @@ export const headerData = {
         { text: 'Malaysia', href: '/malaysia' },
         { text: 'Singapore', href: '/singapore' },
         { text: 'Vietnam', href: '/vietnam' },
+        { text: 'China', href: '/china' },
+        { text: 'India', href: '/india' },
       ],
     },
     { text: 'The Process', href: '/process' },

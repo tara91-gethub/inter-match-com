@@ -4,7 +4,7 @@ import JsonLd from '~/components/JsonLd.astro';
 const metadata = {
   title: 'FAQ',
   description:
-    'Frequently asked questions about private matchmaking in Southeast Asia - how it works, confidentiality, process and membership.',
+    'Frequently asked questions about private matchmaking in Asia - how it works, confidentiality, process and membership.',
 };
 const faqs = [
   [
@@ -21,7 +21,7 @@ const faqs = [
   ],
   [
     'Which countries and cities do you serve?',
-    'We serve the Philippines, including Manila and Cebu; Thailand, including Bangkok; Indonesia, including Jakarta; Malaysia, including Kuala Lumpur; Singapore; and Vietnam, including Ho Chi Minh City.',
+    'We serve the Philippines, Thailand, Indonesia, Malaysia, Singapore, Vietnam, China and India, with city coverage in major professional centres.',
   ],
   [
     'What kind of professionals do you work with?',
@@ -73,7 +73,7 @@ const schema = {
       name: 'Which countries and cities do you serve?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We serve the Philippines, including Manila and Cebu; Thailand, including Bangkok; Indonesia, including Jakarta; Malaysia, including Kuala Lumpur; Singapore; and Vietnam, including Ho Chi Minh City.',
+        text: 'We serve the Philippines, Thailand, Indonesia, Malaysia, Singapore, Vietnam, China and India, with city coverage in major professional centres.',
       },
     },
     {
@@ -121,7 +121,7 @@ const schema = {
         class="text-xl md:text-2xl text-[#9b8f82] max-w-2xl mx-auto italic leading-relaxed"
         style="font-family:'Newsreader',serif;"
       >
-        Confidential answers for discerning professionals across Southeast Asia.
+        Confidential answers for discerning professionals across Asia.
       </p>
     </header><section class="border border-[#4e453b] divide-y divide-[#4e453b]">
       {
@@ -189,6 +189,46 @@ const schema = {
                 (
                 <a class="text-[#eac290]" href="/vietnam/ho-chi-minh-city">
                   Ho Chi Minh City
+                </a>
+                ),{' '}
+                <a class="text-[#eac290]" href="/china">
+                  China
+                </a>{' '}
+                (
+                <a class="text-[#eac290]" href="/china/shanghai">
+                  Shanghai
+                </a>
+                ,{' '}
+                <a class="text-[#eac290]" href="/china/beijing">
+                  Beijing
+                </a>
+                ,{' '}
+                <a class="text-[#eac290]" href="/china/shenzhen">
+                  Shenzhen
+                </a>
+                ,{' '}
+                <a class="text-[#eac290]" href="/china/guangzhou">
+                  Guangzhou
+                </a>
+                ,{' '}
+                <a class="text-[#eac290]" href="/china/hong-kong">
+                  Hong Kong
+                </a>
+                ), and{' '}
+                <a class="text-[#eac290]" href="/india">
+                  India
+                </a>{' '}
+                (
+                <a class="text-[#eac290]" href="/india/mumbai">
+                  Mumbai
+                </a>
+                ,{' '}
+                <a class="text-[#eac290]" href="/india/delhi">
+                  Delhi
+                </a>
+                ,{' '}
+                <a class="text-[#eac290]" href="/india/bangalore">
+                  Bangalore
                 </a>
                 ).
               </p>

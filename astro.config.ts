@@ -37,7 +37,18 @@ export default defineConfig({
         const rawPathname = new URL(item.url).pathname;
         const pathname = rawPathname.length > 1 && rawPathname.endsWith('/') ? rawPathname.slice(0, -1) : rawPathname;
         if (pathname === '/') item.priority = 1.0;
-        else if (['/philippines', '/thailand', '/indonesia', '/malaysia', '/singapore', '/vietnam'].includes(pathname))
+        else if (
+          [
+            '/philippines',
+            '/thailand',
+            '/indonesia',
+            '/malaysia',
+            '/singapore',
+            '/vietnam',
+            '/china',
+            '/india',
+          ].includes(pathname)
+        )
           item.priority = 0.9;
         else if (
           [
@@ -53,6 +64,14 @@ export default defineConfig({
             '/vietnam/ho-chi-minh-city',
             '/vietnam/hanoi',
             '/vietnam/da-nang',
+            '/china/shanghai',
+            '/china/beijing',
+            '/china/shenzhen',
+            '/china/guangzhou',
+            '/china/hong-kong',
+            '/india/mumbai',
+            '/india/delhi',
+            '/india/bangalore',
             '/membership',
             '/process',
             '/faq',

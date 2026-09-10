@@ -6,10 +6,24 @@ const { currentCity } = Astro.props;
 const links = [
   { name: 'Manila', href: '/philippines/manila' },
   { name: 'Cebu', href: '/philippines/cebu' },
+  { name: 'Davao', href: '/philippines/davao' },
   { name: 'Bangkok', href: '/thailand/bangkok' },
+  { name: 'Chiang Mai', href: '/thailand/chiang-mai' },
   { name: 'Jakarta', href: '/indonesia/jakarta' },
+  { name: 'Bali', href: '/indonesia/bali' },
   { name: 'Kuala Lumpur', href: '/malaysia/kuala-lumpur' },
+  { name: 'Penang', href: '/malaysia/penang' },
   { name: 'Ho Chi Minh City', href: '/vietnam/ho-chi-minh-city' },
+  { name: 'Hanoi', href: '/vietnam/hanoi' },
+  { name: 'Da Nang', href: '/vietnam/da-nang' },
+  { name: 'Shanghai', href: '/china/shanghai' },
+  { name: 'Beijing', href: '/china/beijing' },
+  { name: 'Shenzhen', href: '/china/shenzhen' },
+  { name: 'Guangzhou', href: '/china/guangzhou' },
+  { name: 'Hong Kong', href: '/china/hong-kong' },
+  { name: 'Mumbai', href: '/india/mumbai' },
+  { name: 'Delhi', href: '/india/delhi' },
+  { name: 'Bangalore', href: '/india/bangalore' },
 ].filter((link) => link.name !== currentCity);
 ---
 
@@ -19,7 +33,7 @@ const links = [
       class="mb-6 text-center text-sm uppercase tracking-[0.25em] text-[#eac290]"
       style="font-family:'Newsreader',serif;"
     >
-      The Southeast Asia Bureau
+      The Asia Bureau
     </h2>
     <div class="flex flex-wrap justify-center gap-4">
       {

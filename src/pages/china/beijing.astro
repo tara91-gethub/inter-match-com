@@ -1,0 +1,30 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+import beijingImg from '~/assets/images/cities/beijing.jpg';
+const metadata = {
+  title: 'Private Matchmaking in Beijing | The Matchmaking Bureau',
+  description:
+    'Private matchmaking in Beijing for discerning professionals seeking serious introductions with privacy and judgment.',
+};
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.matchmakingbureau.com' },
+    { '@type': 'ListItem', position: 2, name: 'China', item: 'https://www.matchmakingbureau.com/china' },
+    { '@type': 'ListItem', position: 3, name: 'Beijing', item: 'https://www.matchmakingbureau.com/china/beijing' },
+  ],
+};
+const links = [{ text: 'China', href: '/china' }];
+---
+
+<RegionPage
+  metadata={metadata}
+  eyebrow="Private Matchmaking"
+  hero="Beijing Bureau"
+  body="Beijing brings together influence, family expectation, professional achievement and cultural depth. The Matchmaking Bureau serves Beijing with private introductions for serious individuals who value discretion, personal judgment and compatibility beyond a public profile."
+  image={beijingImg}
+  imageAlt="Beijing skyline beyond a private courtyard at sunset"
+  links={links}
+  schema={schema}
+/>

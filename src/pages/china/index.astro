@@ -1,0 +1,51 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+import chinaImg from '~/assets/images/countries/china.jpg';
+import shanghaiImg from '~/assets/images/cities/shanghai.jpg';
+import beijingImg from '~/assets/images/cities/beijing.jpg';
+import shenzhenImg from '~/assets/images/cities/shenzhen.jpg';
+import guangzhouImg from '~/assets/images/cities/guangzhou.jpg';
+import hongKongImg from '~/assets/images/cities/hong-kong.jpg';
+const metadata = {
+  title: 'Private Matchmaking in China | The Matchmaking Bureau',
+  description:
+    'Private matchmaking in China for discerning professionals. Serving Shanghai, Beijing, Shenzhen, Guangzhou and Hong Kong.',
+};
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://www.matchmakingbureau.com',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'China',
+      item: 'https://www.matchmakingbureau.com/china',
+    },
+  ],
+};
+const cards = [
+  { title: 'Shanghai', href: '/china/shanghai', image: shanghaiImg, imageAlt: 'Shanghai skyline at sunset' },
+  { title: 'Beijing', href: '/china/beijing', image: beijingImg, imageAlt: 'Beijing skyline at sunset' },
+  { title: 'Shenzhen', href: '/china/shenzhen', image: shenzhenImg, imageAlt: 'Shenzhen skyline at blue hour' },
+  { title: 'Guangzhou', href: '/china/guangzhou', image: guangzhouImg, imageAlt: 'Guangzhou skyline at sunset' },
+  { title: 'Hong Kong', href: '/china/hong-kong', image: hongKongImg, imageAlt: 'Hong Kong harbour skyline' },
+];
+---
+
+<RegionPage
+  metadata={metadata}
+  eyebrow="Private Matchmaking"
+  hero="China Bureau"
+  body="China is one of the world's most important centres of ambition, family legacy and international business. The Matchmaking Bureau serves discerning professionals across China with private, carefully considered introductions built around seriousness, discretion and genuine long-term compatibility."
+  image={chinaImg}
+  imageAlt="China city skyline from a private terrace at sunset"
+  cards={cards}
+  links={[]}
+  schema={schema}
+/>

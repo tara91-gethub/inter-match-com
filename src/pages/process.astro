@@ -3,8 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/JsonLd.astro';
 const metadata = {
   title: 'The Process',
-  description:
-    'How The Matchmaking Bureau works - private matchmaking across Southeast Asia, from application to introduction.',
+  description: 'How The Matchmaking Bureau works - private matchmaking across Asia, from application to introduction.',
 };
 const schema = {
   '@context': 'https://schema.org',
@@ -23,8 +22,10 @@ const schema = {
     { '@type': 'Country', name: 'Malaysia' },
     { '@type': 'Country', name: 'Singapore' },
     { '@type': 'Country', name: 'Vietnam' },
+    { '@type': 'Country', name: 'China' },
+    { '@type': 'Country', name: 'India' },
   ],
-  description: 'Hand-selected private introductions for discerning professionals across Southeast Asia.',
+  description: 'Hand-selected private introductions for discerning professionals across Asia.',
   serviceType: 'Matchmaking',
 };
 const steps = [
@@ -34,11 +35,7 @@ const steps = [
     'A confidential application establishes intent, values, lifestyle context and regional preferences.',
   ],
   ['02', 'The Consultation', 'A private conversation gives our consultants the nuance no algorithm can understand.'],
-  [
-    '03',
-    'The Search',
-    'Our team reviews trusted circles across Southeast Asia and curates only compatible possibilities.',
-  ],
+  ['03', 'The Search', 'Our team reviews trusted circles across Asia and curates only compatible possibilities.'],
   ['04', 'The Introduction', 'A single introduction is arranged with discretion and careful context.'],
   ['05', 'Ongoing Support', 'Feedback refines the search and protects the integrity of each step.'],
 ];

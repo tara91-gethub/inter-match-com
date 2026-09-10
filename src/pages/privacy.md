@@ -5,7 +5,7 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 _Last updated_: June 5, 2026
 
-The Matchmaking Bureau is a private matchmaking agency serving discerning individuals across Southeast Asia. Privacy is central to our work. This policy explains how we collect, use, protect, and disclose information submitted through our website and consultation process.
+The Matchmaking Bureau is a private matchmaking agency serving discerning individuals across Asia. Privacy is central to our work. This policy explains how we collect, use, protect, and disclose information submitted through our website and consultation process.
 
 ## Information We Collect
 

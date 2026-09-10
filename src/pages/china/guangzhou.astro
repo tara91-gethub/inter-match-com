@@ -1,0 +1,30 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+import guangzhouImg from '~/assets/images/cities/guangzhou.jpg';
+const metadata = {
+  title: 'Private Matchmaking in Guangzhou | The Matchmaking Bureau',
+  description:
+    'Private matchmaking in Guangzhou for discerning professionals seeking serious introductions with discretion and care.',
+};
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.matchmakingbureau.com' },
+    { '@type': 'ListItem', position: 2, name: 'China', item: 'https://www.matchmakingbureau.com/china' },
+    { '@type': 'ListItem', position: 3, name: 'Guangzhou', item: 'https://www.matchmakingbureau.com/china/guangzhou' },
+  ],
+};
+const links = [{ text: 'China', href: '/china' }];
+---
+
+<RegionPage
+  metadata={metadata}
+  eyebrow="Private Matchmaking"
+  hero="Guangzhou Bureau"
+  body="Guangzhou has a strong commercial culture, close professional circles and a deep respect for family context. The Matchmaking Bureau serves Guangzhou with private, considered introductions for people seeking a serious partner with discretion and substance."
+  image={guangzhouImg}
+  imageAlt="Guangzhou riverfront skyline at sunset"
+  links={links}
+  schema={schema}
+/>

@@ -1,0 +1,30 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+import mumbaiImg from '~/assets/images/cities/mumbai.jpg';
+const metadata = {
+  title: 'Private Matchmaking in Mumbai | The Matchmaking Bureau',
+  description:
+    'Private matchmaking in Mumbai for discerning professionals seeking serious introductions with privacy and personal care.',
+};
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.matchmakingbureau.com' },
+    { '@type': 'ListItem', position: 2, name: 'India', item: 'https://www.matchmakingbureau.com/india' },
+    { '@type': 'ListItem', position: 3, name: 'Mumbai', item: 'https://www.matchmakingbureau.com/india/mumbai' },
+  ],
+};
+const links = [{ text: 'India', href: '/india' }];
+---
+
+<RegionPage
+  metadata={metadata}
+  eyebrow="Private Matchmaking"
+  hero="Mumbai Bureau"
+  body="Mumbai is India's commercial capital, where professional ambition, family context and reputation often matter deeply. The Matchmaking Bureau serves Mumbai with discreet, carefully considered introductions for serious people who want a more personal route to connection."
+  image={mumbaiImg}
+  imageAlt="Mumbai skyline and waterfront at sunset"
+  links={links}
+  schema={schema}
+/>

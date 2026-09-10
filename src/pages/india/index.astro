@@ -1,0 +1,47 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+import indiaImg from '~/assets/images/countries/india.jpg';
+import mumbaiImg from '~/assets/images/cities/mumbai.jpg';
+import delhiImg from '~/assets/images/cities/delhi.jpg';
+import bangaloreImg from '~/assets/images/cities/bangalore.jpg';
+const metadata = {
+  title: 'Private Matchmaking in India | The Matchmaking Bureau',
+  description:
+    'Private matchmaking in India for discerning professionals. Serving Mumbai, Delhi and Bangalore with discretion.',
+};
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://www.matchmakingbureau.com',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'India',
+      item: 'https://www.matchmakingbureau.com/india',
+    },
+  ],
+};
+const cards = [
+  { title: 'Mumbai', href: '/india/mumbai', image: mumbaiImg, imageAlt: 'Mumbai skyline and waterfront at sunset' },
+  { title: 'Delhi', href: '/india/delhi', image: delhiImg, imageAlt: 'Delhi boulevard and skyline at sunset' },
+  { title: 'Bangalore', href: '/india/bangalore', image: bangaloreImg, imageAlt: 'Bangalore skyline at blue hour' },
+];
+---
+
+<RegionPage
+  metadata={metadata}
+  eyebrow="Private Matchmaking"
+  hero="India Bureau"
+  body="India is home to one of the world's most accomplished professional communities, where family expectations, ambition and long-term intention often carry deep importance. The Matchmaking Bureau serves India with discreet, hand-selected introductions for people seeking a serious relationship."
+  image={indiaImg}
+  imageAlt="India city skyline from a private terrace at sunset"
+  cards={cards}
+  links={[]}
+  schema={schema}
+/>

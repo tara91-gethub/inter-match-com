@@ -1,0 +1,30 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+import delhiImg from '~/assets/images/cities/delhi.jpg';
+const metadata = {
+  title: 'Private Matchmaking in Delhi | The Matchmaking Bureau',
+  description:
+    'Private matchmaking in Delhi for discerning professionals seeking serious introductions with discretion and judgment.',
+};
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.matchmakingbureau.com' },
+    { '@type': 'ListItem', position: 2, name: 'India', item: 'https://www.matchmakingbureau.com/india' },
+    { '@type': 'ListItem', position: 3, name: 'Delhi', item: 'https://www.matchmakingbureau.com/india/delhi' },
+  ],
+};
+const links = [{ text: 'India', href: '/india' }];
+---
+
+<RegionPage
+  metadata={metadata}
+  eyebrow="Private Matchmaking"
+  hero="Delhi Bureau"
+  body="Delhi brings together influence, professional achievement, family networks and long-term expectations. The Matchmaking Bureau serves Delhi with private introductions for discerning individuals who want their search handled with care, privacy and seriousness."
+  image={delhiImg}
+  imageAlt="Delhi boulevard and skyline at sunset"
+  links={links}
+  schema={schema}
+/>
