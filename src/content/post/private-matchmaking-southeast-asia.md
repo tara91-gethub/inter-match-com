@@ -9,7 +9,7 @@ author: 'The Matchmaking Bureau'
 
 For accomplished professionals across Southeast Asia, privacy is not a preference. It is part of daily life. Founders, executives, doctors, lawyers and senior professionals often move through close social and business circles where reputation matters and where a casual public search can feel exposed before it has even begun.
 
-Dating apps were built for volume. Private matchmaking is built for judgment. The difference matters. A serious professional in Manila, Bangkok, Jakarta or Kuala Lumpur may not want to trade discretion for convenience, and may not have the time to sort through conversations that lack substance. The private introduction offers another path: curated, discreet and intentional from the first conversation.
+Dating apps were built for volume. Private matchmaking is built for judgment. The difference matters. A serious professional in [Manila](/philippines/manila), [Bangkok](/thailand/bangkok), [Jakarta](/indonesia/jakarta) or [Kuala Lumpur](/malaysia/kuala-lumpur) may not want to trade discretion for convenience, and may not have the time to sort through conversations that lack substance. The private introduction offers another path: curated, discreet and intentional from the first conversation.
 
 In many Filipino, Thai, Indonesian and Malaysian professional circles, face culture still shapes how people approach connection. Introductions carry context. Reputation travels quickly. A relationship search that appears too casual can feel misaligned with the seriousness of a person's career, family expectations and public identity. Private matchmaking respects that reality.
 
@@ -19,6 +19,6 @@ That is why a private introduction can feel so different. It begins with discret
 
 For many professionals, the appeal is also efficiency. A curated introduction does not guarantee love, but it protects time. It removes much of the noise that defines modern dating and creates room for a more considered first meeting.
 
-Those exploring private matchmaking in the region may begin with our country bureaus for the [Philippines](/philippines) and [Thailand](/thailand), or apply directly for a confidential review.
+Those exploring private matchmaking in the region may begin with our country bureaus for the [Philippines](/philippines), [Thailand](/thailand), [Indonesia](/indonesia), [Malaysia](/malaysia), [Singapore](/singapore) and [Vietnam](/vietnam), or apply directly for a confidential review.
 
 The strongest connections rarely begin with volume. They begin with attention, privacy and a serious understanding of what two accomplished people are truly seeking.

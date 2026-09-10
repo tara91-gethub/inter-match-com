@@ -7,7 +7,7 @@ image: '~/assets/images/antique-brass-key.jpg'
 author: 'The Matchmaking Bureau'
 ---
 
-International matchmaking can become complicated very quickly when people start with practical questions. Where will we live? Who will relocate? Does this person match every point on my checklist? These questions do matter, but we do not believe they should always come first. For us, the more important question is whether two people could genuinely be right for each other.
+International matchmaking can become complicated very quickly when people start with practical questions. Where will we live? Who will relocate? Does this person match every point on my checklist? These questions do matter, but we do not believe they should always come first. For us, the more important question is whether two people could genuinely be right for each other, whether they are based in a major business centre like [Singapore](/singapore) or a lifestyle-led city like [Bali](/indonesia/bali).
 
 ## Relocation Should Not Always Come First
 
