@@ -43,6 +43,7 @@ export default defineConfig({
           [
             '/philippines/manila',
             '/philippines/cebu',
+            '/philippines/davao',
             '/thailand/bangkok',
             '/thailand/chiang-mai',
             '/indonesia/jakarta',

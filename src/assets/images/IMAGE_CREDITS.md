@@ -16,3 +16,4 @@ These local city and country images replace watermarked placeholder downloads.
 - `cities/da-nang.jpg` - Generated local city image for this project.
 - `cities/chiang-mai.jpg` - Generated local city image for this project.
 - `cities/penang.jpg` - Generated local city image for this project.
+- `cities/davao.jpg` - Generated local city image for this project.

@@ -3,10 +3,11 @@ import RegionPage from '~/components/RegionPage.astro';
 import philippinesImg from '~/assets/images/countries/philippines.jpg';
 import manilaImg from '~/assets/images/cities/manila.jpg';
 import cebuImg from '~/assets/images/cities/cebu.jpg';
+import davaoImg from '~/assets/images/cities/davao.jpg';
 const metadata = {
   title: 'Private Matchmaking in the Philippines | The Matchmaking Bureau',
   description:
-    'Private matchmaking in the Philippines for discerning professionals. Serving Manila and Cebu with absolute discretion.',
+    'Private matchmaking in the Philippines for discerning professionals. Serving Manila, Cebu and Davao with absolute discretion.',
 };
 const schema = {
   '@context': 'https://schema.org',
@@ -29,6 +30,7 @@ const schema = {
 const cards = [
   { title: 'Manila', href: '/philippines/manila', image: manilaImg },
   { title: 'Cebu', href: '/philippines/cebu', image: cebuImg },
+  { title: 'Davao', href: '/philippines/davao', image: davaoImg, imageAlt: 'Davao city skyline at sunset' },
 ];
 ---
 

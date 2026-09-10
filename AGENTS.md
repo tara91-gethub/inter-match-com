@@ -85,6 +85,7 @@ Location options currently include:
 
 - Manila
 - Cebu
+- Davao
 - Bangkok
 - Jakarta
 - Kuala Lumpur
@@ -94,7 +95,7 @@ Location options currently include:
 
 Country/city SEO pages currently include:
 
-- Philippines: `/philippines`, `/philippines/manila`, `/philippines/cebu`
+- Philippines: `/philippines`, `/philippines/manila`, `/philippines/cebu`, `/philippines/davao`
 - Thailand: `/thailand`, `/thailand/bangkok`, `/thailand/chiang-mai`
 - Indonesia: `/indonesia`, `/indonesia/jakarta`, `/indonesia/bali`
 - Malaysia: `/malaysia`, `/malaysia/kuala-lumpur`, `/malaysia/penang`
@@ -226,6 +227,7 @@ Do not over-personalize the country/city SEO pages with Del content. Keep Del ma
 - Removed thin `/category/...` archive pages from the build and sitemap; keep real country/city pages indexed instead.
 - Improved schema markup: richer Article schema, Organization contact email/contactPoint, and shared Organization `@id` references in Service schemas.
 - Added new city SEO pages for Bali, Hanoi, Da Nang, Chiang Mai, and Penang using the existing `RegionPage` pattern.
+- Added Davao as an additional Philippines city SEO page using the same `RegionPage` pattern.
 
 ## Working Style With The Site Owner
 

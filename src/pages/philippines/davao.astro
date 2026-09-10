@@ -1,0 +1,45 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+import davaoImg from '~/assets/images/cities/davao.jpg';
+const metadata = {
+  title: 'Private Matchmaking in Davao | The Matchmaking Bureau',
+  description:
+    'Private matchmaking in Davao for discerning Filipino professionals seeking serious introductions with privacy and personal care.',
+};
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://www.matchmakingbureau.com',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Philippines',
+      item: 'https://www.matchmakingbureau.com/philippines',
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'Davao',
+      item: 'https://www.matchmakingbureau.com/philippines/davao',
+    },
+  ],
+};
+const links = [{ text: 'Philippines', href: '/philippines' }];
+---
+
+<RegionPage
+  metadata={metadata}
+  eyebrow="Private Matchmaking"
+  hero="Davao Bureau"
+  body="Davao is one of the Philippines' most important southern cities, known for its business community, family values and quieter sense of privacy. The Matchmaking Bureau serves Davao with personal, carefully considered introductions for people seeking a serious relationship with discretion."
+  image={davaoImg}
+  imageAlt="Davao city skyline with tropical greenery at sunset"
+  links={links}
+  schema={schema}
+/>
