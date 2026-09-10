@@ -2,10 +2,11 @@
 import RegionPage from '~/components/RegionPage.astro';
 import malaysiaImg from '~/assets/images/countries/malaysia.jpg';
 import kualaLumpurImg from '~/assets/images/cities/kuala-lumpur.jpg';
+import penangImg from '~/assets/images/cities/penang.jpg';
 const metadata = {
   title: 'Private Matchmaking in Malaysia | The Matchmaking Bureau',
   description:
-    'Private matchmaking in Malaysia for discerning professionals. Serving Kuala Lumpur with absolute discretion.',
+    'Private matchmaking in Malaysia for discerning professionals. Serving Kuala Lumpur and Penang with absolute discretion.',
 };
 const schema = {
   '@context': 'https://schema.org',
@@ -25,7 +26,10 @@ const schema = {
     },
   ],
 };
-const cards = [{ title: 'Kuala Lumpur', href: '/malaysia/kuala-lumpur', image: kualaLumpurImg }];
+const cards = [
+  { title: 'Kuala Lumpur', href: '/malaysia/kuala-lumpur', image: kualaLumpurImg },
+  { title: 'Penang', href: '/malaysia/penang', image: penangImg },
+];
 ---
 
 <RegionPage

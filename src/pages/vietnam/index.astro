@@ -2,10 +2,12 @@
 import RegionPage from '~/components/RegionPage.astro';
 import vietnamImg from '~/assets/images/countries/vietnam.jpg';
 import hoChiMinhCityImg from '~/assets/images/cities/ho-chi-minh-city.jpg';
+import hanoiImg from '~/assets/images/cities/hanoi.jpg';
+import daNangImg from '~/assets/images/cities/da-nang.jpg';
 const metadata = {
   title: 'Private Matchmaking in Vietnam | The Matchmaking Bureau',
   description:
-    'Private matchmaking in Vietnam for discerning professionals. Serving Ho Chi Minh City with absolute discretion.',
+    'Private matchmaking in Vietnam for discerning professionals. Serving Ho Chi Minh City, Hanoi and Da Nang with discretion.',
 };
 const schema = {
   '@context': 'https://schema.org',
@@ -25,7 +27,11 @@ const schema = {
     },
   ],
 };
-const cards = [{ title: 'Ho Chi Minh City', href: '/vietnam/ho-chi-minh-city', image: hoChiMinhCityImg }];
+const cards = [
+  { title: 'Ho Chi Minh City', href: '/vietnam/ho-chi-minh-city', image: hoChiMinhCityImg },
+  { title: 'Hanoi', href: '/vietnam/hanoi', image: hanoiImg },
+  { title: 'Da Nang', href: '/vietnam/da-nang', image: daNangImg },
+];
 ---
 
 <RegionPage

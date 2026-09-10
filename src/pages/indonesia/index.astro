@@ -2,10 +2,11 @@
 import RegionPage from '~/components/RegionPage.astro';
 import indonesiaImg from '~/assets/images/countries/indonesia.jpg';
 import jakartaImg from '~/assets/images/cities/jakarta.jpg';
+import baliImg from '~/assets/images/cities/bali.jpg';
 const metadata = {
   title: 'Private Matchmaking in Indonesia | The Matchmaking Bureau',
   description:
-    'Private matchmaking in Indonesia for discerning professionals. Serving Jakarta with absolute discretion.',
+    'Private matchmaking in Indonesia for discerning professionals. Serving Jakarta and Bali with absolute discretion.',
 };
 const schema = {
   '@context': 'https://schema.org',
@@ -25,7 +26,10 @@ const schema = {
     },
   ],
 };
-const cards = [{ title: 'Jakarta', href: '/indonesia/jakarta', image: jakartaImg }];
+const cards = [
+  { title: 'Jakarta', href: '/indonesia/jakarta', image: jakartaImg },
+  { title: 'Bali', href: '/indonesia/bali', image: baliImg },
+];
 ---
 
 <RegionPage

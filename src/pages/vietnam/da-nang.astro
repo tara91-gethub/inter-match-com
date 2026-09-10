@@ -1,0 +1,44 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+import daNangImg from '~/assets/images/cities/da-nang.jpg';
+const metadata = {
+  title: 'Private Matchmaking in Da Nang | The Matchmaking Bureau',
+  description:
+    'Private matchmaking in Da Nang for discerning professionals and serious singles seeking considered introductions with discretion.',
+};
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://www.matchmakingbureau.com',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Vietnam',
+      item: 'https://www.matchmakingbureau.com/vietnam',
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'Da Nang',
+      item: 'https://www.matchmakingbureau.com/vietnam/da-nang',
+    },
+  ],
+};
+const links = [{ text: 'Vietnam', href: '/vietnam' }];
+---
+
+<RegionPage
+  metadata={metadata}
+  eyebrow="Private Matchmaking"
+  hero="Da Nang Bureau"
+  body="Da Nang offers a quieter but increasingly international setting for professionals who value lifestyle, family and long-term intention. The Matchmaking Bureau serves Da Nang with private introductions designed around genuine compatibility rather than volume or public exposure."
+  image={daNangImg}
+  links={links}
+  schema={schema}
+/>

@@ -92,6 +92,15 @@ Location options currently include:
 - Ho Chi Minh City
 - Other
 
+Country/city SEO pages currently include:
+
+- Philippines: `/philippines`, `/philippines/manila`, `/philippines/cebu`
+- Thailand: `/thailand`, `/thailand/bangkok`, `/thailand/chiang-mai`
+- Indonesia: `/indonesia`, `/indonesia/jakarta`, `/indonesia/bali`
+- Malaysia: `/malaysia`, `/malaysia/kuala-lumpur`, `/malaysia/penang`
+- Singapore: `/singapore`
+- Vietnam: `/vietnam`, `/vietnam/ho-chi-minh-city`, `/vietnam/hanoi`, `/vietnam/da-nang`
+
 ## About Page / Del
 
 The About page includes Del as the matchmaker.
@@ -216,6 +225,7 @@ Do not over-personalize the country/city SEO pages with Del content. Keep Del ma
 - Standardized canonical/sitemap/schema URLs to `https://www.matchmakingbureau.com`.
 - Removed thin `/category/...` archive pages from the build and sitemap; keep real country/city pages indexed instead.
 - Improved schema markup: richer Article schema, Organization contact email/contactPoint, and shared Organization `@id` references in Service schemas.
+- Added new city SEO pages for Bali, Hanoi, Da Nang, Chiang Mai, and Penang using the existing `RegionPage` pattern.
 
 ## Working Style With The Site Owner
 

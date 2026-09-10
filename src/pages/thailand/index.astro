@@ -2,10 +2,11 @@
 import RegionPage from '~/components/RegionPage.astro';
 import thailandImg from '~/assets/images/countries/thailand.jpg';
 import bangkokImg from '~/assets/images/cities/bangkok.jpg';
+import chiangMaiImg from '~/assets/images/cities/chiang-mai.jpg';
 const metadata = {
   title: 'Private Matchmaking in Thailand | The Matchmaking Bureau',
   description:
-    'Private matchmaking in Thailand for discerning professionals. Serving Bangkok with absolute discretion.',
+    'Private matchmaking in Thailand for discerning professionals. Serving Bangkok and Chiang Mai with absolute discretion.',
 };
 const schema = {
   '@context': 'https://schema.org',
@@ -25,7 +26,10 @@ const schema = {
     },
   ],
 };
-const cards = [{ title: 'Bangkok', href: '/thailand/bangkok', image: bangkokImg }];
+const cards = [
+  { title: 'Bangkok', href: '/thailand/bangkok', image: bangkokImg },
+  { title: 'Chiang Mai', href: '/thailand/chiang-mai', image: chiangMaiImg },
+];
 ---
 
 <RegionPage

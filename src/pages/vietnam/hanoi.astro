@@ -1,0 +1,44 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+import hanoiImg from '~/assets/images/cities/hanoi.jpg';
+const metadata = {
+  title: 'Private Matchmaking in Hanoi | The Matchmaking Bureau',
+  description:
+    'Private matchmaking in Hanoi for discerning Vietnamese professionals seeking serious introductions with privacy and personal care.',
+};
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://www.matchmakingbureau.com',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Vietnam',
+      item: 'https://www.matchmakingbureau.com/vietnam',
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'Hanoi',
+      item: 'https://www.matchmakingbureau.com/vietnam/hanoi',
+    },
+  ],
+};
+const links = [{ text: 'Vietnam', href: '/vietnam' }];
+---
+
+<RegionPage
+  metadata={metadata}
+  eyebrow="Private Matchmaking"
+  hero="Hanoi Bureau"
+  body="Hanoi brings together tradition, ambition and a growing professional class with deep family and cultural values. The Matchmaking Bureau serves Hanoi with discreet, hand-selected introductions for people who want a serious search handled with patience, judgment and respect."
+  image={hanoiImg}
+  links={links}
+  schema={schema}
+/>

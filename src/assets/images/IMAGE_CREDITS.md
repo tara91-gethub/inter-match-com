@@ -11,3 +11,8 @@ These local city and country images replace watermarked placeholder downloads.
 - `cities/kuala-lumpur.jpg` - "Kl-skyline-at-night-2022.jpg", Wikimedia Commons.
 - `countries/vietnam.jpg` - "Ho Chi Minh City Skyline 2022 (1).jpg", Wikimedia Commons.
 - `cities/ho-chi-minh-city.jpg` - "Saigon skyline.jpg", Wikimedia Commons.
+- `cities/bali.jpg` - Generated local city image for this project.
+- `cities/hanoi.jpg` - Generated local city image for this project.
+- `cities/da-nang.jpg` - Generated local city image for this project.
+- `cities/chiang-mai.jpg` - Generated local city image for this project.
+- `cities/penang.jpg` - Generated local city image for this project.
