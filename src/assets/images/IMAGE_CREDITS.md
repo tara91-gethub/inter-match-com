@@ -27,3 +27,4 @@ These local city and country images replace watermarked placeholder downloads.
 - `cities/mumbai.jpg` - Generated local city image for this project.
 - `cities/delhi.jpg` - Generated local city image for this project.
 - `cities/bangalore.jpg` - Generated local city image for this project.
+- `blog/quiet-cost-waiting-right-person.jpg` - Pexels free stock photo by UMUT RAW, downloaded from https://www.pexels.com/photo/close-up-of-woman-s-face-with-finger-on-lips-28928771/

@@ -244,6 +244,7 @@ Do not over-personalize the country/city SEO pages with Del content. Keep Del ma
 - Added new city SEO pages for Bali, Hanoi, Da Nang, Chiang Mai, and Penang using the existing `RegionPage` pattern.
 - Added Davao as an additional Philippines city SEO page using the same `RegionPage` pattern.
 - Added China and India country SEO pages with city pages for Shanghai, Beijing, Shenzhen, Guangzhou, Hong Kong, Mumbai, Delhi and Bangalore.
+- Added blog post `quiet-cost-waiting-right-person` using a Pexels stock image and internal links to the checklist article and membership page.
 
 ## Working Style With The Site Owner
 
