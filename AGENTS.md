@@ -207,6 +207,10 @@ Implementation:
 
 - `api/indexnow-key.js` returns the IndexNow key as `text/plain`.
 - `vercel.json` rewrites `/indexnow.txt` to `/api/indexnow-key`.
+- `scripts/submit-indexnow.mjs` submits built sitemap URLs to the IndexNow batch API after `astro build`.
+- `npm run build` runs `astro build && node scripts/submit-indexnow.mjs`.
+- The submitter uses `keyLocation: https://www.matchmakingbureau.com/indexnow.txt`, skips local builds without an IndexNow env key, and skips non-production Vercel builds unless `INDEXNOW_ALLOW_NON_PRODUCTION=true`.
+- On production Vercel builds, it submits all sitemap URLs and also adds deleted URLs it can infer from `VERCEL_GIT_PREVIOUS_SHA` and `VERCEL_GIT_COMMIT_SHA`.
 
 If Bing cannot verify IndexNow, confirm the Vercel env var is set in Production and the latest deployment is live, then open `/indexnow.txt` in the browser. It should show only the key.
 
@@ -236,6 +240,7 @@ Do not over-personalize the country/city SEO pages with Del content. Keep Del ma
 - Added visible submitting state to the contact form button.
 - Replaced watermarked city/country images.
 - Added IndexNow key-file route using a Vercel environment variable.
+- Added automatic IndexNow sitemap submission after production builds.
 - Added blog post `international-matchmaking-relocation`.
 - Added detailed `/matchmaking-process` page and linked it from `/process`, FAQ, and footer.
 - Standardized canonical/sitemap/schema URLs to `https://www.matchmakingbureau.com`.
