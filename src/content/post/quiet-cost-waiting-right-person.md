@@ -7,7 +7,7 @@ image: '~/assets/images/blog/quiet-cost-waiting-right-person.jpg'
 author: 'The Matchmaking Bureau'
 ---
 
-People often think they know exactly what they want in a partner. But sometimes that certainty comes from limited experience, too much time on social media, and too much time listening to other people’s experiences and opinions. Over time, those outside influences can start to feel like your own thinking, and a borrowed checklist can start to look like a personal standard.
+People often think they know exactly what they want in a partner. But sometimes that certainty comes from limited experience, too much time on social media, and too much time listening to other people’s experiences and opinions. Over time, those outside influences can start to feel like your own thinking, and a borrowed [dating checklist](/blog/dating-checklist-right-person) can start to look like a personal standard.
 
 So it is worth asking where those preferences really came from, how much social comparison and external validation are shaping your choices, and what happens when you keep waiting instead of questioning those assumptions.
 
@@ -73,6 +73,6 @@ Ask yourself. Or don’t. Keep doing what you are doing.
 
 This is where private matchmaking is different. Sometimes you may not fully understand your own patterns, or you may not know how to explain yourself to someone who lives in another city, another country, or comes from a different background.
 
-Private matchmaking is not about choosing for you. It is about working with you, understanding you, understanding what kind of person may actually fit your life, and then making a thoughtful introduction.
+[Private matchmaking](/membership) is not about choosing for you. It is about working with you, understanding you, understanding what kind of person may actually fit your life, and then making a thoughtful introduction.
 
 Instead of endless swiping, we take time to understand both people before bringing them together. The goal is not to force a match. It is to create the chance for something real, something meaningful, and maybe something beautiful to grow.
