@@ -19,7 +19,7 @@ Someone who is serious about marriage usually shows it through their behaviour. 
 
 ## The Checklist Problem
 
-Standards matter, but an oversized checklist can keep people single for years. Character, values, and compatibility are important. Preferences—height, hobbies, income, personality type, suburb—are not the same as requirements. The problem begins when every preference becomes a rule. People often forget that the person on the other side has a checklist too. You are not only choosing them. They are choosing you. When both sides search for someone who matches a long list perfectly, they overlook good people who could genuinely make them happy. Marriage requires two real human beings, not two perfect lists.
+Standards matter, but an <a href="/blog/dating-checklist-right-person" target="_blank" rel="noopener noreferrer">oversized checklist</a> can keep people single for years. Character, values, and compatibility are important. Preferences—height, hobbies, income, personality type, suburb—are not the same as requirements. The problem begins when every preference becomes a rule. People often forget that the person on the other side has a checklist too. You are not only choosing them. They are choosing you. When both sides search for someone who matches a long list perfectly, they overlook good people who could genuinely make them happy. Marriage requires two real human beings, not two perfect lists.
 
 ## Compatibility Is Not About Being Identical
 
@@ -39,7 +39,7 @@ A matchmaker should not send endless profiles. That only recreates the same prob
 
 ## Why The Matchmaking Bureau Exists
 
-At The Matchmaking Bureau, we focus on thoughtful, private introductions rather than endless options. One genuine conversation with someone who wants the same future as you is worth far more than months of distracted swiping. If you are in your thirties and still searching, it does not mean something has gone wrong. You may simply have been using a system that creates activity but not progress. The person you are looking for may be dealing with the same issue—professionally stable, family-oriented, tired of superficial conversations, and wanting one good person instead of ten at once. The challenge is getting both people into the same conversation.
+At The Matchmaking Bureau, we focus on <a href="/matchmaking-process" target="_blank" rel="noopener noreferrer">thoughtful, private introductions</a> rather than endless options. One genuine conversation with someone who wants the same future as you is worth far more than months of distracted swiping. If you are in your thirties and still searching, it does not mean something has gone wrong. You may simply have been using a system that creates activity but not progress. The person you are looking for may be dealing with the same issue—professionally stable, family-oriented, tired of superficial conversations, and wanting one good person instead of ten at once. The challenge is getting both people into the same conversation.
 
 ## Matchmaking Still Works Because It Removes Distraction
 
