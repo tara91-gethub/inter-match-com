@@ -28,3 +28,4 @@ These local city and country images replace watermarked placeholder downloads.
 - `cities/delhi.jpg` - Generated local city image for this project.
 - `cities/bangalore.jpg` - Generated local city image for this project.
 - `blog/quiet-cost-waiting-right-person.jpg` - Pexels free stock photo by UMUT RAW, downloaded from https://www.pexels.com/photo/close-up-of-woman-s-face-with-finger-on-lips-28928771/
+- `blog/how-to-find-someone-who-wants-marriage.jpg` - Pexels free stock photo by Tima Miroshnichenko, downloaded from https://www.pexels.com/photo/couple-talking-while-drinking-coffee-5698147/
