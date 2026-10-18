@@ -9,6 +9,8 @@ import malaysiaImg from '~/assets/images/countries/malaysia.jpg';
 import singaporeImg from '~/assets/images/countries/singapore.jpg';
 import vietnamImg from '~/assets/images/countries/vietnam.jpg';
 import chinaImg from '~/assets/images/countries/china.jpg';
+import taiwanImg from '~/assets/images/countries/taiwan.jpg';
+import japanImg from '~/assets/images/countries/japan.jpg';
 import indiaImg from '~/assets/images/countries/india.jpg';
 import privateInteriorHeroImg from '~/assets/images/private-interior-hero.jpg';
 import watchMovementDetailImg from '~/assets/images/watch-movement-detail.jpg';
@@ -16,7 +18,7 @@ import type { ImageMetadata } from 'astro';
 const metadata = {
   title: 'Private Matchmaking in Asia',
   description:
-    'Private matchmaking across Asia for discerning professionals in the Philippines, Thailand, Indonesia, Malaysia, Singapore, Vietnam, China and India.',
+    'Private matchmaking across Asia for discerning professionals in the Philippines, Thailand, Indonesia, Malaysia, Singapore, Vietnam, China, Taiwan, Japan and India.',
   openGraph: { images: [{ url: '~/assets/images/og-default-international.jpg', width: 1200, height: 630 }] },
 };
 const schema = {
@@ -28,7 +30,7 @@ const schema = {
   logo: 'https://www.matchmakingbureau.com/favicon.svg',
   email: 'admin@matchmakingbureau.com',
   description:
-    'Private matchmaking agency serving Asia - Philippines, Thailand, Indonesia, Malaysia, Singapore, Vietnam, China and India.',
+    'Private matchmaking agency serving Asia - Philippines, Thailand, Indonesia, Malaysia, Singapore, Vietnam, China, Taiwan, Japan and India.',
   contactPoint: {
     '@type': 'ContactPoint',
     email: 'admin@matchmakingbureau.com',
@@ -43,6 +45,8 @@ const schema = {
     { '@type': 'Country', name: 'Singapore' },
     { '@type': 'Country', name: 'Vietnam' },
     { '@type': 'Country', name: 'China' },
+    { '@type': 'Country', name: 'Taiwan' },
+    { '@type': 'Country', name: 'Japan' },
     { '@type': 'Country', name: 'India' },
   ],
   serviceType: 'Private Matchmaking Agency',
@@ -56,6 +60,8 @@ const countries: [string, string, ImageMetadata, string][] = [
   ['Singapore', '/singapore', singaporeImg, 'Singapore'],
   ['Vietnam', '/vietnam', vietnamImg, 'Ho Chi Minh City, Hanoi and Da Nang'],
   ['China', '/china', chinaImg, 'Shanghai, Beijing, Shenzhen, Guangzhou and Hong Kong'],
+  ['Taiwan', '/taiwan', taiwanImg, 'Taipei and Kaohsiung'],
+  ['Japan', '/japan', japanImg, 'Tokyo and Osaka'],
   ['India', '/india', indiaImg, 'Mumbai, Delhi and Bangalore'],
 ];
 ---
@@ -123,8 +129,8 @@ const countries: [string, string, ImageMetadata, string][] = [
               The Bureau is a private enclave for accomplished professionals across Asia who value discretion, substance
               and genuine compatibility.
             </p><p>
-              Serving the Philippines, Thailand, Indonesia, Malaysia, Singapore, Vietnam, China and India, our approach
-              is curated, selective and deeply human.
+              Serving the Philippines, Thailand, Indonesia, Malaysia, Singapore, Vietnam, China, Taiwan, Japan and
+              India, our approach is curated, selective and deeply human.
             </p>
           </div>
         </div>

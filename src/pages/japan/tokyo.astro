@@ -1,0 +1,31 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+import tokyoImg from '~/assets/images/cities/tokyo.jpg';
+
+const metadata = {
+  title: 'Private Matchmaking in Tokyo',
+  description:
+    'Private matchmaking in Tokyo for discerning Japanese and international professionals seeking serious introductions.',
+};
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.matchmakingbureau.com' },
+    { '@type': 'ListItem', position: 2, name: 'Japan', item: 'https://www.matchmakingbureau.com/japan' },
+    { '@type': 'ListItem', position: 3, name: 'Tokyo', item: 'https://www.matchmakingbureau.com/japan/tokyo' },
+  ],
+};
+const links = [{ text: 'Japan', href: '/japan' }];
+---
+
+<RegionPage
+  metadata={metadata}
+  eyebrow="Private Matchmaking"
+  hero="Tokyo Bureau"
+  body="Tokyo is one of the world's most accomplished and internationally connected cities. The Matchmaking Bureau serves professionals in Tokyo who value privacy, seriousness and a more personal search, with carefully considered introductions designed around genuine compatibility."
+  image={tokyoImg}
+  imageAlt="Tokyo skyline with Tokyo Tower in warm evening light"
+  links={links}
+  schema={schema}
+/>

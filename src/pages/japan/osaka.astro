@@ -1,0 +1,31 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+import osakaImg from '~/assets/images/cities/osaka.jpg';
+
+const metadata = {
+  title: 'Private Matchmaking in Osaka',
+  description:
+    'Private matchmaking in Osaka for discerning professionals seeking confidential and carefully selected introductions.',
+};
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.matchmakingbureau.com' },
+    { '@type': 'ListItem', position: 2, name: 'Japan', item: 'https://www.matchmakingbureau.com/japan' },
+    { '@type': 'ListItem', position: 3, name: 'Osaka', item: 'https://www.matchmakingbureau.com/japan/osaka' },
+  ],
+};
+const links = [{ text: 'Japan', href: '/japan' }];
+---
+
+<RegionPage
+  metadata={metadata}
+  eyebrow="Private Matchmaking"
+  hero="Osaka Bureau"
+  body="Osaka is a major centre of commerce, enterprise and culture with a character distinctly its own. The Matchmaking Bureau serves accomplished people in Osaka through discreet, selective introductions for those who want a serious relationship search handled with judgment and care."
+  image={osakaImg}
+  imageAlt="Osaka skyline across the Umeda business district"
+  links={links}
+  schema={schema}
+/>

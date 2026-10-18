@@ -1,0 +1,31 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+import taipeiImg from '~/assets/images/cities/taipei.jpg';
+
+const metadata = {
+  title: 'Private Matchmaking in Taipei',
+  description:
+    'Private matchmaking in Taipei for discerning Taiwanese and international professionals seeking serious introductions.',
+};
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.matchmakingbureau.com' },
+    { '@type': 'ListItem', position: 2, name: 'Taiwan', item: 'https://www.matchmakingbureau.com/taiwan' },
+    { '@type': 'ListItem', position: 3, name: 'Taipei', item: 'https://www.matchmakingbureau.com/taiwan/taipei' },
+  ],
+};
+const links = [{ text: 'Taiwan', href: '/taiwan' }];
+---
+
+<RegionPage
+  metadata={metadata}
+  eyebrow="Private Matchmaking"
+  hero="Taipei Bureau"
+  body="Taipei brings together technology, finance, culture and a highly international professional community. The Matchmaking Bureau serves accomplished people in Taipei with discreet introductions for those seeking a serious relationship beyond public dating and endless profiles."
+  image={taipeiImg}
+  imageAlt="Taipei skyline and Taipei 101 illuminated at sunset"
+  links={links}
+  schema={schema}
+/>

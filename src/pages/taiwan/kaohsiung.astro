@@ -1,0 +1,36 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+import kaohsiungImg from '~/assets/images/cities/kaohsiung.jpg';
+
+const metadata = {
+  title: 'Private Matchmaking in Kaohsiung',
+  description:
+    'Private matchmaking in Kaohsiung for discerning professionals seeking confidential, carefully selected introductions.',
+};
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.matchmakingbureau.com' },
+    { '@type': 'ListItem', position: 2, name: 'Taiwan', item: 'https://www.matchmakingbureau.com/taiwan' },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'Kaohsiung',
+      item: 'https://www.matchmakingbureau.com/taiwan/kaohsiung',
+    },
+  ],
+};
+const links = [{ text: 'Taiwan', href: '/taiwan' }];
+---
+
+<RegionPage
+  metadata={metadata}
+  eyebrow="Private Matchmaking"
+  hero="Kaohsiung Bureau"
+  body="Kaohsiung is southern Taiwan's leading centre of commerce, industry and waterfront life. The Matchmaking Bureau serves serious professionals in Kaohsiung with confidential, carefully selected introductions grounded in shared values and long-term compatibility."
+  image={kaohsiungImg}
+  imageAlt="Kaohsiung skyline and waterfront under a bright sky"
+  links={links}
+  schema={schema}
+/>

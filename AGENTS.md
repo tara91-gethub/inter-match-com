@@ -101,6 +101,10 @@ Location options currently include:
 - Shenzhen
 - Guangzhou
 - Hong Kong
+- Taipei
+- Kaohsiung
+- Tokyo
+- Osaka
 - Mumbai
 - Delhi
 - Bangalore
@@ -115,6 +119,8 @@ Country/city SEO pages currently include:
 - Singapore: `/singapore`
 - Vietnam: `/vietnam`, `/vietnam/ho-chi-minh-city`, `/vietnam/hanoi`, `/vietnam/da-nang`
 - China: `/china`, `/china/shanghai`, `/china/beijing`, `/china/shenzhen`, `/china/guangzhou`, `/china/hong-kong`
+- Taiwan: `/taiwan`, `/taiwan/taipei`, `/taiwan/kaohsiung`
+- Japan: `/japan`, `/japan/tokyo`, `/japan/osaka`
 - India: `/india`, `/india/mumbai`, `/india/delhi`, `/india/bangalore`
 
 ## About Page / Del
@@ -167,7 +173,7 @@ The default social sharing preview is configured to use:
 Current homepage sharing metadata:
 
 - Title: `Private Matchmaking in Asia`
-- Description: `Private matchmaking across Asia for discerning professionals in the Philippines, Thailand, Indonesia, Malaysia, Singapore, Vietnam, China and India.`
+- Description: `Private matchmaking across Asia for discerning professionals in the Philippines, Thailand, Indonesia, Malaysia, Singapore, Vietnam, China, Taiwan, Japan and India.`
 - Image size: 1200 x 630
 
 ## Vercel Analytics
@@ -249,6 +255,7 @@ Do not over-personalize the country/city SEO pages with Del content. Keep Del ma
 - Added new city SEO pages for Bali, Hanoi, Da Nang, Chiang Mai, and Penang using the existing `RegionPage` pattern.
 - Added Davao as an additional Philippines city SEO page using the same `RegionPage` pattern.
 - Added China and India country SEO pages with city pages for Shanghai, Beijing, Shenzhen, Guangzhou, Hong Kong, Mumbai, Delhi and Bangalore.
+- Added Japan and Taiwan country SEO pages with city pages for Tokyo, Osaka, Taipei and Kaohsiung, using credited Wikimedia Commons images.
 - Added blog post `quiet-cost-waiting-right-person` using a Pexels stock image and internal links to the checklist article and membership page.
 - Added blog post `how-to-find-someone-who-wants-marriage` using a credited Pexels stock image and internal links to the checklist article and detailed matchmaking process.
 

@@ -1,0 +1,51 @@
+---
+import RegionPage from '~/components/RegionPage.astro';
+import taiwanImg from '~/assets/images/countries/taiwan.jpg';
+import taipeiImg from '~/assets/images/cities/taipei.jpg';
+import kaohsiungImg from '~/assets/images/cities/kaohsiung.jpg';
+
+const metadata = {
+  title: 'Private Matchmaking in Taiwan',
+  description:
+    'Private matchmaking in Taiwan for discerning professionals. Serving Taipei and Kaohsiung with confidential introductions.',
+};
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://www.matchmakingbureau.com',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Taiwan',
+      item: 'https://www.matchmakingbureau.com/taiwan',
+    },
+  ],
+};
+const cards = [
+  { title: 'Taipei', href: '/taiwan/taipei', image: taipeiImg, imageAlt: 'Taipei skyline at sunset' },
+  {
+    title: 'Kaohsiung',
+    href: '/taiwan/kaohsiung',
+    image: kaohsiungImg,
+    imageAlt: 'Kaohsiung skyline and waterfront district',
+  },
+];
+---
+
+<RegionPage
+  metadata={metadata}
+  eyebrow="Private Matchmaking"
+  hero="Taiwan Bureau"
+  body="Taiwan is home to a sophisticated professional community shaped by enterprise, family values and international outlook. The Matchmaking Bureau serves discerning people across Taiwan with private introductions built around seriousness, discretion and genuine long-term compatibility."
+  image={taiwanImg}
+  imageAlt="Taipei 101 and the Taiwan city skyline in warm evening light"
+  cards={cards}
+  links={[]}
+  schema={schema}
+/>

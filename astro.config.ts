@@ -46,6 +46,8 @@ export default defineConfig({
             '/singapore',
             '/vietnam',
             '/china',
+            '/taiwan',
+            '/japan',
             '/india',
           ].includes(pathname)
         )
@@ -69,6 +71,10 @@ export default defineConfig({
             '/china/shenzhen',
             '/china/guangzhou',
             '/china/hong-kong',
+            '/taiwan/taipei',
+            '/taiwan/kaohsiung',
+            '/japan/tokyo',
+            '/japan/osaka',
             '/india/mumbai',
             '/india/delhi',
             '/india/bangalore',
