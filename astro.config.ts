@@ -31,7 +31,7 @@ export default defineConfig({
     sitemap({
       filter(page) {
         const pathname = new URL(page).pathname;
-        return !pathname.startsWith('/category/') && pathname !== '/thank-you';
+        return !pathname.startsWith('/category/') && !['/thank-you', '/payment'].includes(pathname);
       },
       serialize(item) {
         const rawPathname = new URL(item.url).pathname;

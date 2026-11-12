@@ -50,6 +50,7 @@ npm run build
 - `src/pages/about.astro` - About / philosophy / Meet Del
 - `src/pages/contact.astro` - application form
 - `src/pages/thank-you.astro` - successful form submission page
+- `src/pages/payment.astro` - unlisted, noindex private membership payment page; excluded from navigation and sitemap
 - `src/pages/membership.astro` - membership page
 - `src/pages/process.astro` - process page
 - `src/pages/matchmaking-process.astro` - detailed candidate-facing process explanation
@@ -256,6 +257,7 @@ Do not over-personalize the country/city SEO pages with Del content. Keep Del ma
 - Added Davao as an additional Philippines city SEO page using the same `RegionPage` pattern.
 - Added China and India country SEO pages with city pages for Shanghai, Beijing, Shenzhen, Guangzhou, Hong Kong, Mumbai, Delhi and Bangalore.
 - Added Japan and Taiwan country SEO pages with city pages for Tokyo, Osaka, Taipei and Kaohsiung, using credited Wikimedia Commons images.
+- Added an unlisted `/payment` page for the USD $199 12-month membership, linking to the approved Airwallex checkout after required terms acceptance.
 - Added blog post `quiet-cost-waiting-right-person` using a Pexels stock image and internal links to the checklist article and membership page.
 - Added blog post `how-to-find-someone-who-wants-marriage` using a credited Pexels stock image and internal links to the checklist article and detailed matchmaking process.
 

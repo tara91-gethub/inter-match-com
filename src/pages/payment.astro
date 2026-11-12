@@ -1,0 +1,270 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+const paymentUrl = 'https://pay.airwallex.com/sghnvfn5ke7p';
+
+const metadata = {
+  title: 'Private Membership Payment',
+  description: 'Private payment page for a 12-month Matchmaking Bureau membership.',
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+---
+
+<Layout metadata={metadata}>
+  <main transition:animate="fade" class="bg-[#090e1c] text-[#d2c4b7]">
+    <section class="border-b border-[#4e453b] px-6 py-20 md:px-12 md:py-28">
+      <div class="mx-auto max-w-4xl">
+        <p class="mb-6 text-xs uppercase tracking-[0.3em] text-[#eac290]" style="font-family:'Newsreader',serif;">
+          Private Membership
+        </p>
+        <h1
+          class="mb-8 max-w-3xl text-5xl leading-tight text-white md:text-7xl"
+          style="font-family:'Noto Serif',serif;"
+        >
+          Your Private Matchmaking Journey
+        </h1>
+        <p class="mb-5 text-2xl text-[#eac290]" style="font-family:'Newsreader',serif;">
+          Thank you for choosing The Matchmaking Bureau.
+        </p>
+        <p class="max-w-3xl text-lg leading-8 md:text-xl" style="font-family:'Newsreader',serif;">
+          We appreciate the trust you have placed in us. Finding a life partner is one of life&apos;s most important
+          decisions, and we believe that journey deserves care, patience, privacy and genuine human attention.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-[#0e1322] px-6 py-16 md:px-12 md:py-20">
+      <div class="mx-auto max-w-4xl border border-[#5a4c3c] bg-[#111726] p-7 md:p-12" data-payment-panel>
+        <div class="mb-8 flex flex-col justify-between gap-6 border-b border-[#4e453b] pb-8 md:flex-row md:items-end">
+          <div>
+            <p class="mb-3 text-xs uppercase tracking-[0.28em] text-[#eac290]" style="font-family:'Newsreader',serif;">
+              Your Membership
+            </p>
+            <p class="text-4xl text-white md:text-5xl" style="font-family:'Noto Serif',serif;">USD $199</p>
+          </div>
+          <p class="max-w-sm text-base leading-7 md:text-right" style="font-family:'Newsreader',serif;">
+            12 months of private matchmaking consideration. One-time payment with no automatic renewal.
+          </p>
+        </div>
+
+        <label class="mb-6 flex cursor-pointer items-start gap-4 text-sm leading-6 md:text-base">
+          <input type="checkbox" class="mt-1 h-5 w-5 shrink-0 accent-[#cda777]" data-payment-consent />
+          <span>
+            I have read and understood the membership terms and payment policy on this page, as well as the
+            <a class="text-[#eac290] underline underline-offset-4" href="/terms">Terms and Conditions</a> and
+            <a class="text-[#eac290] underline underline-offset-4" href="/privacy">Privacy Policy</a>.
+          </span>
+        </label>
+
+        <p class="mb-5 hidden text-sm text-[#eac290]" data-payment-notice role="alert">
+          Please confirm that you have read and understood the terms before continuing.
+        </p>
+
+        <a
+          href={paymentUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex w-full items-center justify-center bg-[#cda777] px-7 py-5 text-center text-xs font-bold uppercase tracking-[0.16em] text-[#573c15] transition-all hover:bg-[#eac290] focus:outline-none focus:ring-2 focus:ring-[#eac290] focus:ring-offset-2 focus:ring-offset-[#111726] md:w-auto md:px-12 md:tracking-[0.22em]"
+          style="font-family:'Noto Serif',serif;"
+          aria-disabled="true"
+          data-payment-link
+        >
+          Make Payment — USD $199
+        </a>
+      </div>
+    </section>
+
+    <div class="mx-auto max-w-4xl px-6 py-20 md:px-12 md:py-28">
+      <section class="mb-16">
+        <h2 class="mb-7 text-3xl text-white md:text-5xl" style="font-family:'Noto Serif',serif;">
+          A More Personal Approach
+        </h2>
+        <div class="space-y-6 text-lg leading-8" style="font-family:'Newsreader',serif;">
+          <p>
+            Our service is built around personally reviewed profiles, thoughtful introductions and a more selective
+            approach to matchmaking. We are not trying to introduce you to as many people as possible. We focus on
+            people who genuinely intend to build a meaningful, long-term relationship.
+          </p>
+          <p>
+            Our matchmakers take time to understand each person&apos;s background, expectations, relationship intentions
+            and personal circumstances. Not every applicant will be suitable for an introduction, and we would rather be
+            thoughtful than arrange conversations simply for the sake of numbers.
+          </p>
+        </div>
+      </section>
+
+      <section class="mb-16 border-t border-[#4e453b] pt-16">
+        <h2 class="mb-7 text-3xl text-white md:text-5xl" style="font-family:'Noto Serif',serif;">
+          How the Process Works
+        </h2>
+        <div class="space-y-6 text-lg leading-8" style="font-family:'Newsreader',serif;">
+          <p>
+            We begin by reviewing your profile, relationship expectations, personal preferences and the qualities you
+            value in a life partner. Our team may contact you with further questions so we can understand you more
+            clearly.
+          </p>
+          <p>
+            When considering potential candidates, we review the information available to us, discuss relationship
+            intentions and consider whether both people&apos;s expectations and circumstances may be compatible. We may
+            also review publicly available information where appropriate. These steps help us assess consistency and
+            seriousness, but they cannot guarantee a person&apos;s identity, character or future behaviour.
+          </p>
+          <p>
+            If we believe an introduction may be worthwhile, we communicate with both people first. Every introduction
+            depends on mutual interest and consent. Our matchmakers remain available to offer reasonable guidance and
+            communication support while respecting your choices, boundaries and privacy.
+          </p>
+        </div>
+      </section>
+
+      <section class="mb-16 border-t border-[#4e453b] pt-16">
+        <h2 class="mb-7 text-3xl text-white md:text-5xl" style="font-family:'Noto Serif',serif;">
+          Meaningful Connections Take Time
+        </h2>
+        <div class="space-y-6 text-lg leading-8" style="font-family:'Newsreader',serif;">
+          <p>
+            Finding the right life partner should not be rushed. Every person has different expectations, circumstances
+            and relationship goals, and finding two people whose intentions and preferences align can take time.
+          </p>
+          <p>
+            Some clients may hear from us sooner than others. There is no fixed timeline and no guaranteed number of
+            introductions. We ask you to remain patient, communicate openly with our team and provide accurate
+            information when requested. Our priority is to consider meaningful opportunities carefully.
+          </p>
+        </div>
+      </section>
+
+      <section class="mb-16 border-t border-[#4e453b] pt-16">
+        <h2 class="mb-7 text-3xl text-white md:text-5xl" style="font-family:'Noto Serif',serif;">
+          Your 12-Month Membership
+        </h2>
+        <div class="space-y-6 text-lg leading-8" style="font-family:'Newsreader',serif;">
+          <p>
+            Your one-time payment of USD $199 provides 12 months of private matchmaking membership. This includes an
+            initial profile assessment, maintaining your profile within our private records, consideration for suitable
+            introductions, human review of potential compatibility, and reasonable communication and guidance from our
+            matchmaking team.
+          </p>
+          <p>
+            Your membership begins after successful payment and remains active for 12 months. It does not renew
+            automatically. Membership does not guarantee a match, a particular number of introductions or a successful
+            relationship. Introductions depend on suitable candidates being available and both people expressing
+            interest.
+          </p>
+        </div>
+      </section>
+
+      <section class="mb-16 border-t border-[#4e453b] pt-16">
+        <h2 class="mb-7 text-3xl text-white md:text-5xl" style="font-family:'Noto Serif',serif;">
+          Payment and Refund Policy
+        </h2>
+        <div class="space-y-6 text-lg leading-8" style="font-family:'Newsreader',serif;">
+          <p>
+            By making payment, you are purchasing a 12-month private matchmaking service. Matchmaking work may begin
+            immediately after payment, and the fee covers the time and work undertaken by our team rather than a
+            guaranteed outcome.
+          </p>
+          <p>
+            The fee is generally non-refundable for a change of mind or when no compatible match is identified during
+            the membership period. Nothing in this policy excludes or limits any rights or remedies available under
+            applicable consumer protection laws.
+          </p>
+        </div>
+      </section>
+
+      <section class="mb-16 border-t border-[#4e453b] pt-16">
+        <h2 class="mb-7 text-3xl text-white md:text-5xl" style="font-family:'Noto Serif',serif;">
+          Privacy and Payment
+        </h2>
+        <div class="space-y-6 text-lg leading-8" style="font-family:'Newsreader',serif;">
+          <p>
+            We handle personal information discreetly and use information provided during the matchmaking process to
+            assess compatibility and facilitate potential introductions. We do not publish client profiles through this
+            page. You can read our full <a class="text-[#eac290] underline underline-offset-4" href="/privacy"
+              >Privacy Policy</a
+            > and <a class="text-[#eac290] underline underline-offset-4" href="/terms">Terms and Conditions</a> before continuing.
+          </p>
+          <p>
+            Payments are collected through Airwallex by <strong class="font-normal text-white"
+              >TUI VENTURES LIMITED</strong
+            >, our New Zealand payment collection entity. Your bank statement or payment confirmation may display TUI
+            VENTURES LIMITED.
+          </p>
+          <p>
+            If you have difficulty making payment or would prefer to pay in another currency, email us at
+            <a class="text-[#eac290] underline underline-offset-4" href="mailto:admin@matchmakingbureau.com"
+              >admin@matchmakingbureau.com</a
+            > and we will help you.
+          </p>
+        </div>
+      </section>
+
+      <section class="border-t border-[#4e453b] pt-16 text-center">
+        <p class="mb-5 text-xs uppercase tracking-[0.3em] text-[#eac290]" style="font-family:'Newsreader',serif;">
+          Complete Your Membership
+        </p>
+        <h2 class="mb-5 text-4xl text-white md:text-6xl" style="font-family:'Noto Serif',serif;">Make Your Payment</h2>
+        <p class="mx-auto mb-10 max-w-2xl text-lg leading-8" style="font-family:'Newsreader',serif;">
+          USD $199 for 12 months. One payment, with no automatic renewal.
+        </p>
+
+        <div class="mx-auto max-w-3xl border border-[#5a4c3c] bg-[#111726] p-7 text-left md:p-10" data-payment-panel>
+          <label class="mb-6 flex cursor-pointer items-start gap-4 text-sm leading-6 md:text-base">
+            <input type="checkbox" class="mt-1 h-5 w-5 shrink-0 accent-[#cda777]" data-payment-consent />
+            <span>
+              I have read and understood the membership terms and payment policy on this page, as well as the
+              <a class="text-[#eac290] underline underline-offset-4" href="/terms">Terms and Conditions</a> and
+              <a class="text-[#eac290] underline underline-offset-4" href="/privacy">Privacy Policy</a>.
+            </span>
+          </label>
+
+          <p class="mb-5 hidden text-sm text-[#eac290]" data-payment-notice role="alert">
+            Please confirm that you have read and understood the terms before continuing.
+          </p>
+
+          <a
+            href={paymentUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex w-full items-center justify-center bg-[#cda777] px-7 py-5 text-center text-xs font-bold uppercase tracking-[0.16em] text-[#573c15] transition-all hover:bg-[#eac290] focus:outline-none focus:ring-2 focus:ring-[#eac290] focus:ring-offset-2 focus:ring-offset-[#111726] md:tracking-[0.22em]"
+            style="font-family:'Noto Serif',serif;"
+            aria-disabled="true"
+            data-payment-link
+          >
+            Make Payment — USD $199
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    document.querySelectorAll<HTMLElement>('[data-payment-panel]').forEach((panel) => {
+      const checkbox = panel.querySelector<HTMLInputElement>('[data-payment-consent]');
+      const link = panel.querySelector<HTMLAnchorElement>('[data-payment-link]');
+      const notice = panel.querySelector<HTMLElement>('[data-payment-notice]');
+
+      if (!checkbox || !link || !notice) return;
+
+      const updateState = () => {
+        link.setAttribute('aria-disabled', String(!checkbox.checked));
+        link.classList.toggle('opacity-60', !checkbox.checked);
+        notice.classList.add('hidden');
+      };
+
+      checkbox.addEventListener('change', updateState);
+      link.addEventListener('click', (event) => {
+        if (checkbox.checked) return;
+
+        event.preventDefault();
+        notice.classList.remove('hidden');
+        checkbox.focus();
+      });
+
+      updateState();
+    });
+  </script>
+</Layout>
