@@ -29,7 +29,7 @@ These local city and country images replace watermarked placeholder downloads.
 - `cities/bangalore.jpg` - Generated local city image for this project.
 - `blog/quiet-cost-waiting-right-person.jpg` - Pexels free stock photo by UMUT RAW, downloaded from https://www.pexels.com/photo/close-up-of-woman-s-face-with-finger-on-lips-28928771/
 - `blog/how-to-find-someone-who-wants-marriage.jpg` - Pexels free stock photo by Tima Miroshnichenko, downloaded from https://www.pexels.com/photo/couple-talking-while-drinking-coffee-5698147/
-- `blog/finding-love-after-divorce.jpg` - Pexels free stock photo by Alena Evseenko, downloaded from https://www.pexels.com/photo/stylish-mature-woman-with-gray-hair-outdoors-29646627/
+- `blog/finding-love-after-divorce.jpg` - Pexels free stock photo by Thegiansepillo, downloaded from https://www.pexels.com/photo/content-asian-woman-on-street-5271111/
 - `blog/financial-compatibility-life-partner.jpg` - Pexels free stock photo by Ketut Subiyanto, downloaded from https://www.pexels.com/photo/cheerful-ethnic-couple-using-calculator-while-sitting-at-table-4308045/
 - `countries/japan.jpg` - "Mountain Fuji (97911911).jpeg" by Yuhei Mukoyama, Wikimedia Commons, CC BY-SA 3.0.
 - `cities/tokyo.jpg` - "Minato City, Tokyo, Japan.jpg" by David Kernan, Wikimedia Commons, CC BY 4.0.
