@@ -260,6 +260,8 @@ Do not over-personalize the country/city SEO pages with Del content. Keep Del ma
 - Added an unlisted `/payment` page for the USD $199 12-month membership, linking to the approved Airwallex checkout after required terms acceptance.
 - Added blog post `quiet-cost-waiting-right-person` using a Pexels stock image and internal links to the checklist article and membership page.
 - Added blog post `how-to-find-someone-who-wants-marriage` using a credited Pexels stock image and internal links to the checklist article and detailed matchmaking process.
+- Added blog posts `finding-love-after-divorce` and `financial-compatibility-life-partner` using new credited Pexels images and simple paragraph-style copy based on the owner's guidance.
+- Expanded `too-many-dating-options` with a short section about dating multiple people instead of creating a competing article.
 
 ## Working Style With The Site Owner
 

@@ -71,6 +71,14 @@ If you are constantly thinking about the next possible match, it is very difficu
 
 Sometimes fewer options create more clarity.
 
+## Should You Date Multiple People at the Same Time?
+
+There is no single rule for everyone. At the beginning, some people may have more than one conversation while they decide whether there is a genuine connection.
+
+The problem begins when every promising person is constantly compared with someone else. It becomes difficult to understand one connection properly when your attention is divided between several people.
+
+Once an introduction begins to feel worthwhile, giving that person your attention can create more clarity. This is why our matchmaking approach prefers one thoughtful introduction at a time rather than several distractions at once.
+
 ## This Is Why We Handpick Matches
 
 We do not believe matchmaking should simply mean searching a database for people who meet certain criteria.
