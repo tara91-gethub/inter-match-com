@@ -243,6 +243,7 @@ Do not over-personalize the country/city SEO pages with Del content. Keep Del ma
 - Moved relaxed Del portrait into the Discretion Promise section.
 - Added Vercel Analytics.
 - Fixed contact form so it sends through Hostinger SMTP.
+- Added a visible direct-email fallback above the contact form.
 - Added `/thank-you` page and successful form redirects.
 - Added visible submitting state to the contact form button.
 - Replaced watermarked city/country images.

@@ -38,7 +38,7 @@ const locations = [
 
 <Layout metadata={metadata}>
   <main transition:animate="fade" class="mx-auto max-w-4xl px-6 py-24 md:py-32">
-    <header class="mb-24 text-center">
+    <header class="mb-16 text-center md:mb-20">
       <h1 class="mb-8 text-5xl tracking-[-0.02em] text-white md:text-7xl" style="font-family:'Noto Serif',serif;">
         The Entry Bureau
       </h1>
@@ -49,6 +49,19 @@ const locations = [
         Refining the search for exceptional connection. Please provide your details with the utmost discretion.
       </p>
     </header>
+
+    <div class="mb-20 border-y border-[#4e453b] py-7 text-center">
+      <p class="mb-2 text-xs uppercase tracking-[0.25em] text-[#9b8f82]" style="font-family:'Newsreader',serif;">
+        Prefer to contact us directly?
+      </p>
+      <a
+        href="mailto:admin@matchmakingbureau.com"
+        class="text-lg text-[#eac290] transition-colors hover:text-white md:text-xl"
+        style="font-family:'Noto Serif',serif;"
+      >
+        admin@matchmakingbureau.com
+      </a>
+    </div>
 
     <p
       id="form-status"
