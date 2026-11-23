@@ -244,6 +244,7 @@ Do not over-personalize the country/city SEO pages with Del content. Keep Del ma
 - Added Vercel Analytics.
 - Fixed contact form so it sends through Hostinger SMTP.
 - Added a visible direct-email fallback above the contact form.
+- Hardened contact delivery with SMTP/browser timeouts, origin and size checks, email validation, and a spam honeypot.
 - Added `/thank-you` page and successful form redirects.
 - Added visible submitting state to the contact form button.
 - Replaced watermarked city/country images.

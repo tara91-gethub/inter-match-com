@@ -1,6 +1,7 @@
 import nodemailer from 'nodemailer';
 
 const requiredFields = ['full_name', 'email'];
+const allowedHosts = new Set(['matchmakingbureau.com', 'www.matchmakingbureau.com', 'localhost', '127.0.0.1']);
 
 const parseMultipartBody = (body, contentType) => {
   const boundaryMatch = contentType.match(/boundary=(?:"([^"]+)"|([^;]+))/i);
@@ -62,7 +63,28 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
+  const origin = req.headers.origin;
+  if (origin) {
+    try {
+      const host = new URL(origin).hostname;
+      if (!allowedHosts.has(host) && !host.endsWith('.vercel.app')) {
+        return sendResult(req, res, 403, { ok: false, error: 'invalid-origin' }, '/contact?error=invalid-origin');
+      }
+    } catch {
+      return sendResult(req, res, 403, { ok: false, error: 'invalid-origin' }, '/contact?error=invalid-origin');
+    }
+  }
+
+  const contentLength = Number(req.headers['content-length'] || 0);
+  if (contentLength > 50_000) {
+    return sendResult(req, res, 413, { ok: false, error: 'submission-too-large' }, '/contact?error=too-large');
+  }
+
   const form = await readBody(req);
+
+  if (String(form.website || '').trim()) {
+    return sendResult(req, res, 200, { ok: true, redirect: '/thank-you' }, '/thank-you');
+  }
 
   const missingField = requiredFields.find((field) => !String(form[field] || '').trim());
   if (missingField) {
@@ -71,6 +93,10 @@ export default async function handler(req, res) {
       receivedFields: Object.keys(form),
     });
     return sendResult(req, res, 400, { ok: false, error: 'required', field: missingField }, '/contact?error=required');
+  }
+
+  if (!/^\S+@\S+\.\S+$/.test(String(form.email).trim())) {
+    return sendResult(req, res, 400, { ok: false, error: 'invalid-email' }, '/contact?error=invalid-email');
   }
 
   const smtpHost = process.env.SMTP_HOST || 'smtp.hostinger.com';
@@ -89,6 +115,9 @@ export default async function handler(req, res) {
     host: smtpHost,
     port: smtpPort,
     secure: smtpSecure,
+    connectionTimeout: 10_000,
+    greetingTimeout: 10_000,
+    socketTimeout: 20_000,
     auth: {
       user: smtpUser,
       pass: smtpPass,

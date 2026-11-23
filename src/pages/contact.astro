@@ -78,6 +78,14 @@ const locations = [
       method="POST"
       enctype="application/x-www-form-urlencoded"
     >
+      <input
+        type="text"
+        name="website"
+        tabindex="-1"
+        autocomplete="off"
+        class="absolute -left-[10000px] h-px w-px opacity-0"
+        aria-hidden="true"
+      />
       <section class="space-y-12">
         <div class="mb-12 flex items-baseline gap-4 border-b border-[#4e453b] pb-4">
           <span class="text-xs uppercase tracking-widest text-[#eac290]" style="font-family:'Newsreader',serif;"
@@ -199,6 +207,7 @@ const locations = [
           <input
             name="discretion_agreement"
             value="Accepted"
+            required
             class="mt-1 h-5 w-5 cursor-pointer border border-[#4e453b] bg-transparent accent-[#eac290]"
             type="checkbox"
           />
@@ -278,6 +287,9 @@ const locations = [
         submitHelp.classList.remove('hidden');
       }
 
+      const controller = new AbortController();
+      const timeout = window.setTimeout(() => controller.abort(), 25000);
+
       try {
         const body = new URLSearchParams(new FormData(form));
         const response = await fetch(form.action, {
@@ -287,6 +299,7 @@ const locations = [
             'Content-Type': 'application/x-www-form-urlencoded',
           },
           body,
+          signal: controller.signal,
         });
 
         const result = await response.json();
@@ -298,6 +311,7 @@ const locations = [
       } catch {
         showStatus('Something went wrong sending the form. Please try again or email admin@matchmakingbureau.com.');
       } finally {
+        window.clearTimeout(timeout);
         if (button) {
           button.disabled = false;
           button.removeAttribute('aria-busy');
