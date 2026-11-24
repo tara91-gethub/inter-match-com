@@ -3,6 +3,8 @@ title: 'Is Private Matchmaking Worth It?'
 excerpt: 'Find out who private matchmaking is for, what you pay for, and what to ask a matchmaker before you decide to join.'
 category: 'Guide'
 publishDate: 2026-11-25
+image: '~/assets/images/blog/couple-narrawallee-beach.jpg'
+imageAlt: 'Aerial view of two people walking beside the waves at Narrawallee Beach, Australia'
 author: 'The Matchmaking Bureau'
 ---
 
