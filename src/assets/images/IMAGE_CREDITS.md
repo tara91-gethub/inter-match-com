@@ -2,7 +2,7 @@
 
 These local city and country images replace watermarked placeholder downloads.
 
-- `blog/couple-narrawallee-beach.jpg` - Pexels free stock photo by Ben Mack, taken at Narrawallee Beach, Australia: https://www.pexels.com/photo/aerial-view-of-a-couple-standing-on-the-shore-6775341/
+- `blog/couple-surfers-paradise.jpg` - Pexels free stock photo by Rohi Bernard Codillo, taken at Surfers Paradise, Queensland, Australia: https://www.pexels.com/photo/couple-standing-together-on-sea-shore-17797787/
 
 - `countries/thailand.jpg` - "Bangkok skyline from The Speakeasy.jpg", Wikimedia Commons.
 - `cities/bangkok.jpg` - "Bangkok - City skyline at sunset.JPG", Wikimedia Commons.
